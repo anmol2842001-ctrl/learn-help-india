@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#1565c0">
-<meta name="description" content="Learn & Help India - Study, Jobs, Government Services, Tools and Support">
 <title>Learn & Help India</title>
 
 <style>
@@ -25,7 +24,7 @@ border-radius:9px;
 padding:11px 17px;
 background:#1565c0;
 color:white;
-font-size:15px
+margin:5px
 }
 button:hover{background:#0d47a1}
 header{
@@ -36,13 +35,14 @@ text-align:center
 }
 .logo{
 width:80px;height:80px;border-radius:50%;background:white;
-margin:auto;display:flex;align-items:center;justify-content:center;
-font-size:42px
+margin:auto;display:flex;align-items:center;
+justify-content:center;font-size:42px
 }
 header h1{font-size:30px;margin-top:8px}
 nav{
-background:white;padding:10px;text-align:center;position:sticky;
-top:0;z-index:100;box-shadow:0 2px 8px #0002
+background:white;padding:10px;text-align:center;
+position:sticky;top:0;z-index:100;
+box-shadow:0 2px 8px #0002
 }
 nav a{
 display:inline-block;color:#1565c0;font-weight:bold;
@@ -57,7 +57,8 @@ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:18px
 }
 .card,.section{
-background:white;border-radius:16px;box-shadow:0 3px 14px #0001
+background:white;border-radius:16px;
+box-shadow:0 3px 14px #0001
 }
 .card{padding:22px;text-align:center}
 .card h3{color:#1565c0;margin:8px 0}
@@ -71,7 +72,6 @@ background:#f8fbff;padding:20px;border-radius:14px;
 border:1px solid #dce8f5
 }
 .quiz-container{max-width:700px;margin:auto}
-.quiz-start{text-align:center}
 .quiz-box{display:none}
 .progress{text-align:center;font-weight:bold;color:#1565c0;margin-bottom:15px}
 .question{
@@ -80,47 +80,45 @@ border:1px solid #dce8f5
 }
 .question h3{margin-bottom:18px}
 .option{
-display:block;width:100%;text-align:left;margin:9px 0;background:#1565c0
+display:block;width:100%;text-align:left;
+margin:9px 0;background:#1565c0
 }
-.option.correct{background:#2e7d32}
-.option.wrong{background:#c62828}
-.option:disabled{opacity:.95}
+.correct{background:#2e7d32!important}
+.wrong{background:#c62828!important}
 .feedback{text-align:center;font-weight:bold;min-height:28px;margin-top:12px}
-.next-btn{display:none;margin:15px auto 0}
+.next-btn{display:none;margin:15px auto}
 .result{
 display:none;text-align:center;background:#f8fbff;
 padding:25px;border-radius:15px
 }
 .score{font-size:42px;font-weight:bold;color:#1565c0;margin:10px}
-.tool{background:#f8fbff;padding:20px;border-radius:14px}
+.tool{
+background:#f8fbff;padding:20px;border-radius:14px
+}
 .tool input{
 width:100%;padding:11px;margin:6px 0;
 border:1px solid #ccc;border-radius:8px
 }
 .output{font-weight:bold;color:#1565c0;margin-top:10px}
 .service-link{
-display:inline-block;
-margin-top:8px;
+display:block;
 background:#1565c0;
 color:white;
-padding:10px 14px;
-border-radius:8px;
+padding:12px;
+border-radius:9px;
+margin:7px 0;
 font-weight:bold
 }
+.service-link:hover{background:#0d47a1}
 pre{
-text-align:left;
-background:#222;
-color:#eee;
-padding:15px;
-border-radius:10px;
-overflow:auto
+background:#17202a;color:#fff;
+padding:15px;border-radius:10px;
+overflow:auto;text-align:left
 }
 footer{
 margin-top:35px;background:#0d47a1;color:white;
 text-align:center;padding:25px 15px
 }
-.hidden{display:none}
-.small{font-size:13px;color:#666}
 @media(max-width:600px){
 header h1{font-size:25px}
 nav a{font-size:13px;margin:3px}
@@ -153,8 +151,8 @@ nav a{font-size:13px;margin:3px}
 <div class="welcome">
 <h2>Welcome to Learn & Help India</h2>
 <p>
-एक ऐसी जगह जहाँ आप पढ़ सकते हैं, practice कर सकते हैं,
-jobs और useful government information प्राप्त कर सकते हैं।
+Study, Jobs, Government Services, Tools और Coding
+एक ही जगह।
 </p>
 </div>
 
@@ -163,54 +161,55 @@ jobs और useful government information प्राप्त कर सकत
 <div class="card">
 <div class="icon">📚</div>
 <h3>Study</h3>
-<p>Competitive Exams की तैयारी करें।</p>
+<p>Competitive Exam Practice</p>
 <a href="#study"><button>Study शुरू करें</button></a>
 </div>
 
 <div class="card">
 <div class="icon">💼</div>
 <h3>Jobs</h3>
-<p>Government और Private Jobs की जानकारी।</p>
+<p>Government और Private Jobs</p>
 <a href="#jobs"><button>Jobs देखें</button></a>
 </div>
 
 <div class="card">
 <div class="icon">🧮</div>
-<h3>Useful Tools</h3>
-<p>Calculator और measurement tools।</p>
+<h3>Tools</h3>
+<p>Useful Calculators</p>
 <a href="#tools"><button>Tools देखें</button></a>
 </div>
 
 <div class="card">
 <div class="icon">💻</div>
 <h3>Coding</h3>
-<p>HTML, CSS और JavaScript सीखें।</p>
+<p>HTML, CSS और JavaScript</p>
 <a href="#coding"><button>Coding सीखें</button></a>
 </div>
 
 <div class="card">
 <div class="icon">🏛️</div>
-<h3>Government Services</h3>
-<p>Aadhaar, PAN और अन्य useful services।</p>
+<h3>Services</h3>
+<p>Aadhaar, PAN और अन्य services</p>
 <a href="#services"><button>Services देखें</button></a>
 </div>
 
 <div class="card">
-<div class="icon">❤️</div>
-<h3>Help People</h3>
-<p>सही जानकारी दूसरों तक पहुँचाएँ।</p>
-<a href="#support"><button>Help करें</button></a>
+<div class="icon">💬</div>
+<h3>Support</h3>
+<p>हमसे संपर्क करें</p>
+<a href="#support"><button>Support</button></a>
 </div>
 
 </div>
 </section>
+
 
 <section id="study" class="section">
 
 <h2 class="section-title">📚 Study Center</h2>
 
 <p class="section-intro">
-Subject चुनें और 50 questions का test शुरू करें।
+Subject चुनें और 50 Questions का Test दें।
 </p>
 
 <div class="grid">
@@ -218,40 +217,36 @@ Subject चुनें और 50 questions का test शुरू करे�
 <div class="card">
 <div class="icon">➗</div>
 <h3>Maths</h3>
-<p>50 Questions</p>
-<button type="button" onclick="startTest('math')">Start Test</button>
+<button onclick="startTest('math')">50 Questions</button>
 </div>
 
 <div class="card">
 <div class="icon">🧠</div>
 <h3>Reasoning</h3>
-<p>50 Questions</p>
-<button type="button" onclick="startTest('reasoning')">Start Test</button>
+<button onclick="startTest('reasoning')">50 Questions</button>
 </div>
 
 <div class="card">
 <div class="icon">🔤</div>
 <h3>English</h3>
-<p>50 Questions</p>
-<button type="button" onclick="startTest('english')">Start Test</button>
+<button onclick="startTest('english')">50 Questions</button>
 </div>
 
 <div class="card">
 <div class="icon">🇮🇳</div>
 <h3>GK / GS</h3>
-<p>50 Questions</p>
-<button type="button" onclick="startTest('gk')">Start Test</button>
+<button onclick="startTest('gk')">50 Questions</button>
 </div>
 
 <div class="card">
 <div class="icon">📰</div>
 <h3>Current Affairs</h3>
-<p>50 Practice Questions</p>
-<button type="button" onclick="startTest('current')">Start Test</button>
+<button onclick="startTest('current')">50 Questions</button>
 </div>
 
 </div>
 </section>
+
 
 <section id="quiz" class="section">
 
@@ -259,8 +254,8 @@ Subject चुनें और 50 questions का test शुरू करे�
 
 <div class="quiz-container">
 
-<div id="quizStart" class="quiz-start">
-<p>ऊपर से कोई subject चुनकर test शुरू करें।</p>
+<div id="quizStart" style="text-align:center">
+<p>ऊपर से कोई subject चुनें।</p>
 </div>
 
 <div id="quizBox" class="quiz-box">
@@ -275,7 +270,7 @@ Subject चुनें और 50 questions का test शुरू करे�
 
 <div id="feedback" class="feedback"></div>
 
-<button id="nextBtn" class="next-btn" type="button">
+<button id="nextBtn" class="next-btn" onclick="nextQuestion()">
 Next Question ➡️
 </button>
 
@@ -290,23 +285,21 @@ Next Question ➡️
 
 <p id="message"></p>
 
-<br>
-
-<button id="restartBtn" type="button">
-🔄 Restart Test
-</button>
+<button onclick="restartTest()">🔄 Restart Test</button>
+<button onclick="goStudy()">📚 Study Center</button>
 
 </div>
 
 </div>
 </section>
 
+
 <section id="jobs" class="section">
 
 <h2 class="section-title">💼 Jobs & Career</h2>
 
 <p class="section-intro">
-नौकरी की जानकारी लेते समय हमेशा official notification verify करें।
+Job information और official portals
 </p>
 
 <div class="grid">
@@ -314,22 +307,66 @@ Next Question ➡️
 <div class="card">
 <div class="icon">🏛️</div>
 <h3>Government Jobs</h3>
-<p>SSC, Railway, Banking, Bihar आदि।</p>
-<button type="button" onclick="showJobInfo()">View Information</button>
+<p>SSC, Railway, Banking और Government jobs.</p>
+
+<a class="service-link"
+href="https://ssc.gov.in/"
+target="_blank">
+SSC Official Website
+</a>
+
+<a class="service-link"
+href="https://www.rrbapply.gov.in/"
+target="_blank">
+Railway Recruitment
+</a>
+
+<a class="service-link"
+href="https://www.ibps.in/"
+target="_blank">
+IBPS Official Website
+</a>
+
 </div>
+
 
 <div class="card">
 <div class="icon">🏢</div>
 <h3>Private Jobs</h3>
-<p>Office, BPO, Back Office, Customer Support।</p>
-<button type="button" onclick="showPrivateJobs()">View Information</button>
+
+<p>
+Office, Back Office, BPO और Customer Support jobs.
+</p>
+
+<a class="service-link"
+href="https://www.naukri.com/"
+target="_blank">
+Naukri
+</a>
+
+<a class="service-link"
+href="https://www.linkedin.com/jobs/"
+target="_blank">
+LinkedIn Jobs
+</a>
+
 </div>
+
 
 <div class="card">
 <div class="icon">🏠</div>
 <h3>Work From Home</h3>
-<p>Remote और customer support jobs।</p>
-<button type="button" onclick="showWFH()">View Information</button>
+
+<p>
+Remote और Customer Support jobs.
+</p>
+
+<a class="service-link"
+href="https://www.naukri.com/work-from-home-jobs"
+target="_blank">
+WFH Jobs
+</a>
+
 </div>
 
 </div>
@@ -339,12 +376,14 @@ Next Question ➡️
 <div class="feature">
 <h3>⚠️ Job Fraud से सावधान</h3>
 <p>
-नौकरी के नाम पर advance payment, OTP, UPI PIN,
-ATM PIN या bank password किसी को न दें।
+नौकरी के नाम पर किसी को OTP, UPI PIN,
+ATM PIN या bank password न दें।
+Advance payment से सावधान रहें।
 </p>
 </div>
 
 </section>
+
 
 <section id="tools" class="section">
 
@@ -353,45 +392,73 @@ ATM PIN या bank password किसी को न दें।
 <div class="grid">
 
 <div class="tool">
-<h3>🧮 Basic Calculator</h3>
+<h3>🧮 Calculator</h3>
+
 <input id="calcInput" placeholder="Example: 25+50*2">
-<button type="button" onclick="calculate()">Calculate</button>
+
+<button onclick="calculate()">Calculate</button>
+
 <p id="calcResult" class="output"></p>
 </div>
 
+
 <div class="tool">
-<h3>📊 Percentage Calculator</h3>
+
+<h3>📊 Percentage</h3>
+
 <input id="obtained" type="number" placeholder="Obtained Marks">
 <input id="total" type="number" placeholder="Total Marks">
-<button type="button" onclick="percentage()">Calculate</button>
+
+<button onclick="percentage()">Calculate</button>
+
 <p id="percentageResult" class="output"></p>
+
 </div>
 
+
 <div class="tool">
-<h3>📐 Area Calculator</h3>
+
+<h3>📐 Area</h3>
+
 <input id="length" type="number" placeholder="Length (meter)">
 <input id="width" type="number" placeholder="Width (meter)">
-<button type="button" onclick="area()">Calculate</button>
+
+<button onclick="area()">Calculate</button>
+
 <p id="areaResult" class="output"></p>
+
 </div>
 
+
 <div class="tool">
+
 <h3>📏 Meter → Feet</h3>
+
 <input id="meter" type="number" placeholder="Meter">
-<button type="button" onclick="meterToFeet()">Convert</button>
+
+<button onclick="meterToFeet()">Convert</button>
+
 <p id="feetResult" class="output"></p>
+
 </div>
 
+
 <div class="tool">
-<h3>🌾 Land Measurement</h3>
+
+<h3>🌾 Land Area</h3>
+
 <input id="landLength" type="number" placeholder="Length (meter)">
 <input id="landWidth" type="number" placeholder="Width (meter)">
-<button type="button" onclick="landArea()">Calculate Area</button>
+
+<button onclick="landArea()">Calculate</button>
+
 <p id="landResult" class="output"></p>
+
 </div>
 
 </div>
 </section>
+
 
 <section id="coding" class="section">
 
@@ -402,113 +469,141 @@ ATM PIN या bank password किसी को न दें।
 <div class="card">
 <div class="icon">🌐</div>
 <h3>HTML</h3>
-<p>Website structure सीखें।</p>
-<pre>&lt;h1&gt;Hello India&lt;/h1&gt;
-&lt;p&gt;My Website&lt;/p&gt;</pre>
+<p>Website structure</p>
+
+<pre>
+&lt;h1&gt;Hello India&lt;/h1&gt;
+&lt;p&gt;My Website&lt;/p&gt;
+</pre>
+
 </div>
 
 <div class="card">
 <div class="icon">🎨</div>
 <h3>CSS</h3>
-<p>Website design सीखें।</p>
-<pre>body{
-background:#f4f7fb;
-color:#222;
-}</pre>
+<p>Website design</p>
+
+<pre>
+body{
+ background:#f4f7fb;
+ color:#222;
+}
+</pre>
+
 </div>
 
 <div class="card">
 <div class="icon">⚡</div>
 <h3>JavaScript</h3>
-<p>Website को interactive बनाएँ।</p>
-<pre>function hello(){
-alert("Hello India");
-}</pre>
+<p>Website functionality</p>
+
+<pre>
+function hello(){
+ alert("Hello India");
+}
+</pre>
+
+<button onclick="hello()">Run Example</button>
+
 </div>
 
 </div>
 </section>
+
 
 <section id="services" class="section">
 
 <h2 class="section-title">🏛️ Government Services</h2>
 
 <p class="section-intro">
-नीचे दिए गए links संबंधित official portals पर ले जाते हैं।
+नीचे official government websites के links हैं।
 </p>
 
 <div class="grid">
 
 <div class="card">
+
 <div class="icon">🪪</div>
 <h3>Aadhaar</h3>
-<p>UIDAI का official portal</p>
+
 <a class="service-link"
 href="https://uidai.gov.in/"
-target="_blank"
-rel="noopener noreferrer">
-Official Aadhaar
+target="_blank">
+UIDAI Official Website
 </a>
+
+<a class="service-link"
+href="https://myaadhaar.uidai.gov.in/"
+target="_blank">
+MyAadhaar
+</a>
+
 </div>
 
+
 <div class="card">
+
 <div class="icon">💳</div>
 <h3>PAN Card</h3>
-<p>Income Tax Department की official information</p>
+
 <a class="service-link"
 href="https://www.incometax.gov.in/"
-target="_blank"
-rel="noopener noreferrer">
-Official Income Tax
+target="_blank">
+Income Tax Official Website
 </a>
+
+<a class="service-link"
+href="https://www.pan.utiitsl.com/"
+target="_blank">
+UTIITSL PAN
+</a>
+
+<a class="service-link"
+href="https://tinpan.proteantech.in/services/pan/pan-index"
+target="_blank">
+Protean PAN
+</a>
+
 </div>
 
+
 <div class="card">
+
 <div class="icon">📜</div>
-<h3>Income Tax</h3>
-<p>Tax और PAN related services</p>
-<a class="service-link"
-href="https://www.incometax.gov.in/"
-target="_blank"
-rel="noopener noreferrer">
-Open Portal
-</a>
-</div>
+<h3>Certificates</h3>
 
-<div class="card">
-<div class="icon">🏛️</div>
-<h3>Government Services</h3>
-<p>भारत सरकार का services portal</p>
+<a class="service-link"
+href="https://serviceonline.bihar.gov.in/"
+target="_blank">
+Bihar ServicePlus
+</a>
+
 <a class="service-link"
 href="https://www.india.gov.in/"
-target="_blank"
-rel="noopener noreferrer">
-India.gov.in
+target="_blank">
+National Portal of India
 </a>
+
 </div>
 
+
 <div class="card">
+
 <div class="icon">🎓</div>
 <h3>Education</h3>
-<p>National Scholarship Portal</p>
+
 <a class="service-link"
 href="https://scholarships.gov.in/"
-target="_blank"
-rel="noopener noreferrer">
-Scholarship Portal
+target="_blank">
+National Scholarship Portal
 </a>
-</div>
 
-<div class="card">
-<div class="icon">💼</div>
-<h3>Employment</h3>
-<p>National Career Service</p>
 <a class="service-link"
-href="https://www.ncs.gov.in/"
-target="_blank"
-rel="noopener noreferrer">
-NCS Portal
+href="https://www.nta.ac.in/"
+target="_blank">
+NTA Official Website
 </a>
+
 </div>
 
 </div>
@@ -516,51 +611,85 @@ NCS Portal
 <br>
 
 <div class="feature">
-<strong>⚠️ सुरक्षा:</strong>
+
+<h3>🔐 सुरक्षा</h3>
+
 <p>
-OTP, UPI PIN, ATM PIN, password या banking details
-किसी unknown व्यक्ति को न दें।
+Aadhaar/PAN जैसी services के लिए केवल
+official government websites का उपयोग करें।
+OTP, PIN और password किसी के साथ share न करें।
 </p>
+
 </div>
 
 </section>
+
 
 <section id="support" class="section">
 
 <h2 class="section-title">💬 Customer Support</h2>
 
 <p class="section-intro">
-Website से जुड़ी समस्या या सहायता के लिए संपर्क करें।
+Website से जुड़ी समस्या के लिए संपर्क करें।
 </p>
 
 <div class="grid">
 
 <div class="card">
+
 <div class="icon">💬</div>
-<h3>WhatsApp Support</h3>
-<p>सीधे WhatsApp पर message भेजें।</p>
-<a href="https://wa.me/919905459779?text=Hello%20Learn%20%26%20Help%20India%2C%20mujhe%20website%20par%20help%20chahiye."
-target="_blank" rel="noopener noreferrer">
-<button type="button">Open WhatsApp</button>
+
+<h3>WhatsApp</h3>
+
+<p>सीधे WhatsApp पर message करें।</p>
+
+<a
+class="service-link"
+href="https://wa.me/919905459779?text=Hello%20Learn%20%26%20Help%20India%2C%20mujhe%20website%20par%20help%20chahiye."
+target="_blank">
+
+Open WhatsApp
+
 </a>
+
 </div>
 
+
 <div class="card">
+
 <div class="icon">📧</div>
-<h3>Email Support</h3>
-<p>Detailed समस्या email से भेजें।</p>
-<a href="mailto:anmol2842001@gmail.com?subject=Learn%20%26%20Help%20India%20Support">
-<button type="button">Send Email</button>
+
+<h3>Email</h3>
+
+<p>समस्या email से भेजें।</p>
+
+<a
+class="service-link"
+href="mailto:anmol2842001@gmail.com?subject=Learn%20%26%20Help%20India%20Support">
+
+Send Email
+
 </a>
+
 </div>
 
+
 <div class="card">
+
 <div class="icon">📞</div>
-<h3>Support Number</h3>
+
+<h3>Call</h3>
+
 <p>9905459779</p>
-<a href="tel:9905459779">
-<button type="button">Call Support</button>
+
+<a
+class="service-link"
+href="tel:9905459779">
+
+Call Support
+
 </a>
+
 </div>
 
 </div>
@@ -569,362 +698,372 @@ target="_blank" rel="noopener noreferrer">
 
 <div class="feature">
 
-<h3>❓ Frequently Asked Questions</h3>
+<h3>❓ FAQ</h3>
 
 <br>
 
 <p>
-<b>Q. Website किसलिए है?</b><br>
-Study, Jobs, Government Services, Tools और helpful information के लिए।
+<b>Q. Quiz कैसे काम करता है?</b><br>
+Subject चुनें, question का answer दें और अंत में score देखें।
 </p>
 
 <br>
 
 <p>
-<b>Q. Job पाने के लिए पैसे देने चाहिए?</b><br>
-नहीं। Unknown व्यक्ति को advance payment न करें।
+<b>Q. Job के लिए पैसे देने चाहिए?</b><br>
+Unknown व्यक्ति को advance payment न करें।
 </p>
 
 <br>
 
 <p>
-<b>Q. Quiz का score कैसे मिलेगा?</b><br>
-50 questions पूरा होने के बाद score automatically दिखाई देगा।
+<b>Q. Government services कहाँ मिलेंगी?</b><br>
+Services section में official links दिए गए हैं।
 </p>
 
 </div>
+
 </section>
+
 
 <section class="section">
+
 <div class="feature" style="text-align:center">
+
 <h2>❤️ हमारा उद्देश्य</h2>
+
 <p>
-Learn & Help India का उद्देश्य है कि सही और उपयोगी जानकारी
-लोगों तक आसानी से पहुँचे।
+Learn & Help India का उद्देश्य है कि
+सही और उपयोगी जानकारी लोगों तक आसानी से पहुँचे।
 </p>
+
 <br>
-<strong>सीखना • आगे बढ़ना • दूसरों की मदद करना 🇮🇳</strong>
+
+<strong>
+सीखना • आगे बढ़ना • दूसरों की मदद करना 🇮🇳
+</strong>
+
 </div>
+
 </section>
 
 </div>
 
+
 <footer>
+
 <h2>🌏 Learn & Help India</h2>
+
 <p>Learn • Grow • Help 🇮🇳</p>
-<p>Support: 9905459779 | anmol2842001@gmail.com</p>
+
+<p>Support: 9905459779</p>
+
+<p>anmol2842001@gmail.com</p>
+
 <p>© 2026 Learn & Help India</p>
+
 </footer>
+
 
 <script>
 
-/* =====================================================
+/* ==========================
    QUESTION DATABASE
-   ===================================================== */
+   50 QUESTIONS EACH
+========================== */
 
-const questions = {
+const questions={
 
-math: [
-
-["200 का 25% कितना होगा?",["25","50","75","100"],1],
-["500 का 10% कितना होगा?",["25","50","75","100"],1],
-["400 का 20% कितना होगा?",["60","80","100","120"],1],
-["1000 का 15% कितना होगा?",["100","150","200","250"],1],
-["300 का 30% कितना होगा?",["60","90","120","150"],1],
-["600 का 50% कितना होगा?",["200","250","300","350"],2],
-["800 का 25% कितना होगा?",["100","150","200","250"],2],
-["250 का 20% कितना होगा?",["40","50","60","70"],1],
-["120 का 50% कितना होगा?",["40","50","60","70"],2],
-["900 का 10% कितना होगा?",["80","90","100","110"],1],
-["45 + 55 = ?",["90","100","110","120"],1],
-["125 + 75 = ?",["180","190","200","210"],2],
-["500 - 275 = ?",["215","225","235","245"],1],
+math:[
+["25% of 200 = ?",["25","50","75","100"],1],
+["10% of 500 = ?",["25","50","75","100"],1],
+["20% of 400 = ?",["60","80","100","120"],1],
+["15% of 1000 = ?",["100","150","200","250"],1],
+["30% of 300 = ?",["60","90","120","150"],1],
+["50% of 600 = ?",["200","250","300","350"],2],
+["25% of 800 = ?",["100","150","200","250"],2],
+["20% of 250 = ?",["40","50","60","70"],1],
+["12 + 18 = ?",["20","25","30","35"],2],
+["45 - 17 = ?",["26","28","30","32"],1],
+["8 × 7 = ?",["54","56","58","60"],1],
+["81 ÷ 9 = ?",["7","8","9","10"],2],
+["15% of 200 = ?",["20","30","40","50"],1],
+["3/4 = ?",["25%","50%","75%","80%"],2],
+["2/5 = ?",["20%","40%","50%","60%"],1],
+["5² = ?",["10","20","25","30"],2],
+["√64 = ?",["6","7","8","9"],2],
+["LCM of 4 and 6?",["8","10","12","14"],2],
+["HCF of 18 and 24?",["3","6","9","12"],1],
+["1000 - 375 = ?",["525","625","675","725"],1],
 ["25 × 4 = ?",["50","75","100","125"],2],
 ["144 ÷ 12 = ?",["10","11","12","13"],2],
-["15 × 6 = ?",["80","90","100","110"],1],
-["360 ÷ 9 = ?",["30","40","50","60"],1],
-["18 + 27 = ?",["35","45","55","65"],1],
-["72 - 38 = ?",["24","34","44","54"],1],
-["7 × 8 = ?",["48","54","56","64"],2],
-["81 ÷ 9 = ?",["7","8","9","10"],2],
-["1/2 का decimal रूप?",["0.25","0.5","0.75","1"],1],
-["1/4 का decimal रूप?",["0.20","0.25","0.40","0.50"],1],
-["3/4 का decimal रूप?",["0.25","0.50","0.75","1"],2],
-["2:3 में कुल कितने parts हैं?",["2","3","5","6"],2],
-["10:15 का सरल रूप?",["1:2","2:3","3:4","4:5"],1],
-["एक दर्जन में कितनी वस्तुएँ?",["10","12","14","16"],1],
-["1 km में कितने meter?",["100","500","1000","1500"],2],
-["1 meter में कितने centimeter?",["10","50","100","1000"],2],
-["1 kg में कितने gram?",["100","500","1000","1500"],2],
-["एक सप्ताह में कितने दिन?",["5","6","7","8"],2],
-["2 घंटे में कितने मिनट?",["60","90","120","150"],2],
-["90 का 20%?",["9","18","27","36"],1],
-["750 का 20%?",["100","125","150","175"],2],
-["1500 का 10%?",["100","150","200","250"],1],
-["60 का 25%?",["10","15","20","25"],2],
-["80 का 75%?",["40","50","60","70"],2],
-["200 का 5%?",["5","10","15","20"],1],
-["400 का 5%?",["10","20","30","40"],1],
-["50 का 40%?",["10","20","30","40"],2],
-["12² = ?",["124","144","164","184"],1],
-["15² = ?",["200","215","225","235"],2],
-["20² = ?",["200","300","400","500"],2],
-["√81 = ?",["7","8","9","10"],2],
+["7 × 9 = ?",["54","63","72","81"],1],
+["1 km = ? meters",["100","500","1000","1500"],2],
+["1 meter = ? cm",["10","50","100","1000"],2],
+["50% of 90 = ?",["35","40","45","50"],2],
+["20% of 150 = ?",["20","30","40","50"],1],
+["30% of 500 = ?",["100","150","200","250"],1],
+["40% of 250 = ?",["80","100","120","140"],1],
+["75% of 80 = ?",["50","60","70","80"],1],
+["2 + 3 × 4 = ?",["14","20","24","10"],0],
+["100 ÷ 4 = ?",["20","25","30","40"],1],
+["18 × 5 = ?",["80","90","100","110"],1],
+["200 + 350 = ?",["450","500","550","600"],2],
+["900 - 450 = ?",["350","400","450","500"],2],
+["12² = ?",["124","144","154","164"],1],
 ["√100 = ?",["8","9","10","11"],2],
-["3³ = ?",["9","18","27","36"],2],
-["5³ = ?",["25","75","125","150"],2],
-["2⁵ = ?",["16","24","32","64"],2],
-["यदि x+5=12, x=?",["5","6","7","8"],2],
-["यदि 3x=21, x=?",["5","6","7","8"],2]
-
+["3/5 of 100 = ?",["40","50","60","70"],2],
+["Ratio 2:3, total 50. First part?",["15","20","25","30"],1],
+["Ratio 3:2, total 50. First part?",["20","25","30","35"],2],
+["Average of 10 and 20?",["10","15","20","25"],1],
+["Average of 5,10,15?",["5","10","15","20"],1],
+["Profit = SP - ?",["CP","MP","Tax","Discount"],0],
+["Discount is generally calculated on?",["CP","MP","SP","Profit"],1],
+["1 hour = ? minutes",["30","45","60","90"],2],
+["1 day = ? hours",["12","18","24","48"],2],
+["1 dozen = ?",["10","12","14","16"],1],
+["25 + 25 + 25 = ?",["50","75","100","125"],1],
+["1000 ÷ 10 = ?",["10","50","100","200"],2],
+["9 × 11 = ?",["90","99","108","110"],1]
 ],
 
-reasoning: [
-
-["2, 4, 6, 8, ?",["9","10","11","12"],1],
-["3, 6, 12, 24, ?",["36","42","48","50"],2],
-["1, 4, 9, 16, ?",["20","24","25","30"],2],
+reasoning:[
+["2,4,6,8,?",["9","10","11","12"],1],
+["3,6,12,24,?",["36","42","48","50"],2],
+["1,4,9,16,?",["20","24","25","30"],2],
 ["Book : Read :: Food : ?",["Cook","Eat","Buy","Sell"],1],
 ["Bird : Fly :: Fish : ?",["Run","Walk","Swim","Jump"],2],
 ["Pen : Write :: Knife : ?",["Cut","Read","Draw","Open"],0],
-["CAT को DBU लिखा जाए तो DOG क्या होगा?",["EPH","EOH","FPH","DPE"],0],
-["A=1, B=2, C=3 तो CAB का योग?",["5","6","7","8"],2],
-["5,10,15,20, ?",["21","25","30","35"],1],
-["10,20,40,80, ?",["100","120","140","160"],3],
-["A,B,C,D, ?",["E","F","G","H"],0],
-["Z,Y,X,W, ?",["U","V","T","S"],1],
-["Monday के बाद कौन सा दिन?",["Sunday","Tuesday","Wednesday","Friday"],1],
-["North के opposite क्या है?",["East","West","South","North"],2],
-["East के opposite क्या है?",["West","North","South","East"],0],
-["यदि आज Monday है, 3 दिन बाद?",["Tuesday","Wednesday","Thursday","Friday"],2],
-["Triangle में कितनी sides होती हैं?",["2","3","4","5"],1],
-["Square में कितने corners?",["2","3","4","5"],2],
-["Odd one out?",["Apple","Mango","Banana","Carrot"],3],
+["CAT → DBU, DOG → ?",["EPH","EOH","FPH","DPE"],0],
+["A=1,B=2,C=3, CAB = ?",["5","6","7","8"],2],
+["5,10,15,20,?",["22","25","30","35"],1],
+["10,20,40,80,?",["100","120","160","180"],2],
+["100,90,80,70,?",["50","60","65","75"],1],
+["A,C,E,G,?",["H","I","J","K"],1],
+["Z,X,V,T,?",["R","S","Q","P"],0],
+["Monday के बाद?",["Sunday","Tuesday","Friday","Saturday"],1],
+["January के बाद?",["March","April","February","May"],2],
+["North का opposite?",["East","South","West","North"],1],
+["East का opposite?",["West","North","South","East"],0],
+["Mother's son is your?",["Father","Brother","Uncle","Cousin"],1],
+["Father's daughter is your?",["Sister","Mother","Aunt","Cousin"],0],
+["Odd one out?",["Apple","Mango","Potato","Banana"],2],
 ["Odd one out?",["Dog","Cat","Cow","Rose"],3],
-["2,4,8,16, ?",["24","28","32","36"],2],
-["100,90,80,70, ?",["50","60","65","75"],1],
-["7,14,21,28, ?",["32","35","38","42"],1],
-["1,3,5,7, ?",["8","9","10","11"],1],
-["2,3,5,7, ?",["9","10","11","12"],2],
-["Doctor : Hospital :: Teacher : ?",["Court","School","Bank","Farm"],1],
-["Bird : Nest :: Lion : ?",["Den","Stable","Kennel","Hive"],0],
-["Hand : Glove :: Foot : ?",["Cap","Shoe","Shirt","Belt"],1],
-["Eye : See :: Ear : ?",["Run","Hear","Walk","Touch"],1],
-["Day : Night :: Hot : ?",["Warm","Cold","Fire","Heat"],1],
-["Brother का female relation?",["Sister","Mother","Aunt","Daughter"],0],
-["Father की sister?",["Mother","Aunt","Cousin","Niece"],1],
-["Mother के brother?",["Uncle","Father","Brother","Nephew"],0],
-["एक वर्ष में कितने महीने?",["10","11","12","13"],2],
-["एक दिन में कितने घंटे?",["12","18","24","30"],2],
-["Clock में एक पूरा circle कितने degree?",["90","180","270","360"],3],
-["यदि A बड़ा है B से और B बड़ा है C से, सबसे बड़ा?",["A","B","C","सभी समान"],0],
-["यदि RAM को SBN लिखा जाए तो CAT?",["DBU","CBT","DBS","DCT"],0],
-["यदि PEN को QFO लिखा जाए तो BOX?",["CPY","COY","BQY","CPX"],0],
-["5 लोगों की line में Ravi आगे से तीसरा है। पीछे से?",["1","2","3","4"],2],
-["10 लोगों की line में कोई व्यक्ति आगे से 4th है। पीछे से?",["5th","6th","7th","8th"],2],
-["यदि सभी roses flowers हैं, तो rose क्या है?",["Tree","Flower","Fruit","Leaf"],1],
-["सभी cats animals हैं। क्या cat animal है?",["हाँ","नहीं","पता नहीं","कभी-कभी"],0],
-["यदि 2+3=10 और 3+4=21 pattern है, 4+5=?",["36","40","45","50"],2],
-["12 को आधा करने पर?",["4","5","6","8"],2],
-["20 का double?",["30","40","50","60"],1],
-["100 का आधा?",["25","40","50","75"],2],
-["एक वर्ग की सभी sides कैसी होती हैं?",["अलग","समान","दो समान","कोई नहीं"],1],
-["यदि North की ओर मुँह है और right turn लें तो दिशा?",["West","East","South","North"],1]
-
+["Odd one out?",["2","4","6","9"],3],
+["2,3,5,7,?",["9","10","11","12"],2],
+["1,2,4,8,?",["10","12","16","18"],2],
+["11,22,33,44,?",["50","55","60","66"],1],
+["100,50,25,?",["10","12.5","15","20"],1],
+["3,9,27,?",["54","72","81","90"],2],
+["4,16,64,?",["128","192","256","300"],2],
+["8,16,24,32,?",["36","40","42","48"],1],
+["20,18,16,14,?",["10","11","12","13"],2],
+["If today Monday, tomorrow?",["Sunday","Tuesday","Wednesday","Friday"],1],
+["If yesterday Friday, today?",["Thursday","Friday","Saturday","Sunday"],2],
+["Clock has how many hours?",["10","12","14","24"],1],
+["Triangle has sides?",["2","3","4","5"],1],
+["Square has sides?",["3","4","5","6"],1],
+["Opposite of UP?",["Down","Left","Right","Back"],0],
+["Opposite of LEFT?",["Up","Down","Right","Front"],2],
+["If A>B and B>C, then?",["A<C","A=C","A>C","None"],2],
+["If 1=3, 2=6, 3=9, 4=?",["10","12","14","16"],1],
+["Which is smallest?",["0.1","0.01","1","10"],1],
+["Which is largest?",["0.5","0.05","5","0.005"],2],
+["A is before B. B is before C. Who is first?",["A","B","C","None"],0],
+["Which is a vehicle?",["Car","Apple","Table","Book"],0],
+["Which is a fruit?",["Potato","Carrot","Mango","Rice"],2],
+["Which is a color?",["Red","Dog","Chair","Book"],0],
+["Which is a number?",["Five","Table","Blue","Cat"],0],
+["Which comes first alphabetically?",["Dog","Apple","Cat","Ball"],1],
+["Which comes last alphabetically?",["Apple","Ball","Cat","Dog"],3],
+["If 5 workers do job in 5 days, concept is?",["Work","Color","Direction","Shape"],0]
 ],
 
-english: [
-
+english:[
 ["Synonym of Happy?",["Sad","Glad","Angry","Weak"],1],
 ["Antonym of Hot?",["Warm","Cold","Heat","Fire"],1],
-["Choose the correct article: ___ apple",["a","an","the","no article"],1],
+["Choose article: ___ apple",["a","an","the","no article"],1],
 ["He ___ to school every day.",["go","goes","going","gone"],1],
 ["Plural of Child?",["Childs","Childes","Children","Childrens"],2],
 ["Opposite of Early?",["Fast","Late","Quick","Soon"],1],
 ["Synonym of Big?",["Small","Large","Tiny","Short"],1],
 ["I ___ a student.",["am","is","are","be"],0],
-["Synonym of Small?",["Tiny","Huge","Large","Long"],0],
-["Antonym of Good?",["Better","Bad","Best","Fine"],1],
-["She ___ a book.",["read","reads","reading","readed"],1],
-["They ___ playing.",["is","am","are","be"],2],
-["He is ___ honest man.",["a","an","the","no"],1],
-["I have ___ umbrella.",["a","an","the","no"],1],
+["Antonym of Good?",["Best","Bad","Better","Fine"],1],
+["Synonym of Begin?",["End","Start","Stop","Close"],1],
+["Plural of Man?",["Mans","Men","Mens","Manes"],1],
+["Plural of Woman?",["Womans","Women","Womens","Woman"],1],
 ["Past tense of Go?",["Goed","Gone","Went","Going"],2],
 ["Past tense of Eat?",["Ate","Eaten","Eating","Eats"],0],
-["Past tense of Write?",["Wrote","Written","Writing","Writes"],0],
-["Opposite of Strong?",["Power","Weak","Hard","Heavy"],1],
-["Synonym of Fast?",["Slow","Quick","Late","Weak"],1],
-["Synonym of Begin?",["End","Start","Stop","Close"],1],
-["Antonym of Rich?",["Poor","Happy","Strong","Big"],0],
-["Antonym of Light?",["Bright","Dark","White","Clear"],1],
-["One who teaches?",["Doctor","Teacher","Farmer","Driver"],1],
-["One who treats patients?",["Teacher","Doctor","Pilot","Lawyer"],1],
-["Correct spelling?",["Beautifull","Beautiful","Beutiful","Beautifol"],1],
-["Correct spelling?",["Necessary","Necesary","Neccessary","Necessery"],0],
-["Correct spelling?",["Separate","Seperate","Seprate","Seperete"],0],
-["I ___ milk every day.",["drink","drinks","drank","drinking"],0],
-["She ___ very well.",["sing","sings","singing","sung"],1],
+["She ___ singing.",["is","are","am","be"],0],
+["They ___ playing.",["is","am","are","be"],2],
+["He has ___ umbrella.",["a","an","the","no"],1],
+["I saw ___ moon.",["a","an","the","no"],2],
+["Correct spelling?",["Beautifull","Beautiful","Beutiful","Beautifal"],1],
+["Correct spelling?",["Receive","Recieve","Receeve","Receve"],0],
+["Synonym of Quick?",["Slow","Fast","Weak","Late"],1],
+["Antonym of Strong?",["Powerful","Weak","Hard","Big"],1],
+["Synonym of Smart?",["Clever","Dull","Slow","Weak"],0],
+["Antonym of Rich?",["Poor","Strong","Big","Happy"],0],
+["A person who teaches?",["Doctor","Teacher","Driver","Farmer"],1],
+["A person who treats patients?",["Teacher","Doctor","Farmer","Pilot"],1],
+["A place where books are kept?",["Library","Hospital","Market","Station"],0],
+["A place where trains stop?",["Airport","Station","School","Bank"],1],
+["Choose noun: 'The boy runs.'",["boy","runs","the","none"],0],
+["Choose verb: 'The boy runs.'",["boy","runs","the","none"],1],
+["Choose adjective: 'A tall boy.'",["A","tall","boy","none"],1],
+["Choose pronoun: 'He is here.'",["He","is","here","none"],0],
+["I ___ coffee.",["drink","drinks","drank","drinking"],0],
+["She ___ coffee.",["drink","drinks","drank","drinking"],1],
+["They ___ cricket.",["plays","play","playing","played"],1],
 ["We ___ students.",["is","am","are","be"],2],
-["He ___ not like tea.",["do","does","is","are"],1],
-["They ___ cricket yesterday.",["play","played","playing","plays"],1],
-["The sun ___ in the east.",["rise","rises","rising","rose"],1],
-["A group of lions is called?",["Herd","Pride","Pack","Flock"],1],
-["A group of cows is called?",["Herd","Pride","Flock","School"],0],
-["A group of birds is called?",["Herd","Flock","Pride","Pack"],1],
-["Meaning of Brave?",["Coward","Courageous","Weak","Lazy"],1],
-["Meaning of Honest?",["Truthful","Angry","Lazy","Rich"],0],
-["Antonym of Ancient?",["Old","Modern","Historic","Past"],1],
-["Synonym of Intelligent?",["Clever","Foolish","Weak","Slow"],0],
-["Choose noun: Rahul is a boy.",["Rahul","is","a","boy"],0],
-["Choose verb: Birds fly.",["Birds","fly","the","none"],1],
-["Choose adjective: He is a tall boy.",["He","is","tall","boy"],2],
-["Choose pronoun: She is happy.",["She","is","happy","none"],0],
-["What is the plural of Man?",["Mans","Men","Mens","Manes"],1],
-["What is the plural of Woman?",["Womans","Women","Womens","Woman"],1],
-["What is the plural of Mouse?",["Mouses","Mice","Mouse","Mices"],1],
-["What is the opposite of Up?",["Over","Down","High","Top"],1],
-["What is the opposite of Open?",["Start","Close","Wide","Enter"],1],
-["What is the opposite of Victory?",["Win","Success","Defeat","Prize"],2]
-
+["He ___ a car.",["have","has","having","had"],1],
+["I ___ two brothers.",["has","have","having","had"],1],
+["Opposite of Old?",["Young","Big","Small","Fast"],0],
+["Opposite of Clean?",["Pure","Dirty","Good","Fresh"],1],
+["Synonym of Small?",["Little","Large","Huge","Tall"],0],
+["Synonym of Angry?",["Furious","Happy","Calm","Glad"],0],
+["Antonym of Light?",["Bright","Dark","White","Clear"],1],
+["Antonym of Easy?",["Simple","Hard","Soft","Fast"],1],
+["'Honest' starts with?",["a","an","the","no article"],1],
+["'Book' is a?",["Noun","Verb","Adjective","Adverb"],0],
+["'Run' can be a?",["Verb","Noun only","Article","Pronoun"],0],
+["'Beautiful' is a?",["Noun","Verb","Adjective","Article"],2],
+["'Slowly' is an?",["Noun","Verb","Adjective","Adverb"],3],
+["Question sentence ends with?",[".","!",",","?"],3]
 ],
 
-gk: [
-
+gk:[
 ["भारतीय संविधान का अनुच्छेद 14 किससे संबंधित है?",["समानता","स्वतंत्रता","धर्म","शिक्षा"],0],
 ["भारत का राष्ट्रीय पशु?",["सिंह","बाघ","हाथी","मोर"],1],
 ["भारत में संविधान कब लागू हुआ?",["15 अगस्त 1947","26 नवंबर 1949","26 जनवरी 1950","2 अक्टूबर 1950"],2],
 ["भारत की राजधानी?",["मुंबई","कोलकाता","नई दिल्ली","चेन्नई"],2],
-["क्षेत्रफल में भारत का सबसे बड़ा राज्य?",["मध्य प्रदेश","राजस्थान","उत्तर प्रदेश","महाराष्ट्र"],1],
+["क्षेत्रफल में सबसे बड़ा राज्य?",["मध्य प्रदेश","राजस्थान","उत्तर प्रदेश","महाराष्ट्र"],1],
 ["भारत की संसद के कितने सदन हैं?",["एक","दो","तीन","चार"],1],
 ["भारत में मतदान की न्यूनतम आयु?",["16","18","21","25"],1],
-["RBI की स्थापना कब हुई?",["1935","1947","1950","1955"],0],
-["भारत का राष्ट्रीय पक्षी?",["कबूतर","मोर","तोता","गरुड़"],1],
-["भारत का राष्ट्रीय फूल?",["गुलाब","कमल","सूरजमुखी","चमेली"],1],
-["भारत का राष्ट्रीय वृक्ष?",["नीम","बरगद","पीपल","आम"],1],
-["भारत का राष्ट्रीय फल?",["सेब","आम","केला","संतरा"],1],
-["भारत का राष्ट्रीय गीत?",["जन गण मन","वंदे मातरम्","सारे जहाँ से अच्छा","ऐ मेरे वतन"],1],
-["भारत का राष्ट्रगान?",["वंदे मातरम्","जन गण मन","जननी जन्मभूमि","सारे जहाँ से अच्छा"],1],
-["भारत का सर्वोच्च न्यायालय कहाँ है?",["मुंबई","पटना","नई दिल्ली","कोलकाता"],2],
-["भारतीय संविधान के निर्माता सभा के अध्यक्ष?",["राजेंद्र प्रसाद","नेहरू","पटेल","अंबेडकर"],0],
-["भारतीय संविधान की प्रारूप समिति के अध्यक्ष?",["नेहरू","बी.आर. अंबेडकर","पटेल","राजेंद्र प्रसाद"],1],
-["भारत के प्रथम राष्ट्रपति?",["नेहरू","राजेंद्र प्रसाद","पटेल","राधाकृष्णन"],1],
-["भारत के प्रथम प्रधानमंत्री?",["नेहरू","गांधी","पटेल","राजेंद्र प्रसाद"],0],
-["भारत को स्वतंत्रता कब मिली?",["1945","1946","1947","1950"],2],
-["भारत का गणतंत्र दिवस?",["15 अगस्त","26 जनवरी","2 अक्टूबर","14 नवंबर"],1],
-["गांधी जयंती?",["2 अक्टूबर","15 अगस्त","26 जनवरी","14 नवंबर"],0],
-["राष्ट्रीय विज्ञान दिवस?",["28 फरवरी","5 जून","15 अगस्त","1 मई"],0],
-["विश्व पर्यावरण दिवस?",["5 जून","8 मार्च","22 अप्रैल","1 मई"],0],
+["RBI की स्थापना?",["1935","1947","1950","1955"],0],
+["भारत का राष्ट्रीय पक्षी?",["कबूतर","मोर","तोता","हंस"],1],
+["भारत का राष्ट्रीय फूल?",["गुलाब","कमल","सूरजमुखी","चंपा"],1],
+["भारत का राष्ट्रीय फल?",["आम","सेब","केला","संतरा"],0],
+["भारत का राष्ट्रीय खेल आधिकारिक रूप से?",["हॉकी","क्रिकेट","कोई घोषित नहीं","फुटबॉल"],2],
+["गंगा नदी का उद्गम?",["गोमुख","अरावली","सतपुड़ा","नीलगिरि"],0],
+["भारत का सबसे बड़ा महासागर?",["अटलांटिक","हिंद महासागर","प्रशांत","आर्कटिक"],1],
+["सूर्य के सबसे निकट ग्रह?",["पृथ्वी","शुक्र","बुध","मंगल"],2],
 ["पृथ्वी का उपग्रह?",["सूर्य","चंद्रमा","मंगल","शुक्र"],1],
-["सौरमंडल का सबसे बड़ा ग्रह?",["पृथ्वी","शनि","बृहस्पति","मंगल"],2],
-["लाल ग्रह किसे कहते हैं?",["शुक्र","मंगल","बुध","शनि"],1],
-["पृथ्वी के सबसे निकट तारा?",["चंद्रमा","सूर्य","मंगल","शुक्र"],1],
-["पानी का रासायनिक सूत्र?",["CO2","H2O","O2","NaCl"],1],
-["ऑक्सीजन का प्रतीक?",["O","Ox","C","N"],0],
-["सोने का chemical symbol?",["Ag","Au","Fe","Cu"],1],
-["लोहे का chemical symbol?",["Fe","F","Ir","I"],0],
-["कार्बन डाइऑक्साइड का सूत्र?",["CO","CO2","C2O","O2"],1],
-["मानव शरीर में रक्त पंप करने वाला अंग?",["फेफड़ा","हृदय","गुर्दा","यकृत"],1],
-["मानव शरीर का सबसे बड़ा अंग?",["हृदय","त्वचा","फेफड़ा","यकृत"],1],
-["विटामिन C की कमी से कौन सा रोग?",["स्कर्वी","रिकेट्स","बेरीबेरी","एनीमिया"],0],
-["विटामिन D की कमी से?",["रिकेट्स","स्कर्वी","मलेरिया","डेंगू"],0],
-["पौधे भोजन किस प्रक्रिया से बनाते हैं?",["श्वसन","प्रकाश संश्लेषण","पाचन","वाष्पीकरण"],1],
-["जल का boiling point सामान्य दबाव पर?",["50°C","75°C","100°C","150°C"],2],
-["जल का freezing point?",["0°C","10°C","50°C","100°C"],0],
-["भारत की सबसे लंबी नदी?",["यमुना","गंगा","गोदावरी","नर्मदा"],1],
-["भारत का सबसे बड़ा मरुस्थल?",["सहारा","थार","गोबी","कालाहारी"],1],
-["भारत का सबसे ऊँचा पर्वत शिखर?",["कंचनजंघा","अरावली","नीलगिरि","विंध्य"],0],
+["जल का रासायनिक सूत्र?",["CO2","H2O","O2","NaCl"],1],
+["ऑक्सीजन का प्रतीक?",["O","Ox","Og","C"],0],
+["सोने का रासायनिक प्रतीक?",["Ag","Au","Fe","Cu"],1],
+["भारत का पहला राष्ट्रपति?",["राजेंद्र प्रसाद","नेहरू","पटेल","राधाकृष्णन"],0],
+["भारत के पहले प्रधानमंत्री?",["गांधी","नेहरू","पटेल","राजेंद्र प्रसाद"],1],
+["1857 का विद्रोह किस वर्ष?",["1757","1857","1947","1885"],1],
+["भारतीय राष्ट्रीय कांग्रेस की स्थापना?",["1885","1905","1947","1857"],0],
+["भारत स्वतंत्र हुआ?",["1942","1945","1947","1950"],2],
+["गांधीजी का जन्म?",["1869","1875","1885","1890"],0],
+["दांडी मार्च किससे संबंधित?",["नमक","कपड़ा","शिक्षा","रेल"],0],
+["भारत का सर्वोच्च न्यायालय कहाँ?",["मुंबई","नई दिल्ली","पटना","कोलकाता"],1],
+["लोकसभा का कार्यकाल सामान्यतः?",["3","4","5","6"],2],
+["राज्यसभा एक?",["स्थायी सदन","अस्थायी सदन","न्यायालय","मंत्रालय"],0],
+["भारत में कितने मौलिक अधिकार हैं?",["5","6","7","8"],1],
+["अनुच्छेद 21 किससे संबंधित?",["जीवन और व्यक्तिगत स्वतंत्रता","समानता","धर्म","शिक्षा"],0],
+["अनुच्छेद 32 किससे संबंधित?",["संवैधानिक उपचार","समानता","नागरिकता","चुनाव"],0],
+["भारत का राष्ट्रीय चिन्ह?",["सारनाथ सिंह स्तंभ","कमल","मोर","तिरंगा"],0],
+["तिरंगे में कितने मुख्य रंग?",["2","3","4","5"],1],
+["अशोक चक्र में कितनी तीलियाँ?",["12","18","24","32"],2],
 ["बिहार की राजधानी?",["गया","पटना","मुजफ्फरपुर","भागलपुर"],1],
-["बिहार का प्रमुख त्योहार?",["छठ","ओणम","पोंगल","बैसाखी"],0],
-["नालंदा किस राज्य में है?",["बिहार","उत्तर प्रदेश","झारखंड","ओडिशा"],0],
-["मुजफ्फरपुर किस राज्य में है?",["बिहार","झारखंड","उत्तर प्रदेश","पश्चिम बंगाल"],0],
-["भारत में कितने राज्य हैं?",["26","28","29","30"],1]
-
+["बिहार का प्रमुख नदी?",["गंगा","नर्मदा","गोदावरी","कावेरी"],0],
+["बिहार दिवस?",["22 मार्च","15 अगस्त","26 जनवरी","2 अक्टूबर"],0],
+["नालंदा किसके लिए प्रसिद्ध?",["प्राचीन विश्वविद्यालय","समुद्र","रेगिस्तान","बंदरगाह"],0],
+["पृथ्वी सूर्य की परिक्रमा लगभग?",["24 घंटे","30 दिन","365 दिन","100 दिन"],2],
+["पृथ्वी अपने अक्ष पर घूमती है?",["लगभग 24 घंटे","12 घंटे","7 दिन","365 दिन"],0],
+["विटामिन C का स्रोत?",["नींबू","चावल","तेल","नमक"],0],
+["रक्त का लाल रंग किससे?",["हीमोग्लोबिन","कैल्शियम","आयोडीन","प्लाज्मा"],0],
+["पौधे प्रकाश संश्लेषण में क्या लेते हैं?",["CO2","O2","N2","H2"],0],
+["मनुष्य सामान्यतः कितने दाँतों वाला वयस्क?",["28","30","32","36"],2],
+["बल की SI इकाई?",["जूल","न्यूटन","वाट","पास्कल"],1],
+["ऊर्जा की SI इकाई?",["जूल","न्यूटन","वाट","मीटर"],0],
+["विद्युत धारा की SI इकाई?",["वोल्ट","एम्पियर","ओम","वाट"],1],
+["प्रतिरोध की SI इकाई?",["ओम","वोल्ट","एम्पियर","जूल"],0]
 ],
 
-current: [
-
-["Current Affairs पढ़ते समय सबसे जरूरी क्या है?",["Information verify करना","Guess करना","Forward करना","Ignore करना"],0],
-["सरकारी announcement verify करने के लिए?",["Official source","Random post","Unknown message","Anonymous comment"],0],
-["Job vacancy की जानकारी में क्या verify करना चाहिए?",["Official notification","सिर्फ salary","सिर्फ photo","Agent की बात"],0],
-["Current news की authenticity कैसे जाँचें?",["Credible sources","Random video","Forwarded message","Unknown account"],0],
-["किसी सरकारी योजना की जानकारी कहाँ verify करें?",["Official government website","Random WhatsApp","Unknown blog","Comment"],0],
-["नौकरी की अंतिम तारीख कहाँ देखनी चाहिए?",["Official notification","Random video","Agent","Comment"],0],
-["Exam result की सही जानकारी कहाँ मिलेगी?",["Official exam website","Random post","Unknown message","Comment"],0],
-["Fake news से बचने का अच्छा तरीका?",["Source verify करना","तुरंत share करना","Guess करना","Ignore करना"],0],
-["सरकारी document में सबसे महत्वपूर्ण क्या देखें?",["Official source","Random screenshot","Forward","Unknown link"],0],
-["Online form भरने से पहले क्या पढ़ें?",["Official notification","Advertisement only","Comment","Message"],0],
-["Current Affairs में date क्यों महत्वपूर्ण है?",["News की freshness जानने के लिए","Marks कम करने के लिए","Password के लिए","कोई कारण नहीं"],0],
-["News source की credibility कैसे देखें?",["Source और evidence","सिर्फ headline","सिर्फ thumbnail","Comments"],0],
-["किसी viral message पर तुरंत विश्वास करना चाहिए?",["नहीं","हाँ","हमेशा","केवल रात में"],0],
-["Government job में application fee कहाँ verify करें?",["Official notification","Agent","WhatsApp","Random website"],0],
-["Exam syllabus कहाँ से लेना चाहिए?",["Official notification","Random PDF","Comment","Social media forward"],0],
-["Admit card कहाँ से download करें?",["Official website","Unknown link","WhatsApp","Random blog"],0],
-["Fake job पहचानने में क्या suspicious है?",["Advance payment मांगना","Official notification","Written exam","Official email"],0],
-["OTP किसके साथ share करना चाहिए?",["किसी के साथ नहीं","Agent","Unknown caller","Friend"],0],
-["UPI PIN किसे बताना चाहिए?",["किसी को नहीं","Bank caller","Job agent","Unknown person"],0],
-["Current Affairs के notes कैसे रखें?",["Date और source के साथ","बिना date","सिर्फ headline","Random"],0],
-["सरकारी योजना में eligibility कहाँ देखें?",["Official guidelines","Random comment","Agent","Forward"],0],
-["Exam notification में क्या देखें?",["Date, eligibility, fee, syllabus","सिर्फ photo","सिर्फ logo","Comments"],0],
-["Result में roll number क्यों जरूरी हो सकता है?",["Candidate पहचानने के लिए","Password बदलने के लिए","Payment के लिए","कुछ नहीं"],0],
-["Cyber fraud की स्थिति में क्या करना चाहिए?",["Official cybercrime channel से report","और पैसा भेजना","OTP देना","Ignore करना"],0],
-["Unknown APK install करना सुरक्षित है?",["नहीं","हाँ","हमेशा","जरूरी"],0],
-["Unknown website पर bank password डालना चाहिए?",["नहीं","हाँ","कभी भी","सिर्फ रात में"],0],
-["News पढ़ते समय headline देखकर ही conclusion निकालना चाहिए?",["नहीं","हाँ","हमेशा","जरूरी"],0],
-["सरकारी portal का domain verify करना उपयोगी है?",["हाँ","नहीं","कभी नहीं","सिर्फ exam में"],0],
-["Online application submit करने के बाद क्या save करें?",["Application/receipt","कुछ नहीं","Random screenshot","Password share"],0],
-["Admit card की जानकारी किससे verify करें?",["Official exam body","Unknown caller","Random group","Agent"],0],
-["Scholarship information कहाँ verify करें?",["Official portal","Random WhatsApp","Unknown person","Comment"],0],
-["PAN related information कहाँ verify करें?",["Income Tax official portal","Random post","Agent","Unknown website"],0],
-["Aadhaar related information कहाँ verify करें?",["UIDAI official portal","Random message","Agent","Unknown website"],0],
-["Government service में OTP किसे देना चाहिए?",["किसी को नहीं","Agent","Unknown caller","Random website"],0],
-["Job offer में company details verify करनी चाहिए?",["हाँ","नहीं","कभी नहीं","जरूरत नहीं"],0],
-["Interview के नाम पर पैसा मांगा जाए तो?",["सावधानी और verification","तुरंत payment","OTP देना","UPI PIN देना"],0],
-["Current Affairs में official press release उपयोगी है?",["हाँ","नहीं","कभी नहीं","केवल परीक्षा में"],0],
-["Social media post हमेशा official होता है?",["नहीं","हाँ","हमेशा","जरूर"],0],
-["Online information को cross-check करना चाहिए?",["हाँ","नहीं","कभी नहीं","जरूरत नहीं"],0],
-["Current Affairs की तैयारी में daily revision उपयोगी है?",["हाँ","नहीं","कभी नहीं","केवल Sunday"],0],
-["Important news को date के साथ लिखना अच्छा है?",["हाँ","नहीं","कभी नहीं","जरूरत नहीं"],0],
-["Government notification में PDF किसलिए महत्वपूर्ण हो सकती है?",["Official details के लिए","Game खेलने के लिए","Chat के लिए","कुछ नहीं"],0],
-["Job application में गलत information देना उचित है?",["नहीं","हाँ","हमेशा","जरूरी"],0],
-["Exam form submit करने से पहले details check करनी चाहिए?",["हाँ","नहीं","कभी नहीं","जरूरत नहीं"],0],
-["Official helpline number कहाँ से लेना चाहिए?",["Official website","Random post","Unknown caller","Comment"],0],
-["Fake website से कैसे बचें?",["URL और official source verify करें","तुरंत login करें","Password save करें","OTP दें"],0],
-["Current Affairs में facts याद रखने के लिए क्या उपयोगी है?",["Revision और notes","Guessing","Forwarding","Ignoring"],0],
-["Online fraud में transaction details संभालकर रखना चाहिए?",["हाँ","नहीं","कभी नहीं","जरूरत नहीं"],0],
-["किसी भी सरकारी service के लिए agent जरूरी है?",["नहीं","हाँ","हमेशा","हर बार"],0],
-["Learn & Help India पर दी गई सरकारी जानकारी के बाद क्या करना चाहिए?",["Official portal पर verify करना","बिना verify apply करना","Agent को पैसा देना","OTP देना"],0]
-
+current:[
+["Current Affairs में जानकारी कहाँ से verify करें?",["Official source","Random post","Unknown message","Comment"],0],
+["सरकारी announcement के लिए?",["Official website","Forwarded message","Random video","Unknown account"],0],
+["Job vacancy में क्या देखना चाहिए?",["Official notification","सिर्फ salary","Photo","Agent"],0],
+["News की authenticity कैसे जाँचें?",["Credible sources","Random post","Forward","Unknown account"],0],
+["सरकारी नौकरी में final authority?",["Official notification","WhatsApp group","Agent","Random blog"],0],
+["Online fraud में OTP किसे दें?",["किसी को नहीं","Friend","Agent","Unknown caller"],0],
+["UPI PIN किसके साथ share करें?",["किसी के साथ नहीं","Customer care","Friend","Seller"],0],
+["Cyber safety में क्या जरूरी?",["Strong password","Same password everywhere","OTP share","PIN share"],0],
+["Fake job पहचानने का संकेत?",["Advance payment demand","Official notice","Interview","Company website"],0],
+["Current news पढ़ने का अच्छा तरीका?",["Multiple credible sources","One random message","Forward","Comment"],0],
+["Government scheme verify कहाँ?",["Official portal","Random reel","Unknown group","Agent"],0],
+["Exam date verify कहाँ?",["Official notification","YouTube comment","WhatsApp","Friend"],0],
+["Admit card कहाँ से?",["Official exam website","Random website","Agent","Social comment"],0],
+["Result कहाँ verify करें?",["Official result portal","Forward","Unknown link","Random post"],0],
+["Cyber crime report के लिए भारत में?",["1930","100 only","101","108"],0],
+["Aadhaar official authority?",["UIDAI","RBI","SEBI","CBI"],0],
+["PAN किस विभाग से संबंधित?",["Income Tax Department","Railway","Police","Education"],0],
+["RBI किस क्षेत्र से संबंधित?",["Banking","Education","Railway","Agriculture only"],0],
+["SSC का संबंध?",["Staff Selection Commission","Sports Selection Council","State Service College","None"],0],
+["UPI का full form?",["Unified Payments Interface","Universal Payment India","United Payment Internet","None"],0],
+["OTP का अर्थ?",["One Time Password","Online Transfer Pin","Open Transfer Password","None"],0],
+["Digital payment में PIN?",["गोपनीय रखना चाहिए","Share करना चाहिए","Post करना चाहिए","Send करना चाहिए"],0],
+["Fake website से बचने का तरीका?",["URL verify करें","Link blindly open करें","OTP दें","Password दें"],0],
+["Government website में अक्सर domain?",[".gov.in","random.com","free.in","unknown"],0],
+["PAN application के लिए official providers?",["Protean/UTIITSL","Unknown agents","Random apps","Social media"],0],
+["Aadhaar services की official authority?",["UIDAI","SSC","RBI","NTA"],0],
+["Education scholarship portal?",["National Scholarship Portal","Random page","Agent","Unknown"],0],
+["Exam preparation में क्या जरूरी?",["Regular practice","Only guessing","No revision","Only videos"],0],
+["Current Affairs के लिए revision?",["Regular","Never","Once a year","None"],0],
+["Official notice में क्या देखें?",["Date and eligibility","Only image","Only salary","Comments"],0],
+["Job application में documents?",["Official requirements देखें","Anything भेजें","OTP भेजें","PIN भेजें"],0],
+["Fraud call में bank PIN?",["नहीं बताना","बताना","SMS करना","WhatsApp करना"],0],
+["Unknown APK install?",["Avoid करें","Install करें","Forward करें","Share करें"],0],
+["Browser warning पर?",["Source verify करें","Ignore security","Install anything","Share OTP"],0],
+["Password कैसा होना चाहिए?",["Strong and unique","123456","Name only","Phone only"],0],
+["Public Wi-Fi पर sensitive login?",["सावधानी रखें","Always safe","PIN share","OTP share"],0],
+["Official email पहचानने में?",["Domain verify करें","Name देखकर भरोसा","Photo देखकर","Forward देखकर"],0],
+["Scam link में अक्सर?",["Urgency/pressure","Official verification","Clear policy","Trusted domain"],0],
+["Online form भरते समय?",["URL verify करें","Unknown link","Agent password","OTP share"],0],
+["Government portal पर payment?",["Official portal से","Random UPI","Unknown QR","Agent"],0],
+["Current Affairs में fact check?",["Yes","No","Never","Only comments"],0],
+["News headline देखकर?",["पूरी खबर/विश्वसनीय source देखें","तुरंत forward","तुरंत believe","Ignore source"],0],
+["Job offer में interview?",["Company verify करें","Money भेजें","OTP दें","PIN दें"],0],
+["Work from home scam से बचें?",["Advance fee से सावधान","Fee भेजें","OTP दें","Password दें"],0],
+["Online privacy?",["Personal data protect करें","Public करें","Password share","OTP share"],0],
+["Aadhaar OTP?",["किसी से share न करें","Agent को दें","Friend को दें","Post करें"],0],
+["PAN details?",["Official portal पर ही दें","Random link","Unknown person","Social media"],0],
+["Competitive exam में mock test?",["Practice के लिए useful","Never useful","Only guessing","No"],0],
+["Learning का अच्छा तरीका?",["Practice + Revision","Only reading once","No practice","Only guessing"],0]
 ]
 
 };
 
 
-/* =====================================================
-   QUIZ SYSTEM
-   ===================================================== */
+/* ==========================
+   QUIZ
+========================== */
 
-let currentSubject = "";
-let currentQuestions = [];
-let currentIndex = 0;
-let currentScore = 0;
-let answered = false;
+let currentSubject="";
+let currentQuestions=[];
+let currentIndex=0;
+let currentScore=0;
+let answered=false;
 
 function startTest(subject){
 
-if(!questions[subject] || questions[subject].length === 0){
-alert("इस subject के questions उपलब्ध नहीं हैं।");
+if(!questions[subject]){
+alert("Subject data नहीं मिला।");
 return;
 }
 
-currentSubject = subject;
-currentQuestions = questions[subject].slice(0,50);
-currentIndex = 0;
-currentScore = 0;
-answered = false;
+currentSubject=subject;
+currentQuestions=questions[subject];
+currentIndex=0;
+currentScore=0;
 
-document.getElementById("quizStart").style.display = "none";
-document.getElementById("quizBox").style.display = "block";
-document.getElementById("result").style.display = "none";
+document.getElementById("quizStart").style.display="none";
+document.getElementById("quizBox").style.display="block";
+document.getElementById("result").style.display="none";
 
 document.getElementById("quiz").scrollIntoView({
 behavior:"smooth"
@@ -935,36 +1074,31 @@ showQuestion();
 
 function showQuestion(){
 
-answered = false;
+answered=false;
 
-const q = currentQuestions[currentIndex];
+let q=currentQuestions[currentIndex];
 
-document.getElementById("progress").textContent =
-"Question " + (currentIndex + 1) +
-" / " + currentQuestions.length;
+document.getElementById("progress").innerText=
+"Question "+(currentIndex+1)+" / "+currentQuestions.length;
 
-document.getElementById("question").textContent = q[0];
+document.getElementById("question").innerText=q[0];
 
-document.getElementById("feedback").textContent = "";
+let options=document.getElementById("options");
+options.innerHTML="";
 
-const nextBtn = document.getElementById("nextBtn");
-nextBtn.style.display = "none";
-
-const options = document.getElementById("options");
-options.innerHTML = "";
+document.getElementById("feedback").innerText="";
+document.getElementById("nextBtn").style.display="none";
 
 q[1].forEach(function(option,index){
 
-const btn = document.createElement("button");
+let btn=document.createElement("button");
 
-btn.type = "button";
-btn.className = "option";
-btn.textContent =
-String.fromCharCode(65 + index) + ". " + option;
+btn.className="option";
+btn.innerText=String.fromCharCode(65+index)+". "+option;
 
-btn.addEventListener("click",function(){
+btn.onclick=function(){
 checkAnswer(index,btn);
-});
+};
 
 options.appendChild(btn);
 
@@ -973,79 +1107,83 @@ options.appendChild(btn);
 
 function checkAnswer(index,button){
 
-if(answered) return;
+if(answered)return;
 
-answered = true;
+answered=true;
 
-const q = currentQuestions[currentIndex];
-const allButtons = document.querySelectorAll(".option");
+let q=currentQuestions[currentIndex];
 
-allButtons.forEach(function(btn,i){
+let buttons=document.querySelectorAll(".option");
 
-btn.disabled = true;
+buttons.forEach(function(btn,i){
 
-if(i === q[2]){
+btn.disabled=true;
+
+if(i===q[2]){
 btn.classList.add("correct");
 }
 
 });
 
-if(index === q[2]){
+if(index===q[2]){
 
 currentScore++;
 
-document.getElementById("feedback").textContent =
+document.getElementById("feedback").innerText=
 "✅ सही उत्तर!";
 
 }else{
 
 button.classList.add("wrong");
 
-document.getElementById("feedback").textContent =
-"❌ गलत उत्तर। सही उत्तर: " + q[1][q[2]];
+document.getElementById("feedback").innerText=
+"❌ गलत। सही उत्तर: "+q[1][q[2]];
 
 }
 
-document.getElementById("nextBtn").style.display = "block";
+document.getElementById("nextBtn").style.display="block";
 }
 
 function nextQuestion(){
 
 currentIndex++;
 
-if(currentIndex >= currentQuestions.length){
+if(currentIndex>=currentQuestions.length){
+
 finishTest();
+
 }else{
+
 showQuestion();
+
 }
 }
 
 function finishTest(){
 
-document.getElementById("quizBox").style.display = "none";
-document.getElementById("result").style.display = "block";
+document.getElementById("quizBox").style.display="none";
+document.getElementById("result").style.display="block";
 
-document.getElementById("score").textContent =
-currentScore + " / " + currentQuestions.length;
+document.getElementById("score").innerText=
+currentScore+" / "+currentQuestions.length;
 
-const percentage =
-(currentScore / currentQuestions.length) * 100;
+let percent=(currentScore/currentQuestions.length)*100;
 
-let message;
+let message="";
 
-if(percentage >= 80){
-message = "🎉 बहुत बढ़िया! आपकी तैयारी अच्छी है।";
-}else if(percentage >= 50){
-message = "👍 अच्छी कोशिश! थोड़ी और practice करें।";
+if(percent>=80){
+message="🎉 बहुत बढ़िया! आपकी तैयारी बहुत अच्छी है।";
+}else if(percent>=50){
+message="👍 अच्छी कोशिश! और practice करें।";
 }else{
-message = "📚 ज्यादा practice करें। आप बेहतर कर सकते हैं!";
+message="📚 ज्यादा practice करें। आप बेहतर कर सकते हैं।";
 }
 
-document.getElementById("message").textContent = message;
+document.getElementById("message").innerText=message;
 
 localStorage.setItem(
 "lastScore",
-currentScore + "/" + currentQuestions.length
+currentScore+"/"+currentQuestions.length
 );
 }
 
@@ -1053,203 +1191,178 @@ function restartTest(){
 startTest(currentSubject);
 }
 
+function goStudy(){
+document.getElementById("study").scrollIntoView({
+behavior:"smooth"
+});
+}
 
-/* =====================================================
-   TOOLS
-   ===================================================== */
+
+/* ==========================
+   CALCULATOR
+========================== */
 
 function calculate(){
 
-const value =
-document.getElementById("calcInput").value.trim();
-
-const output =
-document.getElementById("calcResult");
+let value=document.getElementById("calcInput").value.trim();
 
 if(!value){
-output.textContent = "❌ Calculation डालें।";
-return;
-}
-
-if(!/^[0-9+\-*/().% ]+$/.test(value)){
-output.textContent = "❌ केवल numbers और + - * / % का उपयोग करें।";
+document.getElementById("calcResult").innerText=
+"❌ Calculation लिखें।";
 return;
 }
 
 try{
 
-const answer = Function(
-'"use strict";return (' + value + ')'
-)();
-
-if(!Number.isFinite(answer)){
+if(!/^[0-9+\-*/().% ]+$/.test(value)){
 throw new Error();
 }
 
-output.textContent = "उत्तर: " + answer;
+let answer=Function(
+'"use strict";return ('+value+')'
+)();
 
-}catch(error){
+document.getElementById("calcResult").innerText=
+"उत्तर: "+answer;
 
-output.textContent = "❌ Calculation गलत है।";
+}catch(e){
+
+document.getElementById("calcResult").innerText=
+"❌ Calculation गलत है।";
 }
 }
+
+
+/* ==========================
+   PERCENTAGE
+========================== */
 
 function percentage(){
 
-const obtained =
-Number(document.getElementById("obtained").value);
+let obtained=Number(
+document.getElementById("obtained").value
+);
 
-const total =
-Number(document.getElementById("total").value);
+let total=Number(
+document.getElementById("total").value
+);
 
-const output =
-document.getElementById("percentageResult");
+if(total<=0){
 
-if(!Number.isFinite(obtained) || !Number.isFinite(total) || total <= 0){
-output.textContent = "❌ सही marks डालें।";
+document.getElementById("percentageResult").innerText=
+"❌ Total marks डालें।";
+
 return;
 }
 
-output.textContent =
-"Percentage: " + ((obtained/total)*100).toFixed(2) + "%";
+let result=(obtained/total)*100;
+
+document.getElementById("percentageResult").innerText=
+"Percentage: "+result.toFixed(2)+"%";
 }
+
+
+/* ==========================
+   AREA
+========================== */
 
 function area(){
 
-const length =
-Number(document.getElementById("length").value);
+let length=Number(
+document.getElementById("length").value
+);
 
-const width =
-Number(document.getElementById("width").value);
+let width=Number(
+document.getElementById("width").value
+);
 
-const output =
-document.getElementById("areaResult");
+if(length<=0 || width<=0){
 
-if(length <= 0 || width <= 0){
-output.textContent = "❌ Length और Width डालें।";
+document.getElementById("areaResult").innerText=
+"❌ Length और Width डालें।";
+
 return;
 }
 
-output.textContent =
-"Area: " + (length*width).toFixed(2) + " m²";
+document.getElementById("areaResult").innerText=
+"Area: "+(length*width).toFixed(2)+" m²";
 }
+
+
+/* ==========================
+   METER TO FEET
+========================== */
 
 function meterToFeet(){
 
-const meter =
-Number(document.getElementById("meter").value);
+let meter=Number(
+document.getElementById("meter").value
+);
 
-const output =
-document.getElementById("feetResult");
+if(meter<0){
 
-if(!Number.isFinite(meter) || meter < 0){
-output.textContent = "❌ सही meter डालें।";
+document.getElementById("feetResult").innerText=
+"❌ सही meter डालें।";
+
 return;
 }
 
-output.textContent =
-meter + " meter = " +
-(meter * 3.28084).toFixed(3) +
-" feet";
+document.getElementById("feetResult").innerText=
+meter+" meter = "+
+(meter*3.28084).toFixed(3)+" feet";
 }
+
+
+/* ==========================
+   LAND AREA
+========================== */
 
 function landArea(){
 
-const length =
-Number(document.getElementById("landLength").value);
+let length=Number(
+document.getElementById("landLength").value
+);
 
-const width =
-Number(document.getElementById("landWidth").value);
+let width=Number(
+document.getElementById("landWidth").value
+);
 
-const output =
-document.getElementById("landResult");
+if(length<=0 || width<=0){
 
-if(length <= 0 || width <= 0){
-output.textContent = "❌ Length और Width डालें।";
+document.getElementById("landResult").innerText=
+"❌ Length और Width डालें।";
+
 return;
 }
 
-const result = length * width;
+let result=length*width;
 
-output.textContent =
-"Land Area: " + result.toFixed(2) + " m²";
+document.getElementById("landResult").innerText=
+"Land Area: "+result.toFixed(2)+" m²";
 }
 
 
-/* =====================================================
-   JOBS
-   ===================================================== */
+/* ==========================
+   CODING
+========================== */
 
-function showJobInfo(){
+function hello(){
 
 alert(
-"🏛️ Government Jobs\n\n" +
-"SSC\n" +
-"Railway\n" +
-"Banking\n" +
-"Bihar Government Jobs\n" +
-"Police\n" +
-"Teaching\n\n" +
-"⚠️ Apply करने से पहले official notification जरूर verify करें।"
-);
-
-}
-
-function showPrivateJobs(){
-
-alert(
-"🏢 Private Jobs\n\n" +
-"Office\n" +
-"Back Office\n" +
-"Customer Support\n" +
-"BPO\n" +
-"Sales\n" +
-"Work From Home\n\n" +
-"⚠️ Company और vacancy की authenticity verify करें।"
-);
-
-}
-
-function showWFH(){
-
-alert(
-"🏠 Work From Home\n\n" +
-"Customer Support\n" +
-"Data Entry\n" +
-"Telecalling\n" +
-"Online Support\n\n" +
-"⚠️ Job के नाम पर advance payment न करें।"
+"🇮🇳 Hello India!\n\n"+
+"JavaScript सही तरह से काम कर रहा है।"
 );
 
 }
 
 
-/* =====================================================
-   NEXT BUTTONS
-   ===================================================== */
-
-document.getElementById("nextBtn").addEventListener(
-"click",
-nextQuestion
-);
-
-document.getElementById("restartBtn").addEventListener(
-"click",
-restartTest
-);
-
-
-/* =====================================================
+/* ==========================
    PAGE LOAD
-   ===================================================== */
+========================== */
 
 window.addEventListener("load",function(){
 
-const saved = localStorage.getItem("lastScore");
-
-if(saved){
-console.log("Last Score: " + saved);
-}
+console.log("Learn & Help India loaded successfully.");
 
 });
 
