@@ -2,148 +2,337 @@
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Learn & Help India - Study, Jobs, Government Services, Tools and Coding">
+<meta name="theme-color" content="#1565c0">
 <title>Learn & Help India</title>
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
 body{
- font-family:Arial,sans-serif;
- background:#f4f7fb;
- color:#222;
+    font-family:Arial,"Noto Sans Devanagari",sans-serif;
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.6;
 }
+
 header{
- background:linear-gradient(135deg,#1565c0,#0d47a1);
- color:white;text-align:center;padding:28px 15px;
+    background:linear-gradient(135deg,#1565c0,#0d47a1);
+    color:white;
+    padding:18px 15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 12px rgba(0,0,0,.2);
 }
+
 .logo{
- width:80px;height:80px;background:white;border-radius:50%;
- margin:auto;display:flex;align-items:center;
- justify-content:center;font-size:42px
+    font-size:28px;
+    font-weight:bold;
 }
-header h1{font-size:30px;margin-top:10px}
-header p{margin-top:7px;font-size:16px}
+
+.tagline{
+    font-size:14px;
+    margin-top:4px;
+    opacity:.95;
+}
 
 nav{
- background:white;padding:12px 5px;text-align:center;
- box-shadow:0 2px 8px #0002;position:sticky;top:0;z-index:100
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    padding:12px 5px 2px;
+    justify-content:center;
 }
+
 nav a{
- display:inline-block;text-decoration:none;color:#1565c0;
- font-weight:bold;margin:5px 7px
+    color:white;
+    text-decoration:none;
+    background:rgba(255,255,255,.15);
+    padding:7px 12px;
+    border-radius:20px;
+    white-space:nowrap;
+    font-size:14px;
 }
 
-.container{max-width:1100px;margin:auto;padding:25px 15px}
-.welcome{text-align:center;margin-bottom:30px}
-.welcome h2,.section-title{
- color:#1565c0;margin-bottom:10px
+nav a:hover{
+    background:white;
+    color:#1565c0;
 }
-.welcome h2{font-size:28px}
-.welcome p,.section-intro{color:#555;line-height:1.6}
 
-.cards,.grid{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
- gap:18px
+.container{
+    width:min(1150px,94%);
+    margin:auto;
 }
-.card,.box{
- background:white;padding:22px 18px;border-radius:17px;
- text-align:center;box-shadow:0 3px 12px #00000015
-}
-.icon{font-size:42px;margin-bottom:10px}
-.card h3,.box h3{color:#1565c0;margin-bottom:9px}
-.card p,.box p{color:#555;line-height:1.5;margin-bottom:15px}
 
-.btn,.start-btn,.next-btn,.restart-btn{
- display:inline-block;border:0;background:#1565c0;color:white;
- padding:11px 18px;border-radius:9px;text-decoration:none;
- font-weight:bold;cursor:pointer
+.hero{
+    margin-top:20px;
+    padding:35px 20px;
+    border-radius:20px;
+    text-align:center;
+    color:white;
+    background:linear-gradient(135deg,#1976d2,#512da8);
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
 }
-.btn:hover,.start-btn:hover,.next-btn:hover{background:#0d47a1}
+
+.hero h1{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.search-box{
+    margin:20px auto;
+    max-width:650px;
+    display:flex;
+    gap:8px;
+}
+
+.search-box input{
+    flex:1;
+    padding:14px;
+    border:0;
+    border-radius:10px;
+    font-size:16px;
+}
+
+button,.btn{
+    border:0;
+    background:#1565c0;
+    color:white;
+    padding:11px 17px;
+    border-radius:9px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+button:hover,.btn:hover{
+    background:#0d47a1;
+}
 
 .section{
- margin-top:40px;background:white;padding:30px 20px;
- border-radius:20px;box-shadow:0 4px 15px #00000014
+    padding:35px 0;
 }
-.section-title{text-align:center;font-size:28px}
-.section-intro{text-align:center;margin-bottom:25px}
 
-.test-container{max-width:650px;margin:auto}
-.test-start{text-align:center;line-height:1.7}
-.test-box,.result-box{display:none}
-.progress{text-align:center;font-weight:bold;color:#1565c0;margin-bottom:15px}
-.question{
- background:#f8fbff;border:1px solid #dce8f5;
- padding:22px;border-radius:15px
+.section-title{
+    text-align:center;
+    color:#0d47a1;
+    margin-bottom:22px;
+    font-size:28px;
 }
-.question h3{line-height:1.5;margin-bottom:18px}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:18px;
+}
+
+.card{
+    background:white;
+    border-radius:16px;
+    padding:22px;
+    box-shadow:0 4px 15px rgba(0,0,0,.09);
+    border-left:5px solid #1565c0;
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 22px rgba(0,0,0,.14);
+}
+
+.card-icon{
+    font-size:42px;
+    margin-bottom:8px;
+}
+
+.card h3{
+    color:#0d47a1;
+    margin-bottom:8px;
+    font-size:22px;
+}
+
+.card p{
+    color:#444;
+    margin-bottom:14px;
+}
+
+.feature{
+    background:#e3f2fd;
+    border-left:5px solid #1976d2;
+}
+
+.warning{
+    background:#fff8e1;
+    border-left:5px solid #ff9800;
+}
+
+.success{
+    background:#e8f5e9;
+    border-left:5px solid #43a047;
+}
+
+.quiz{
+    background:white;
+    padding:22px;
+    border-radius:16px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    margin-bottom:20px;
+}
+
 .option{
- display:block;width:100%;margin:9px 0;padding:13px;
- border:0;border-radius:9px;background:#1565c0;
- color:white;font-size:16px;cursor:pointer;text-align:left
+    display:block;
+    width:100%;
+    text-align:left;
+    margin:8px 0;
+    background:#f1f5f9;
+    color:#222;
+    border:1px solid #ddd;
 }
-.option:disabled{opacity:.7}
-.feedback{text-align:center;font-weight:bold;margin-top:15px;min-height:25px}
-.next-area{text-align:center}
-.next-btn{display:none;margin-top:15px}
-.result-box{
- text-align:center;background:#f8fbff;padding:30px 20px;border-radius:15px
-}
-.score{font-size:40px;font-weight:bold;color:#1565c0;margin:15px}
-.restart-btn{margin-top:15px}
 
-.calculator{
- max-width:400px;margin:auto;background:#f8fbff;padding:20px;
- border-radius:15px
+.option:hover{
+    background:#e3f2fd;
+    color:#0d47a1;
 }
-.calculator input{
- width:100%;padding:12px;margin:7px 0;
- border:1px solid #ccc;border-radius:8px;font-size:16px
-}
+
 .result{
- margin-top:15px;padding:12px;background:white;
- border-radius:8px;font-weight:bold;color:#1565c0
+    margin-top:12px;
+    font-weight:bold;
 }
 
-.modal{
- display:none;position:fixed;inset:0;background:#0008;
- z-index:500;align-items:center;justify-content:center;padding:20px
+.tool-box{
+    background:white;
+    padding:20px;
+    border-radius:16px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
-.modal-content{
- background:white;max-width:550px;width:100%;
- border-radius:18px;padding:25px;position:relative
-}
-.close{
- position:absolute;right:18px;top:12px;
- font-size:28px;cursor:pointer
-}
-.modal-content h2{color:#1565c0;margin-bottom:15px}
-.modal-content p{line-height:1.7;color:#444}
 
-.coding-box{
- background:#111;color:#eee;padding:18px;border-radius:12px;
- text-align:left;overflow:auto;margin-top:15px
+.tool-box input,
+.tool-box textarea,
+.tool-box select{
+    width:100%;
+    padding:12px;
+    margin:7px 0 12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
 }
+
 textarea{
- width:100%;min-height:180px;padding:12px;
- border-radius:10px;border:1px solid #ccc;font-family:monospace
+    min-height:120px;
+    resize:vertical;
 }
-iframe{
- width:100%;height:250px;border:1px solid #ccc;
- background:white;border-radius:10px;margin-top:12px
+
+pre{
+    background:#111827;
+    color:#d1fae5;
+    padding:15px;
+    border-radius:10px;
+    overflow:auto;
 }
 
 footer{
- margin-top:40px;background:#0d47a1;color:white;
- text-align:center;padding:23px
+    margin-top:35px;
+    background:#0d47a1;
+    color:white;
+    padding:30px 15px;
+    text-align:center;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:15px 0;
+}
+
+.footer-links a{
+    color:white;
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    z-index:2000;
+    padding:20px;
+    overflow:auto;
+}
+
+.modal-content{
+    background:white;
+    max-width:600px;
+    margin:50px auto;
+    border-radius:18px;
+    padding:25px;
+    position:relative;
+}
+
+.close{
+    position:absolute;
+    right:15px;
+    top:10px;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.stat{
+    text-align:center;
+    padding:18px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.stat strong{
+    display:block;
+    font-size:30px;
+    color:#1565c0;
+}
+
+.hidden{
+    display:none!important;
+}
+
+#searchResults{
+    margin-top:15px;
 }
 
 @media(max-width:600px){
- header h1{font-size:25px}
- nav a{font-size:14px;margin:4px}
- .section-title{font-size:24px}
- .container{padding:20px 12px}
+    .logo{
+        font-size:23px;
+    }
+
+    .hero h1{
+        font-size:27px;
+    }
+
+    .section-title{
+        font-size:24px;
+    }
+
+    nav{
+        justify-content:flex-start;
+    }
+
+    .search-box{
+        flex-direction:column;
+    }
 }
 </style>
 </head>
@@ -151,621 +340,828 @@ footer{
 <body>
 
 <header>
-<div class="logo">🇮🇳</div>
-<h1>Learn & Help India</h1>
-<p>सीखें • आगे बढ़ें • दूसरों की मदद करें</p>
+    <div class="logo">🌏 Learn & Help India</div>
+    <div class="tagline">पढ़ाई • नौकरी • सेवाएँ • Tools • Coding</div>
+
+    <nav>
+        <a href="#home">🏠 Home</a>
+        <a href="#study">📚 Study</a>
+        <a href="#jobs">💼 Jobs</a>
+        <a href="#services">📝 Services</a>
+        <a href="#tools">🧮 Tools</a>
+        <a href="#coding">💻 Coding</a>
+        <a href="#help">❤️ Help</a>
+    </nav>
 </header>
 
-<nav>
-<a href="#home">🏠 Home</a>
-<a href="#study">📚 Study</a>
-<a href="#jobs">💼 Jobs</a>
-<a href="#tools">🧮 Tools</a>
-<a href="#coding">💻 Coding</a>
-<a href="#services">📝 Services</a>
-<a href="#help">❤️ Help</a>
-</nav>
+<main class="container">
 
-<div class="container">
+<section id="home" class="hero">
+    <h1>Learn & Help India</h1>
+    <p>
+        विद्यार्थियों, नौकरी खोजने वालों और आम नागरिकों के लिए
+        एक उपयोगी digital platform
+    </p>
 
-<!-- HOME -->
-<section id="home">
-<div class="welcome">
-<h2>Welcome to Learn & Help India</h2>
-<p>
-एक ऐसी जगह जहाँ आप सीख सकते हैं, practice कर सकते हैं,
-jobs की जानकारी पा सकते हैं और useful tools इस्तेमाल कर सकते हैं।
-</p>
-</div>
+    <div class="search-box">
+        <input id="searchInput" type="text"
+               placeholder="क्या खोज रहे हैं? जैसे SSC, Jobs, Coding...">
+        <button onclick="searchSite()">🔍 Search</button>
+    </div>
 
-<div class="cards">
-
-<div class="card">
-<div class="icon">📚</div>
-<h3>Study</h3>
-<p>SSC, Bihar और Competitive Exams की तैयारी।</p>
-<a href="#study" class="btn">Study शुरू करें</a>
-</div>
-
-<div class="card">
-<div class="icon">💼</div>
-<h3>Jobs</h3>
-<p>Government, Private और Work From Home jobs।</p>
-<a href="#jobs" class="btn">Jobs देखें</a>
-</div>
-
-<div class="card">
-<div class="icon">🧮</div>
-<h3>Useful Tools</h3>
-<p>Percentage और Basic Calculator।</p>
-<a href="#tools" class="btn">Tools खोलें</a>
-</div>
-
-<div class="card">
-<div class="icon">💻</div>
-<h3>Coding</h3>
-<p>HTML और Website बनाना सीखें।</p>
-<a href="#coding" class="btn">Coding सीखें</a>
-</div>
-
-<div class="card">
-<div class="icon">📝</div>
-<h3>Services</h3>
-<p>Government services की useful जानकारी।</p>
-<a href="#services" class="btn">Services देखें</a>
-</div>
-
-<div class="card">
-<div class="icon">❤️</div>
-<h3>Help People</h3>
-<p>सही जानकारी दूसरों तक पहुँचाएँ।</p>
-<a href="#help" class="btn">Help करें</a>
-</div>
-
-</div>
+    <div id="searchResults"></div>
 </section>
+
+<section class="section">
+    <div class="grid">
+        <div class="stat">
+            <strong>📚</strong>
+            Study
+        </div>
+
+        <div class="stat">
+            <strong>💼</strong>
+            Jobs
+        </div>
+
+        <div class="stat">
+            <strong>🛠️</strong>
+            Tools
+        </div>
+
+        <div class="stat">
+            <strong>💻</strong>
+            Coding
+        </div>
+    </div>
+</section>
+
 
 <!-- STUDY -->
+
 <section id="study" class="section">
-<h2 class="section-title">📚 Study Center</h2>
-<p class="section-intro">Subject चुनें और अपनी practice शुरू करें।</p>
+    <h2 class="section-title">📚 Study & Exam Preparation</h2>
 
-<div class="grid">
+    <div class="grid">
 
-<div class="box">
-<div class="icon">➗</div>
-<h3>Maths</h3>
-<p>Percentage और Basic Maths</p>
-<button class="start-btn" onclick="openTest('math')">Take Test</button>
-</div>
+        <div class="card">
+            <div class="card-icon">📖</div>
+            <h3>SSC CGL</h3>
+            <p>Maths, Reasoning, English और GK/GS की तैयारी।</p>
+            <button onclick="openModal(
+            'SSC CGL',
+            'SSC CGL के लिए Maths, Reasoning, English, GK/GS और Current Affairs की तैयारी यहाँ व्यवस्थित की जा सकती है।')">
+            Details
+            </button>
+        </div>
 
-<div class="box">
-<div class="icon">🧠</div>
-<h3>Reasoning</h3>
-<p>Series, Analogy और Direction</p>
-<button class="start-btn" onclick="openTest('reason')">Take Test</button>
-</div>
+        <div class="card">
+            <div class="card-icon">🧠</div>
+            <h3>Reasoning</h3>
+            <p>Analogy, Series, Coding-Decoding, Blood Relation आदि।</p>
+            <button onclick="startQuiz('reasoning')">Quiz शुरू करें</button>
+        </div>
 
-<div class="box">
-<div class="icon">🔤</div>
-<h3>English</h3>
-<p>Grammar और Vocabulary</p>
-<button class="start-btn" onclick="openTest('english')">Take Test</button>
-</div>
+        <div class="card">
+            <div class="card-icon">➗</div>
+            <h3>Mathematics</h3>
+            <p>Percentage, Profit-Loss, Ratio, Average और Geometry।</p>
+            <button onclick="startQuiz('math')">Quiz शुरू करें</button>
+        </div>
 
-<div class="box">
-<div class="icon">🇮🇳</div>
-<h3>GK / GS</h3>
-<p>History, Polity, Geography, Science</p>
-<button class="start-btn" onclick="openTest('gk')">Take Test</button>
-</div>
+        <div class="card">
+            <div class="card-icon">🔤</div>
+            <h3>English</h3>
+            <p>Grammar, Vocabulary, Synonym, Antonym और Idioms।</p>
+            <button onclick="startQuiz('english')">Quiz शुरू करें</button>
+        </div>
 
-<div class="box">
-<div class="icon">📰</div>
-<h3>Current Affairs</h3>
-<p>Current Affairs Practice</p>
-<button class="start-btn" onclick="openTest('current')">Take Test</button>
-</div>
+        <div class="card">
+            <div class="card-icon">🇮🇳</div>
+            <h3>GK / GS</h3>
+            <p>History, Geography, Polity, Science और सामान्य ज्ञान।</p>
+            <button onclick="startQuiz('gk')">Quiz शुरू करें</button>
+        </div>
 
-<div class="box">
-<div class="icon">🌾</div>
-<h3>Bihar Exams</h3>
-<p>Bihar Competitive Exams</p>
-<button class="start-btn" onclick="openTest('gk')">Study</button>
-</div>
+        <div class="card">
+            <div class="card-icon">📰</div>
+            <h3>Current Affairs</h3>
+            <p>महत्वपूर्ण राष्ट्रीय और अंतरराष्ट्रीय घटनाएँ।</p>
+            <button onclick="openModal(
+            'Current Affairs',
+            'यहाँ verified और updated current affairs को date और category के अनुसार जोड़ा जा सकता है।')">
+            Details
+            </button>
+        </div>
 
-</div>
+    </div>
 </section>
 
-<!-- TEST AREA -->
-<section id="testArea" class="section" style="display:none">
-<h2 id="testTitle" class="section-title"></h2>
-
-<div class="test-container">
-
-<div id="testBox">
-<div id="progress" class="progress"></div>
-
-<div class="question">
-<h3 id="question"></h3>
-<div id="options"></div>
-<div id="feedback" class="feedback"></div>
-
-<div class="next-area">
-<button id="nextBtn" class="next-btn" onclick="nextQuestion()">
-Next Question ➡️
-</button>
-</div>
-</div>
-</div>
-
-<div id="resultBox" class="result-box">
-<h2>🎉 Test Complete!</h2>
-<div id="score" class="score"></div>
-<p id="message"></p>
-<button class="restart-btn" onclick="restartTest()">🔄 Restart</button>
-</div>
-
-</div>
-</section>
 
 <!-- JOBS -->
+
 <section id="jobs" class="section">
-<h2 class="section-title">💼 Jobs</h2>
-<p class="section-intro">Government और Private Jobs की जानकारी।</p>
+    <h2 class="section-title">💼 Jobs</h2>
 
-<div class="grid">
+    <div class="grid">
 
-<div class="box">
-<div class="icon">🏛️</div>
-<h3>Government Jobs</h3>
-<p>SSC, Railway, Banking, Bihar और अन्य सरकारी भर्ती।</p>
-<button class="btn" onclick="showInfo('Government Jobs',
-'इस section में verified vacancy data, qualification, salary, location और official apply link जोड़े जा सकते हैं।')">Details</button>
-</div>
+        <div class="card">
+            <div class="card-icon">🏛️</div>
+            <h3>Government Jobs</h3>
+            <p>SSC, Railway, Banking, Bihar और अन्य सरकारी भर्तियाँ।</p>
+            <button onclick="openModal(
+            'Government Jobs',
+            'इस section में vacancy का नाम, qualification, age limit, salary, last date और official apply link जोड़ा जाएगा।')">
+            Details
+            </button>
+        </div>
 
-<div class="box">
-<div class="icon">🏢</div>
-<h3>Private Jobs</h3>
-<p>Fresher और experienced candidates के लिए jobs।</p>
-<button class="btn" onclick="showInfo('Private Jobs',
-'Private companies की verified vacancies, qualification, salary और apply information यहाँ दिखाई जा सकती है।')">Details</button>
-</div>
+        <div class="card">
+            <div class="card-icon">🏠</div>
+            <h3>Work From Home</h3>
+            <p>Customer support, data और remote opportunities।</p>
+            <button onclick="openModal(
+            'Work From Home',
+            'यहाँ केवल genuine और verified job opportunities को official application source के साथ दिखाया जाना चाहिए।')">
+            Details
+            </button>
+        </div>
 
-<div class="box">
-<div class="icon">🏠</div>
-<h3>Work From Home</h3>
-<p>Customer support, data और remote opportunities।</p>
-<button class="btn" onclick="showInfo('Work From Home',
-'Work From Home jobs में केवल trusted और verified opportunities की जानकारी जोड़ें।')">Details</button>
-</div>
+        <div class="card">
+            <div class="card-icon">☎️</div>
+            <h3>Customer Support</h3>
+            <p>Customer care और support jobs की जानकारी।</p>
+            <button onclick="openModal(
+            'Customer Support',
+            'Job के साथ company, location, salary, qualification और official apply link दिखाया जा सकता है।')">
+            Details
+            </button>
+        </div>
 
-</div>
+        <div class="card">
+            <div class="card-icon">🗂️</div>
+            <h3>Office / Back Office</h3>
+            <p>Fresher के लिए office और back-office opportunities।</p>
+            <button onclick="openModal(
+            'Office Jobs',
+            'Fresher और experienced candidates के लिए office तथा back-office jobs की जानकारी जोड़ी जा सकती है।')">
+            Details
+            </button>
+        </div>
+
+    </div>
+
+    <div class="card warning" style="margin-top:20px;">
+        <h3>⚠️ Job Safety</h3>
+        <p>
+            नौकरी के नाम पर किसी व्यक्ति को पैसे न दें।
+            हमेशा official company या government website से vacancy verify करें।
+        </p>
+    </div>
 </section>
 
-<!-- TOOLS -->
-<section id="tools" class="section">
-<h2 class="section-title">🧮 Useful Tools</h2>
-
-<div class="grid">
-
-<div class="box">
-<div class="icon">%</div>
-<h3>Percentage Calculator</h3>
-
-<div class="calculator">
-<input id="percentNumber" type="number" placeholder="Number">
-<input id="percentValue" type="number" placeholder="Percentage">
-<button class="btn" onclick="calculatePercent()">Calculate</button>
-<div id="percentResult" class="result"></div>
-</div>
-
-</div>
-
-<div class="box">
-<div class="icon">🔢</div>
-<h3>Basic Calculator</h3>
-
-<div class="calculator">
-<input id="num1" type="number" placeholder="पहली संख्या">
-<input id="num2" type="number" placeholder="दूसरी संख्या">
-
-<button class="btn" onclick="calc('+')">+</button>
-<button class="btn" onclick="calc('-')">−</button>
-<button class="btn" onclick="calc('*')">×</button>
-<button class="btn" onclick="calc('/')">÷</button>
-
-<div id="calcResult" class="result"></div>
-</div>
-
-</div>
-
-<div class="box">
-<div class="icon">📐</div>
-<h3>Land Measurement</h3>
-<p>भूमि measurement सीखने के लिए basic information।</p>
-<button class="btn" onclick="showInfo('Land Measurement',
-'भूमि माप में Length, Width, Area, Chain, Tape, Compass, Total Station और अन्य surveying methods का उपयोग होता है।')">
-Open
-</button>
-</div>
-
-</div>
-</section>
-
-<!-- CODING -->
-<section id="coding" class="section">
-<h2 class="section-title">💻 Coding Lab</h2>
-<p class="section-intro">Browser में अपना छोटा HTML प्रयोग करें।</p>
-
-<div class="box">
-
-<textarea id="codeEditor">
-<!DOCTYPE html>
-<html>
-<head>
-<title>My Website</title>
-</head>
-<body>
-<h1>Hello India!</h1>
-<p>मैं Coding सीख रहा हूँ।</p>
-</body>
-</html>
-</textarea>
-
-<br><br>
-
-<button class="btn" onclick="runCode()">▶️ Run Code</button>
-
-<iframe id="preview"></iframe>
-
-</div>
-</section>
 
 <!-- SERVICES -->
+
 <section id="services" class="section">
-<h2 class="section-title">📝 Government Services</h2>
+    <h2 class="section-title">📝 Government & Useful Services</h2>
 
-<div class="grid">
+    <div class="grid">
 
-<div class="box">
-<div class="icon">🪪</div>
-<h3>Documents</h3>
-<p>Aadhaar, PAN, Income, Residence आदि की जानकारी।</p>
-<button class="btn" onclick="showInfo('Documents',
-'सरकारी documents के लिए हमेशा संबंधित official government website का उपयोग करें।')">
-Details
-</button>
-</div>
+        <div class="card">
+            <div class="card-icon">🪪</div>
+            <h3>Aadhaar</h3>
+            <p>Aadhaar से जुड़ी official services की जानकारी।</p>
+            <button onclick="openModal(
+            'Aadhaar',
+            'Aadhaar से जुड़ी किसी भी service के लिए official government source का उपयोग करें।')">
+            Details
+            </button>
+        </div>
 
-<div class="box">
-<div class="icon">📋</div>
-<h3>Online Forms</h3>
-<p>Important forms और application information।</p>
-<button class="btn" onclick="showInfo('Online Forms',
-'किसी भी form को भरने से पहले official notification और official website जरूर check करें।')">
-Details
-</button>
-</div>
+        <div class="card">
+            <div class="card-icon">💳</div>
+            <h3>PAN Card</h3>
+            <p>PAN application और related information।</p>
+            <button onclick="openModal(
+            'PAN Card',
+            'PAN से जुड़ी services के लिए official portal का उपयोग करें।')">
+            Details
+            </button>
+        </div>
 
-<div class="box">
-<div class="icon">🏛️</div>
-<h3>Government Schemes</h3>
-<p>सरकारी योजनाओं की जानकारी।</p>
-<button class="btn" onclick="showInfo('Government Schemes',
-'सरकारी योजनाओं की जानकारी हमेशा official government sources से verify करें।')">
-Details
-</button>
-</div>
+        <div class="card">
+            <div class="card-icon">📜</div>
+            <h3>Certificates</h3>
+            <p>Income, Residence, Caste आदि certificates की जानकारी।</p>
+            <button onclick="openModal(
+            'Certificates',
+            'अपने राज्य के official government portal से certificate services का उपयोग करें।')">
+            Details
+            </button>
+        </div>
 
-</div>
+        <div class="card">
+            <div class="card-icon">🎓</div>
+            <h3>Education Services</h3>
+            <p>Admission, scholarship और education related information।</p>
+            <button onclick="openModal(
+            'Education',
+            'Education services में admission, scholarship, result और examination information जोड़ी जा सकती है।')">
+            Details
+            </button>
+        </div>
+
+    </div>
 </section>
+
+
+<!-- TOOLS -->
+
+<section id="tools" class="section">
+    <h2 class="section-title">🧮 Useful Tools</h2>
+
+    <div class="grid">
+
+        <div class="tool-box">
+            <h3>🧮 Calculator</h3>
+            <input id="calcInput" type="text"
+                   placeholder="जैसे 25*4+100">
+            <button onclick="calculate()">Calculate</button>
+            <p id="calcResult" style="margin-top:12px;font-weight:bold;"></p>
+        </div>
+
+        <div class="tool-box">
+            <h3>📊 Percentage Calculator</h3>
+
+            <input id="obtained" type="number"
+                   placeholder="प्राप्त अंक">
+
+            <input id="total" type="number"
+                   placeholder="कुल अंक">
+
+            <button onclick="percentage()">Calculate</button>
+
+            <p id="percentageResult"
+               style="margin-top:12px;font-weight:bold;">
+            </p>
+        </div>
+
+        <div class="tool-box">
+            <h3>📏 Area Calculator</h3>
+
+            <input id="length" type="number"
+                   placeholder="Length">
+
+            <input id="width" type="number"
+                   placeholder="Width">
+
+            <button onclick="area()">Calculate</button>
+
+            <p id="areaResult"
+               style="margin-top:12px;font-weight:bold;">
+            </p>
+        </div>
+
+        <div class="tool-box">
+            <h3>🔢 Unit Converter</h3>
+
+            <input id="meterInput"
+                   type="number"
+                   placeholder="मीटर">
+
+            <button onclick="convertMeter()">
+                Meter → Feet
+            </button>
+
+            <p id="meterResult"
+               style="margin-top:12px;font-weight:bold;">
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CODING -->
+
+<section id="coding" class="section">
+    <h2 class="section-title">💻 Coding सीखें</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="card-icon">🌐</div>
+            <h3>HTML</h3>
+            <p>Website बनाने की शुरुआत HTML से करें।</p>
+
+            <pre>&lt;h1&gt;Hello India&lt;/h1&gt;
+&lt;p&gt;My first website&lt;/p&gt;</pre>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🎨</div>
+            <h3>CSS</h3>
+            <p>Website को सुंदर और responsive बनाने के लिए CSS।</p>
+
+            <pre>body {
+  background: #f4f7fb;
+  font-family: Arial;
+}</pre>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>JavaScript</h3>
+            <p>Website में interactive features जोड़ने के लिए।</p>
+
+            <pre>function hello(){
+  alert("Hello India!");
+}</pre>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- QUIZ -->
+
+<section id="quiz" class="section">
+    <h2 class="section-title">🧠 Practice Quiz</h2>
+
+    <div id="quizContainer">
+        <div class="quiz">
+            <h3>Question</h3>
+            <p>ऊपर किसी subject का Quiz शुरू करें।</p>
+        </div>
+    </div>
+</section>
+
 
 <!-- HELP -->
-<section id="help" class="section">
-<h2 class="section-title">❤️ Help People</h2>
 
-<div class="box">
-<div class="icon">🤝</div>
-<h3>Learn • Grow • Help</h3>
-<p>
-सीखें, आगे बढ़ें और अपनी जानकारी से दूसरों की मदद करें।
-हमारा लक्ष्य है कि useful information लोगों तक आसानी से पहुँचे।
-</p>
-</div>
+<section id="help" class="section">
+    <h2 class="section-title">❤️ Help & Safety</h2>
+
+    <div class="grid">
+
+        <div class="card success">
+            <div class="card-icon">🤝</div>
+            <h3>Student Help</h3>
+            <p>
+                पढ़ाई, परीक्षा और career से जुड़ी useful information
+                एक जगह उपलब्ध कराने का उद्देश्य।
+            </p>
+        </div>
+
+        <div class="card feature">
+            <div class="card-icon">🔐</div>
+            <h3>Online Safety</h3>
+            <p>
+                OTP, PIN, password और banking information किसी
+                अनजान व्यक्ति के साथ share न करें।
+            </p>
+        </div>
+
+        <div class="card warning">
+            <div class="card-icon">🚨</div>
+            <h3>Fraud से बचें</h3>
+            <p>
+                नौकरी या किसी service के नाम पर advance payment
+                करने से पहले पूरी तरह verify करें।
+            </p>
+        </div>
+
+    </div>
 </section>
 
-<div class="section">
-<h2 class="section-title">❤️ हमारा उद्देश्य</h2>
-<p class="section-intro">
-Learn & Help India का उद्देश्य है कि सही और उपयोगी जानकारी
-लोगों तक आसानी से पहुँचे।
-</p>
-<center><strong>सीखना • आगे बढ़ना • दूसरों की मदद करना 🇮🇳</strong></center>
-</div>
 
-</div>
+<section class="section">
+    <div class="card">
+        <h2>🌱 हमारा उद्देश्य</h2>
+
+        <p>
+            Learn & Help India का उद्देश्य लोगों को पढ़ाई,
+            रोजगार, digital skills, government services और
+            useful tools की आसान जानकारी उपलब्ध कराना है।
+        </p>
+
+        <p>
+            हमारा लक्ष्य है कि information सरल भाषा में,
+            mobile-friendly और उपयोगी तरीके से लोगों तक पहुँचे।
+        </p>
+    </div>
+</section>
+
+</main>
+
 
 <footer>
-<p>© 2026 Learn & Help India</p>
-<p>Learn • Grow • Help 🇮🇳</p>
+    <h2>🌏 Learn & Help India</h2>
+
+    <p>
+        Learn • Work • Grow • Help
+    </p>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#study">Study</a>
+        <a href="#jobs">Jobs</a>
+        <a href="#services">Services</a>
+        <a href="#tools">Tools</a>
+        <a href="#coding">Coding</a>
+    </div>
+
+    <p>
+        © 2026 Learn & Help India
+    </p>
 </footer>
 
+
 <!-- MODAL -->
-<div id="modal" class="modal">
-<div class="modal-content">
-<span class="close" onclick="closeModal()">×</span>
-<h2 id="modalTitle"></h2>
-<p id="modalText"></p>
-<br>
-<button class="btn" onclick="closeModal()">Close</button>
+
+<div id="modal" class="modal"
+     onclick="closeModalOutside(event)">
+
+    <div class="modal-content">
+
+        <span class="close"
+              onclick="closeModal()">×</span>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalText"
+           style="margin-top:15px;">
+        </p>
+
+        <button onclick="closeModal()"
+                style="margin-top:20px;">
+            Close
+        </button>
+
+    </div>
 </div>
-</div>
+
 
 <script>
 
-/* =========================
-   QUESTION DATABASE
-========================= */
+function openModal(title,text){
 
-const data={
+    document.getElementById("modalTitle").innerText = title;
 
-math:[
-["200 का 25% कितना होगा?",["25","50","75","100"],1],
-["500 का 10% कितना होगा?",["25","50","75","100"],1],
-["80 का 50% कितना होगा?",["20","40","60","70"],1],
-["1000 का 15% कितना होगा?",["100","150","200","250"],1],
-["400 का 20% कितना होगा?",["60","80","100","120"],1],
-["300 का 30% कितना होगा?",["60","90","120","150"],1],
-["600 का 25% कितना होगा?",["100","150","200","250"],2],
-["250 का 20% कितना होगा?",["40","50","60","70"],1],
-["900 का 10% कितना होगा?",["70","90","110","120"],1],
-["700 का 10% कितना होगा?",["50","70","90","100"],1]
-],
+    document.getElementById("modalText").innerText = text;
 
-reason:[
-["2, 4, 6, 8, ?",["9","10","11","12"],1],
-["5, 10, 15, 20, ?",["22","25","30","35"],1],
-["3, 6, 12, 24, ?",["36","42","48","50"],2],
-["1, 4, 9, 16, ?",["20","24","25","30"],2],
-["Book : Read :: Food : ?",["Cook","Eat","Buy","Sell"],1],
-["Bird : Fly :: Fish : ?",["Run","Walk","Swim","Jump"],2],
-["Pen : Write :: Knife : ?",["Cut","Read","Draw","Open"],0],
-["CAT को DBU लिखा जाए तो DOG क्या होगा?",["EPH","EOH","FPH","DPE"],0],
-["A=1, B=2, C=3 तो CAB का योग?",["5","6","7","8"],2],
-["अलग कौन है?",["Apple","Mango","Banana","Potato"],3]
-],
-
-english:[
-["Synonym of Happy?",["Sad","Glad","Angry","Weak"],1],
-["Antonym of Hot?",["Warm","Cold","Heat","Fire"],1],
-["Choose: ___ apple",["a","an","the","no article"],1],
-["He ___ to school every day.",["go","goes","going","gone"],1],
-["Plural of Child?",["Childs","Childes","Children","Childrens"],2],
-["Opposite of Early?",["Fast","Late","Quick","Soon"],1],
-["Synonym of Big?",["Small","Large","Tiny","Short"],1],
-["She is good ___ English.",["in","at","on","for"],1],
-["I ___ a student.",["am","is","are","be"],0],
-["Past tense of Go?",["Goed","Gone","Went","Going"],2]
-],
-
-gk:[
-["भारतीय संविधान का अनुच्छेद 14 किससे संबंधित है?",["समानता","स्वतंत्रता","धर्म","शिक्षा"],0],
-["भारत का राष्ट्रीय पशु?",["सिंह","बाघ","हाथी","मोर"],1],
-["भारत में संविधान कब लागू हुआ?",["15 अगस्त 1947","26 नवंबर 1949","26 जनवरी 1950","2 अक्टूबर 1950"],2],
-["भारत की राजधानी?",["मुंबई","कोलकाता","नई दिल्ली","चेन्नई"],2],
-["क्षेत्रफल में भारत का सबसे बड़ा राज्य?",["मध्य प्रदेश","राजस्थान","उत्तर प्रदेश","महाराष्ट्र"],1],
-["गंगा का उद्गम?",["गंगोत्री","यमुनोत्री","सियाचिन","सतोपंथ"],0],
-["भारतीय संविधान के प्रमुख शिल्पकार?",["गांधी","नेहरू","डॉ. बी. आर. अम्बेडकर","पटेल"],2],
-["भारत का आधिकारिक राष्ट्रीय खेल?",["हॉकी","क्रिकेट","कबड्डी","कोई आधिकारिक राष्ट्रीय खेल नहीं"],3],
-["पृथ्वी का प्राकृतिक उपग्रह?",["मंगल","चंद्रमा","शुक्र","सूर्य"],1],
-["पानी का रासायनिक सूत्र?",["CO2","O2","H2O","NaCl"],2]
-],
-
-current:[
-["भारत का राष्ट्रीय पशु कौन है?",["सिंह","बाघ","हाथी","गैंडा"],1],
-["भारत की राजधानी क्या है?",["मुंबई","नई दिल्ली","पटना","जयपुर"],1],
-["ISRO का मुख्यालय कहाँ है?",["मुंबई","नई दिल्ली","बेंगलुरु","हैदराबाद"],2],
-["भारत की मुद्रा क्या है?",["डॉलर","रुपया","यूरो","येन"],1],
-["संयुक्त राष्ट्र का मुख्यालय कहाँ है?",["लंदन","पेरिस","न्यूयॉर्क","रोम"],2],
-["भारत का राष्ट्रीय फूल?",["गुलाब","कमल","चमेली","सूरजमुखी"],1],
-["भारत का राष्ट्रीय पक्षी?",["तोता","मोर","कबूतर","गरुड़"],1],
-["भारत का राष्ट्रीय फल?",["सेब","आम","केला","संतरा"],1],
-["भारतीय संसद के कितने सदन हैं?",["एक","दो","तीन","चार"],1],
-["RBI का पूरा नाम क्या है?",["Reserve Bank of India","Rural Bank India","Royal Bank India","Regional Bank India"],0]
-]
-
-};
-
-let currentType="";
-let currentIndex=0;
-let currentScore=0;
-
-const names={
-math:"➗ Maths Test",
-reason:"🧠 Reasoning Test",
-english:"🔤 English Test",
-gk:"🇮🇳 GK / GS Test",
-current:"📰 Current Affairs Test"
-};
-
-function openTest(type){
-
-currentType=type;
-currentIndex=0;
-currentScore=0;
-
-document.getElementById("testArea").style.display="block";
-document.getElementById("testTitle").innerText=names[type];
-
-document.getElementById("testBox").style.display="block";
-document.getElementById("resultBox").style.display="none";
-
-document.getElementById("testArea").scrollIntoView();
-
-loadQuestion();
-}
-
-function loadQuestion(){
-
-let q=data[currentType][currentIndex];
-
-document.getElementById("progress").innerText=
-"Question "+(currentIndex+1)+" / "+data[currentType].length;
-
-document.getElementById("question").innerText=q[0];
-
-let options=document.getElementById("options");
-options.innerHTML="";
-
-q[1].forEach((option,index)=>{
-
-let btn=document.createElement("button");
-btn.className="option";
-btn.innerText=(index+1)+". "+option;
-
-btn.onclick=function(){
-checkAnswer(index);
-};
-
-options.appendChild(btn);
-
-});
-
-document.getElementById("feedback").innerText="";
-document.getElementById("nextBtn").style.display="none";
-}
-
-function checkAnswer(selected){
-
-let q=data[currentType][currentIndex];
-let buttons=document.querySelectorAll(".option");
-
-buttons.forEach(b=>b.disabled=true);
-
-if(selected===q[2]){
-currentScore++;
-document.getElementById("feedback").innerText="✅ सही उत्तर!";
-document.getElementById("feedback").style.color="green";
-}else{
-document.getElementById("feedback").innerText=
-"❌ गलत! सही उत्तर: "+q[1][q[2]];
-document.getElementById("feedback").style.color="red";
-}
-
-document.getElementById("nextBtn").style.display="inline-block";
-}
-
-function nextQuestion(){
-
-currentIndex++;
-
-if(currentIndex<data[currentType].length){
-loadQuestion();
-}else{
-showResult();
-}
-}
-
-function showResult(){
-
-document.getElementById("testBox").style.display="none";
-document.getElementById("resultBox").style.display="block";
-
-document.getElementById("score").innerText=
-currentScore+" / "+data[currentType].length;
-
-let percentage=
-(currentScore/data[currentType].length)*100;
-
-let msg="";
-
-if(percentage>=80)msg="🌟 बहुत बढ़िया! आपकी तैयारी अच्छी है।";
-else if(percentage>=50)msg="👍 अच्छा प्रयास! थोड़ी और practice करें।";
-else msg="📚 और practice की जरूरत है।";
-
-document.getElementById("message").innerText=msg;
-}
-
-function restartTest(){
-openTest(currentType);
-}
-
-/* MODAL */
-
-function showInfo(title,text){
-
-document.getElementById("modalTitle").innerText=title;
-document.getElementById("modalText").innerText=text;
-document.getElementById("modal").style.display="flex";
-
+    document.getElementById("modal").style.display = "block";
 }
 
 function closeModal(){
-document.getElementById("modal").style.display="none";
+
+    document.getElementById("modal").style.display = "none";
 }
+
+function closeModalOutside(event){
+
+    if(event.target.id === "modal"){
+        closeModal();
+    }
+}
+
+
+/* SEARCH */
+
+const searchItems = [
+
+    ["Study","study"],
+    ["SSC CGL","study"],
+    ["Maths","study"],
+    ["Reasoning","study"],
+    ["English","study"],
+    ["GK","study"],
+    ["Current Affairs","study"],
+
+    ["Government Jobs","jobs"],
+    ["Work From Home","jobs"],
+    ["Customer Support","jobs"],
+    ["Office Jobs","jobs"],
+
+    ["Aadhaar","services"],
+    ["PAN Card","services"],
+    ["Certificates","services"],
+
+    ["Calculator","tools"],
+    ["Percentage","tools"],
+    ["Area Calculator","tools"],
+    ["Unit Converter","tools"],
+
+    ["HTML","coding"],
+    ["CSS","coding"],
+    ["JavaScript","coding"]
+];
+
+function searchSite(){
+
+    const input =
+        document.getElementById("searchInput")
+        .value
+        .trim()
+        .toLowerCase();
+
+    const result =
+        document.getElementById("searchResults");
+
+    if(!input){
+
+        result.innerHTML =
+        "<p>कुछ search करें।</p>";
+
+        return;
+    }
+
+    const found = searchItems.filter(item =>
+        item[0].toLowerCase().includes(input)
+    );
+
+    if(found.length === 0){
+
+        result.innerHTML =
+        "<p>❌ कोई result नहीं मिला।</p>";
+
+        return;
+    }
+
+    result.innerHTML =
+    found.map(item =>
+    `<button
+        onclick="location.hash='${item[1]}'">
+        ${item[0]}
+     </button>`
+    ).join(" ");
+}
+
+
+/* CALCULATOR */
+
+function calculate(){
+
+    const value =
+        document.getElementById("calcInput").value;
+
+    const result =
+        document.getElementById("calcResult");
+
+    if(!value){
+
+        result.innerText =
+        "कृपया calculation लिखें।";
+
+        return;
+    }
+
+    try{
+
+        if(!/^[0-9+\-*/().% ]+$/.test(value)){
+            throw new Error();
+        }
+
+        result.innerText =
+        "उत्तर: " + Function(
+            '"use strict";return (' + value + ')'
+        )();
+
+    }catch(e){
+
+        result.innerText =
+        "❌ Invalid calculation";
+    }
+}
+
 
 /* PERCENTAGE */
 
-function calculatePercent(){
+function percentage(){
 
-let number=parseFloat(document.getElementById("percentNumber").value);
-let percent=parseFloat(document.getElementById("percentValue").value);
+    const obtained =
+        parseFloat(
+            document.getElementById("obtained").value
+        );
 
-if(isNaN(number)||isNaN(percent)){
-document.getElementById("percentResult").innerText=
-"कृपया दोनों संख्या डालें।";
-return;
+    const total =
+        parseFloat(
+            document.getElementById("total").value
+        );
+
+    const result =
+        document.getElementById("percentageResult");
+
+    if(!total || total <= 0){
+
+        result.innerText =
+        "सही total marks डालें।";
+
+        return;
+    }
+
+    const percent =
+        (obtained / total) * 100;
+
+    result.innerText =
+    "Percentage: " + percent.toFixed(2) + "%";
 }
 
-let result=(number*percent)/100;
 
-document.getElementById("percentResult").innerText=
-result;
+/* AREA */
+
+function area(){
+
+    const l =
+        parseFloat(
+            document.getElementById("length").value
+        );
+
+    const w =
+        parseFloat(
+            document.getElementById("width").value
+        );
+
+    const result =
+        document.getElementById("areaResult");
+
+    if(isNaN(l) || isNaN(w)){
+
+        result.innerText =
+        "Length और Width डालें।";
+
+        return;
+    }
+
+    result.innerText =
+    "Area = " + (l*w).toFixed(2) + " square units";
 }
 
-/* BASIC CALCULATOR */
 
-function calc(operator){
+/* METER TO FEET */
 
-let a=parseFloat(document.getElementById("num1").value);
-let b=parseFloat(document.getElementById("num2").value);
+function convertMeter(){
 
-if(isNaN(a)||isNaN(b)){
-document.getElementById("calcResult").innerText=
-"कृपया दोनों संख्या डालें।";
-return;
+    const meter =
+        parseFloat(
+            document.getElementById("meterInput").value
+        );
+
+    const result =
+        document.getElementById("meterResult");
+
+    if(isNaN(meter)){
+
+        result.innerText =
+        "मीटर की value डालें।";
+
+        return;
+    }
+
+    result.innerText =
+    meter + " m = " +
+    (meter * 3.28084).toFixed(3) +
+    " ft";
 }
 
-let result;
 
-if(operator==="+")result=a+b;
-if(operator==="-")result=a-b;
-if(operator==="*")result=a*b;
+/* QUIZ DATA */
 
-if(operator==="/"){
-if(b===0){
-document.getElementById("calcResult").innerText=
-"0 से divide नहीं कर सकते।";
-return;
+const quizzes = {
+
+    math:[
+        {
+            q:"25 का 20% कितना होगा?",
+            a:["5","10","15","20"],
+            c:0
+        },
+        {
+            q:"10 × 5 = ?",
+            a:["15","50","100","25"],
+            c:1
+        }
+    ],
+
+    reasoning:[
+        {
+            q:"2, 4, 6, 8, ?",
+            a:["9","10","11","12"],
+            c:1
+        },
+        {
+            q:"यदि CAT को DBU लिखा जाए, तो DOG को क्या लिखा जाएगा?",
+            a:["EPH","EOG","DPH","EOH"],
+            c:0
+        }
+    ],
+
+    english:[
+        {
+            q:"Synonym of 'Happy' is:",
+            a:["Sad","Glad","Angry","Weak"],
+            c:1
+        },
+        {
+            q:"Antonym of 'Big' is:",
+            a:["Large","Huge","Small","Tall"],
+            c:2
+        }
+    ],
+
+    gk:[
+        {
+            q:"भारत की राजधानी क्या है?",
+            a:["मुंबई","पटना","नई दिल्ली","कोलकाता"],
+            c:2
+        },
+        {
+            q:"भारत का संविधान कब लागू हुआ?",
+            a:["15 August 1947","26 January 1950","2 October 1950","26 November 1949"],
+            c:1
+        }
+    ]
+
+};
+
+
+function startQuiz(subject){
+
+    const questions = quizzes[subject];
+
+    const container =
+        document.getElementById("quizContainer");
+
+    container.innerHTML = "";
+
+    questions.forEach((question,index)=>{
+
+        const box =
+        document.createElement("div");
+
+        box.className = "quiz";
+
+        box.innerHTML =
+        `<h3>Question ${index+1}</h3>
+         <p><strong>${question.q}</strong></p>`;
+
+        question.a.forEach((option,i)=>{
+
+            const btn =
+            document.createElement("button");
+
+            btn.className = "option";
+
+            btn.innerText =
+            String.fromCharCode(65+i) +
+            ". " + option;
+
+            btn.onclick = function(){
+
+                if(i === question.c){
+
+                    btn.style.background =
+                    "#c8e6c9";
+
+                    btn.style.color =
+                    "#1b5e20";
+
+                }else{
+
+                    btn.style.background =
+                    "#ffcdd2";
+
+                    btn.style.color =
+                    "#b71c1c";
+                }
+
+                box.querySelectorAll(".option")
+                    .forEach(b=>b.disabled=true);
+            };
+
+            box.appendChild(btn);
+
+        });
+
+        container.appendChild(box);
+
+    });
+
+    location.hash = "quiz";
+
 }
-result=a/b;
-}
 
-document.getElementById("calcResult").innerText=
-"उत्तर = "+result;
-}
 
-/* CODING LAB */
+/* ENTER KEY SEARCH */
 
-function runCode(){
+document.getElementById("searchInput")
+.addEventListener("keydown",function(event){
 
-let code=document.getElementById("codeEditor").value;
+    if(event.key === "Enter"){
+        searchSite();
+    }
 
-let frame=document.getElementById("preview");
-
-frame.srcdoc=code;
-}
+});
 
 </script>
 
