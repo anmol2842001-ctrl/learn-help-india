@@ -4,413 +4,440 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#1565c0">
-<meta name="description" content="Learn & Help India - Study, Jobs, Land Records, Government Services and Useful Tools">
+
 <title>Learn & Help India</title>
 
 <style>
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0
+    box-sizing:border-box;
+    margin:0;
+    padding:0
 }
 
 html{
-  scroll-behavior:smooth
+    scroll-behavior:smooth
 }
 
 body{
-  font-family:Arial,"Noto Sans",sans-serif;
-  background:#f4f7fb;
-  color:#222;
-  line-height:1.6
+    font-family:Arial,"Noto Sans Devanagari",sans-serif;
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.6
 }
 
 a{
-  text-decoration:none
+    text-decoration:none
 }
 
 button{
-  border:0;
-  cursor:pointer;
-  font-weight:bold;
-  border-radius:10px;
-  padding:11px 17px;
-  background:#1565c0;
-  color:#fff;
-  margin:5px;
-  transition:.2s
+    border:0;
+    cursor:pointer;
+    font-weight:bold;
+    border-radius:10px;
+    padding:11px 17px;
+    background:#1565c0;
+    color:white;
+    margin:5px;
+    transition:.2s
 }
 
 button:hover{
-  background:#0d47a1;
-  transform:translateY(-1px)
+    background:#0d47a1;
+    transform:translateY(-1px)
 }
 
 header{
-  background:linear-gradient(135deg,#1565c0,#0d47a1);
-  color:#fff;
-  padding:28px 15px;
-  text-align:center
+    background:linear-gradient(135deg,#1565c0,#0d47a1);
+    color:white;
+    padding:28px 15px;
+    text-align:center
 }
 
 .logo{
-  width:82px;
-  height:82px;
-  border-radius:50%;
-  background:#fff;
-  margin:auto;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:42px
+    width:82px;
+    height:82px;
+    border-radius:50%;
+    background:white;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:43px
 }
 
 header h1{
-  font-size:30px;
-  margin-top:8px
+    font-size:30px;
+    margin-top:8px
 }
 
 header p{
-  opacity:.95
+    margin-top:4px
 }
 
 nav{
-  background:#fff;
-  padding:10px;
-  text-align:center;
-  position:sticky;
-  top:0;
-  z-index:100;
-  box-shadow:0 2px 8px #0002
+    background:white;
+    padding:10px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 8px #0002
 }
 
 nav a{
-  display:inline-block;
-  color:#1565c0;
-  font-weight:bold;
-  margin:4px 6px;
-  padding:7px 8px;
-  border-radius:7px
-}
-
-nav a:hover{
-  background:#eaf3ff
+    display:inline-block;
+    color:#1565c0;
+    font-weight:bold;
+    margin:4px 6px;
+    padding:6px 5px
 }
 
 .container{
-  max-width:1150px;
-  margin:auto;
-  padding:20px 14px
+    max-width:1150px;
+    margin:auto;
+    padding:20px 14px
 }
 
 .welcome{
-  text-align:center;
-  padding:35px 10px
+    text-align:center;
+    padding:32px 10px
 }
 
 .welcome h2{
-  color:#1565c0;
-  font-size:30px;
-  margin-bottom:8px
+    color:#1565c0;
+    font-size:29px;
+    margin-bottom:8px
 }
 
 .cards,
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:18px
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:18px
 }
 
 .card,
 .section{
-  background:#fff;
-  border-radius:16px;
-  box-shadow:0 3px 14px #0001
+    background:white;
+    border-radius:17px;
+    box-shadow:0 3px 14px #0001
 }
 
 .card{
-  padding:22px;
-  text-align:center
+    padding:22px;
+    text-align:center
 }
 
 .card h3{
-  color:#1565c0;
-  margin:8px 0
+    color:#1565c0;
+    margin:8px 0
 }
 
 .card p{
-  color:#555;
-  margin-bottom:12px
+    color:#555;
+    margin-bottom:13px
 }
 
 .icon{
-  font-size:42px
+    font-size:42px
 }
 
 .section{
-  margin-top:30px;
-  padding:28px 18px
+    margin-top:30px;
+    padding:28px 18px
 }
 
 .section-title{
-  text-align:center;
-  color:#1565c0;
-  font-size:27px;
-  margin-bottom:8px
+    text-align:center;
+    color:#1565c0;
+    font-size:27px;
+    margin-bottom:8px
 }
 
 .section-intro{
-  text-align:center;
-  color:#666;
-  margin-bottom:22px
+    text-align:center;
+    color:#666;
+    margin-bottom:22px
 }
 
 .feature{
-  background:#f8fbff;
-  padding:20px;
-  border-radius:14px;
-  border:1px solid #dce8f5
-}
-
-.topic-card{
-  background:linear-gradient(145deg,#fff,#f7fbff);
-  border:1px solid #dce8f5
-}
-
-.topic-card .practice{
-  width:100%;
-  margin-top:8px
-}
-
-.badge{
-  display:inline-block;
-  background:#e3f2fd;
-  color:#1565c0;
-  padding:4px 9px;
-  border-radius:20px;
-  font-size:12px;
-  font-weight:bold
+    background:#f8fbff;
+    padding:20px;
+    border-radius:14px;
+    border:1px solid #dce8f5;
+    margin-top:15px
 }
 
 .service-link{
-  display:block;
-  background:#1565c0;
-  color:#fff;
-  padding:12px;
-  border-radius:9px;
-  margin:7px 0;
-  font-weight:bold;
-  text-align:center
+    display:block;
+    background:#1565c0;
+    color:white;
+    padding:12px;
+    border-radius:9px;
+    margin:8px 0;
+    font-weight:bold;
+    text-align:center
 }
 
 .service-link:hover{
-  background:#0d47a1
+    background:#0d47a1
 }
 
-.warning{
-  background:#fff8e1;
-  border-left:5px solid #ffb300;
-  padding:15px;
-  border-radius:8px;
-  margin-top:15px
+/* STUDY */
+
+.subject-card{
+    min-height:230px
 }
 
-.success{
-  background:#e8f5e9;
-  border-left:5px solid #2e7d32;
-  padding:15px;
-  border-radius:8px;
-  margin-top:15px
+.topic-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    margin-top:18px
 }
+
+.topic{
+    background:#f8fbff;
+    border:1px solid #dce8f5;
+    border-radius:13px;
+    padding:17px
+}
+
+.topic h4{
+    color:#1565c0;
+    margin-bottom:7px
+}
+
+.topic p{
+    color:#555;
+    font-size:14px
+}
+
+/* QUIZ */
+
+.quiz-container{
+    max-width:750px;
+    margin:auto
+}
+
+.quiz-box{
+    display:none
+}
+
+.progress{
+    text-align:center;
+    font-weight:bold;
+    color:#1565c0;
+    margin-bottom:15px
+}
+
+.progress-bar{
+    height:9px;
+    background:#e0e7ef;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:18px
+}
+
+.progress-fill{
+    height:100%;
+    width:0%;
+    background:#1565c0;
+    transition:.3s
+}
+
+.question{
+    background:#f8fbff;
+    padding:22px;
+    border-radius:15px;
+    border:1px solid #dce8f5
+}
+
+.question h3{
+    margin-bottom:18px
+}
+
+.option{
+    display:block;
+    width:100%;
+    text-align:left;
+    margin:9px 0;
+    background:#1565c0
+}
+
+.correct{
+    background:#2e7d32!important
+}
+
+.wrong{
+    background:#c62828!important
+}
+
+.feedback{
+    text-align:center;
+    font-weight:bold;
+    min-height:28px;
+    margin-top:12px
+}
+
+.next-btn{
+    display:none;
+    margin:15px auto
+}
+
+.result{
+    display:none;
+    text-align:center;
+    background:#f8fbff;
+    padding:25px;
+    border-radius:15px
+}
+
+.score{
+    font-size:44px;
+    font-weight:bold;
+    color:#1565c0;
+    margin:10px
+}
+
+/* INPUTS */
 
 .tool{
-  background:#f8fbff;
-  padding:20px;
-  border-radius:14px;
-  border:1px solid #dce8f5
+    background:#f8fbff;
+    padding:20px;
+    border-radius:14px;
+    border:1px solid #dce8f5
+}
+
+.tool h3{
+    color:#1565c0;
+    margin-bottom:10px
 }
 
 .tool input,
 .tool select{
-  width:100%;
-  padding:12px;
-  margin:6px 0;
-  border:1px solid #ccc;
-  border-radius:8px;
-  background:#fff
+    width:100%;
+    padding:11px;
+    margin:6px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    background:white
 }
 
 .output{
-  font-weight:bold;
-  color:#1565c0;
-  margin-top:10px;
-  min-height:25px
+    font-weight:bold;
+    color:#1565c0;
+    margin-top:10px;
+    min-height:25px
 }
 
-.quiz-container{
-  max-width:760px;
-  margin:auto
+/* LAND RECORD */
+
+.land-warning{
+    border-left:5px solid #f9a825;
+    background:#fff8e1;
+    padding:16px;
+    border-radius:10px;
+    margin-bottom:20px
 }
 
-.quiz-box{
-  display:none
-}
-
-.progress{
-  text-align:center;
-  font-weight:bold;
-  color:#1565c0;
-  margin-bottom:15px
-}
-
-.question{
-  background:#f8fbff;
-  padding:22px;
-  border-radius:15px;
-  border:1px solid #dce8f5
-}
-
-.question h3{
-  margin-bottom:18px
-}
-
-.option{
-  display:block;
-  width:100%;
-  text-align:left;
-  margin:9px 0;
-  background:#1565c0
-}
-
-.option:disabled{
-  cursor:not-allowed;
-  opacity:1
-}
-
-.correct{
-  background:#2e7d32!important
-}
-
-.wrong{
-  background:#c62828!important
-}
-
-.feedback{
-  text-align:center;
-  font-weight:bold;
-  min-height:28px;
-  margin-top:12px
-}
-
-.next-btn{
-  display:none;
-  margin:15px auto
-}
-
-.result{
-  display:none;
-  text-align:center;
-  background:#f8fbff;
-  padding:25px;
-  border-radius:15px
-}
-
-.score{
-  font-size:42px;
-  font-weight:bold;
-  color:#1565c0;
-  margin:10px
+.official{
+    border-left:5px solid #2e7d32;
+    background:#f1f8e9;
+    padding:16px;
+    border-radius:10px;
+    margin-top:15px
 }
 
 .land-result{
-  background:#fff;
-  border:1px solid #dce8f5;
-  padding:15px;
-  border-radius:10px;
-  margin-top:12px
+    margin-top:12px;
+    background:#eef6ff;
+    padding:15px;
+    border-radius:10px;
+    font-weight:bold
 }
 
-.unit-table{
-  width:100%;
-  border-collapse:collapse;
-  margin-top:15px
+/* MOVIES */
+
+.movie-note{
+    background:#fff3e0;
+    border-left:5px solid #ef6c00;
+    padding:16px;
+    border-radius:10px;
+    margin-bottom:20px
 }
 
-.unit-table th,
-.unit-table td{
-  border:1px solid #ddd;
-  padding:9px;
-  text-align:center
+.movie-card{
+    min-height:250px
 }
 
-.unit-table th{
-  background:#1565c0;
-  color:#fff
-}
+/* CODE */
 
 pre{
-  background:#17202a;
-  color:#fff;
-  padding:15px;
-  border-radius:10px;
-  overflow:auto;
-  text-align:left
+    background:#17202a;
+    color:#fff;
+    padding:15px;
+    border-radius:10px;
+    overflow:auto;
+    text-align:left;
+    margin-top:10px
 }
 
+/* FOOTER */
+
 footer{
-  margin-top:35px;
-  background:#0d47a1;
-  color:#fff;
-  text-align:center;
-  padding:30px 15px
+    margin-top:35px;
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:28px 15px
 }
 
 footer a{
-  color:#fff
+    color:white;
+    font-weight:bold
 }
 
 .footer-contact{
-  margin-top:12px;
-  line-height:2
+    margin:12px 0;
+    line-height:2
 }
 
 .footer-contact a{
-  display:inline-block;
-  margin:3px 7px
+    display:block
 }
 
-.small{
-  font-size:13px;
-  color:#666
-}
+/* MOBILE */
 
 @media(max-width:600px){
 
-  header h1{
-    font-size:25px
-  }
+    header h1{
+        font-size:25px
+    }
 
-  nav a{
-    font-size:13px;
-    margin:3px
-  }
+    nav a{
+        font-size:13px;
+        margin:3px
+    }
 
-  .section-title{
-    font-size:23px
-  }
+    .section-title{
+        font-size:23px
+    }
 
-  .welcome h2{
-    font-size:25px
-  }
+    .container{
+        padding:12px
+    }
 
-  .card{
-    padding:18px
-  }
+    .card{
+        padding:18px
+    }
 }
 </style>
 </head>
 
 <body>
+
+<!-- ================= HEADER ================= -->
 
 <header>
 
@@ -423,15 +450,18 @@ footer a{
 </header>
 
 
+<!-- ================= NAVIGATION ================= -->
+
 <nav>
 
 <a href="#home">🏠 Home</a>
 <a href="#study">📚 Study</a>
-<a href="#jobs">💼 Jobs</a>
 <a href="#land">🏡 Land Record</a>
+<a href="#movies">🎬 Movies</a>
+<a href="#jobs">💼 Jobs</a>
 <a href="#tools">🧮 Tools</a>
-<a href="#services">🏛️ Services</a>
 <a href="#coding">💻 Coding</a>
+<a href="#services">🏛️ Services</a>
 <a href="#support">💬 Support</a>
 
 </nav>
@@ -440,7 +470,7 @@ footer a{
 <div class="container">
 
 
-<!-- HOME -->
+<!-- ================= HOME ================= -->
 
 <section id="home">
 
@@ -450,7 +480,8 @@ footer a{
 
 <p>
 Study, Jobs, Land Record, Government Services,
-Useful Tools और Coding — एक ही जगह।
+Useful Tools, Coding और Legal Movie Information
+एक ही जगह।
 </p>
 
 </div>
@@ -465,25 +496,12 @@ Useful Tools और Coding — एक ही जगह।
 
 <h3>Study Center</h3>
 
-<p>SSC CGL और Competitive Exam Practice</p>
+<p>
+Topic-wise learning और practice tests
+</p>
 
 <a href="#study">
 <button>Study शुरू करें</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">💼</div>
-
-<h3>Jobs</h3>
-
-<p>Government और Private Jobs</p>
-
-<a href="#jobs">
-<button>Jobs देखें</button>
 </a>
 
 </div>
@@ -495,7 +513,9 @@ Useful Tools और Coding — एक ही जगह।
 
 <h3>Land Record</h3>
 
-<p>Jamabandi, Mutation, Parimarjan और Bhu-Naksha</p>
+<p>
+Bihar land record के official portals
+</p>
 
 <a href="#land">
 <button>Land Record</button>
@@ -506,14 +526,50 @@ Useful Tools और Coding — एक ही जगह।
 
 <div class="card">
 
+<div class="icon">🎬</div>
+
+<h3>Movies</h3>
+
+<p>
+Legal movie information और official platforms
+</p>
+
+<a href="#movies">
+<button>Movies देखें</button>
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">💼</div>
+
+<h3>Jobs</h3>
+
+<p>
+Government और Private Jobs
+</p>
+
+<a href="#jobs">
+<button>Jobs देखें</button>
+</a>
+
+</div>
+
+
+<div class="card">
+
 <div class="icon">🧮</div>
 
-<h3>Useful Tools</h3>
+<h3>Tools</h3>
 
-<p>Calculator, Percentage और Land Area</p>
+<p>
+Land और Study calculators
+</p>
 
 <a href="#tools">
-<button>Tools देखें</button>
+<button>Tools खोलें</button>
 </a>
 
 </div>
@@ -521,32 +577,20 @@ Useful Tools और Coding — एक ही जगह।
 
 <div class="card">
 
-<div class="icon">🏛️</div>
+<div class="icon">💻</div>
 
-<h3>Government Services</h3>
+<h3>Coding</h3>
 
-<p>Aadhaar, PAN, Certificates आदि</p>
+<p>
+HTML, CSS और JavaScript सीखें
+</p>
 
-<a href="#services">
-<button>Services देखें</button>
+<a href="#coding">
+<button>Coding सीखें</button>
 </a>
 
 </div>
 
-
-<div class="card">
-
-<div class="icon">💬</div>
-
-<h3>Support</h3>
-
-<p>WhatsApp, Call और Email</p>
-
-<a href="#support">
-<button>Support</button>
-</a>
-
-</div>
 
 </div>
 
@@ -554,1223 +598,150 @@ Useful Tools और Coding — एक ही जगह।
 
 
 
-<!-- STUDY -->
-<!-- =========================
-     PROFESSIONAL STUDY CENTER
-========================= -->
+<!-- ==================================================
+                     STUDY CENTER
+=================================================== -->
 
 <section id="study" class="section">
 
-<h2 class="section-title">📚 Professional Study Center</h2>
-
-<p class="section-intro">
-Topic चुनें → Theory पढ़ें → Example समझें → Practice करें
-</p>
-
-<div class="feature" style="margin-bottom:20px;text-align:center">
-<h3>🎯 SSC CGL & Competitive Exam Preparation</h3>
-<p>
-हर topic को आसान भाषा में सीखें और तुरंत MCQ Practice करें।
-</p>
-</div>
-
-<div class="grid" id="mathTopics">
-
-<!-- NUMBER SYSTEM -->
-<div class="card">
-<div class="icon">🔢</div>
-<h3>Number System</h3>
-<p>संख्या, प्राकृतिक संख्या, पूर्णांक और divisibility</p>
-<button onclick="openTopic('number')">
-📖 Theory देखें
-</button>
-<button onclick="startTopicPractice('number')">
-📝 Practice शुरू करें
-</button>
-</div>
-
-<!-- PERCENTAGE -->
-<div class="card">
-<div class="icon">📊</div>
-<h3>Percentage</h3>
-<p>प्रतिशत की basic और competitive exam calculation</p>
-<button onclick="openTopic('percentage')">
-📖 Theory देखें
-</button>
-<button onclick="startTopicPractice('percentage')">
-📝 Practice शुरू करें
-</button>
-</div>
-
-<!-- RATIO -->
-<div class="card">
-<div class="icon">⚖️</div>
-<h3>Ratio & Proportion</h3>
-<p>अनुपात और समानुपात के प्रश्न</p>
-<button onclick="openTopic('ratio')">
-📖 Theory देखें
-</button>
-<button onclick="startTopicPractice('ratio')">
-📝 Practice शुरू करें
-</button>
-</div>
-
-<!-- AVERAGE -->
-<div class="card">
-<div class="icon">📈</div>
-<h3>Average</h3>
-<p>औसत निकालने के आसान तरीके</p>
-<button onclick="openTopic('average')">
-📖 Theory देखें
-</button>
-<button onclick="startTopicPractice('average')">
-📝 Practice शुरू करें
-</button>
-</div>
-
-<!-- PROFIT LOSS -->
-<div class="card">
-<div class="icon">💰</div>
-<h3>Profit & Loss</h3>
-<p>लाभ, हानि, CP, SP और Discount</p>
-<button onclick="openTopic('profit')">
-📖 Theory देखें
-</button>
-<button onclick="startTopicPractice('profit')">
-📝 Practice शुरू करें
-</button>
-</div>
-
-<!-- SI CI -->
-<div class="card">
-<div class="icon">🏦</div>
-<h3>Simple & Compound Interest</h3>
-<p>साधारण और चक्रवृद्धि ब्याज</p>
-<button onclick="openTopic('interest')">
-📖 Theory देखें
-</button>
-<button onclick="startTopicPractice('interest')">
-📝 Practice शुरू करें
-</button>
-</div>
-
-<!-- TIME WORK -->
-<div class="card">
-<div class="icon">👷</div>
-<h3>Time & Work</h3>
-<p>काम और समय के questions</p>
-<button onclick="openTopic('work')">
-📖 Theory देखें
-</button>
-<button onclick="startTopicPractice('work')">
-📝 Practice शुरू करें
-</button>
-</div>
-
-<!-- SPEED -->
-<div class="card">
-<div class="icon">🚗</div>
-<h3>Time, Speed & Distance</h3>
-<p>गति, समय और दूरी</p>
-<button onclick="openTopic('speed')">
-📖 Theory देखें
-</button>
-<button onclick="startTopicPractice('speed')">
-📝 Practice शुरू करें
-</button>
-</div>
-
-<!-- ALGEBRA -->
-<div class="card">
-<div class="icon">➗</div>
-<h3>Algebra</h3>
-<p>बीजगणित के basic concepts</p>
-<button onclick="openTopic('algebra')">
-📖 Theory देखें
-</button>
-<button onclick="startTopicPractice('algebra')">
-📝 Practice शुरू करें
-</button>
-</div>
-
-<!-- GEOMETRY -->
-<div class="card">
-<div class="icon">📐</div>
-<h3>Geometry</h3>
-<p>रेखा, कोण, त्रिभुज और चतुर्भुज</p>
-<button onclick="openTopic('geometry')">
-📖 Theory देखें
-</button>
-<button onclick="startTopicPractice('geometry')">
-📝 Practice शुरू करें
-</button>
-</div>
-
-<!-- MENSURATION -->
-<div class="card">
-<div class="icon">📏</div>
-<h3>Mensuration</h3>
-<p>Area, Perimeter, Volume</p>
-<button onclick="openTopic('mensuration')">
-📖 Theory देखें
-</button>
-<button onclick="startTopicPractice('mensuration')">
-📝 Practice शुरू करें
-</button>
-</div>
-
-<!-- TRIGONOMETRY -->
-<div class="card">
-<div class="icon">📐</div>
-<h3>Trigonometry</h3>
-<p>Sin, Cos, Tan और basic identities</p>
-<button onclick="openTopic('trigonometry')">
-📖 Theory देखें
-</button>
-<button onclick="startTopicPractice('trigonometry')">
-📝 Practice शुरू करें
-</button>
-</div>
-
-<!-- DI -->
-<div class="card">
-<div class="icon">📊</div>
-<h3>Data Interpretation</h3>
-<p>Table, Chart और Graph आधारित questions</p>
-<button onclick="openTopic('di')">
-📖 Theory देखें
-</button>
-<button onclick="startTopicPractice('di')">
-📝 Practice शुरू करें
-</button>
-</div>
-
-</div>
-
-
-<!-- =========================
-     THEORY AREA
-========================= -->
-
-<div id="topicTheory"
-class="feature"
-style="display:none;margin-top:25px">
-
-<h2 id="topicTitle"
-style="color:#1565c0;text-align:center">
+<h2 class="section-title">
+📚 Professional Study Center
 </h2>
 
-<div id="topicContent"></div>
-
-<div style="text-align:center;margin-top:20px">
-
-<button onclick="startCurrentTopicPractice()">
-📝 इस Topic की Practice करें
-</button>
-
-<button onclick="closeTopic()">
-❌ Close
-</button>
-
-</div>
-
-</div>
-
-
-<!-- =========================
-     TOPIC PRACTICE
-========================= -->
-
-<div id="topicPractice"
-class="quiz-container"
-style="display:none;margin-top:25px">
-
-<div class="progress"
-id="topicProgress">
-</div>
-
-<div class="question">
-
-<h3 id="topicQuestion"></h3>
-
-<div id="topicOptions"></div>
-
-<div id="topicFeedback"
-class="feedback">
-</div>
-
-<button
-id="topicNext"
-class="next-btn"
-onclick="nextTopicQuestion()">
-Next Question ➡️
-</button>
-
-</div>
-
-</div>
-
-
-<!-- =========================
-     TOPIC RESULT
-========================= -->
-
-<div id="topicResult"
-class="result"
-style="margin-top:25px">
-
-<h2>🎉 Practice Complete!</h2>
-
-<div id="topicScore"
-class="score">
-</div>
-
-<p id="topicMessage"></p>
-
-<button onclick="restartTopicPractice()">
-🔄 फिर से Practice करें
-</button>
-
-<button onclick="closeTopicPractice()">
-📚 Topics पर वापस जाएँ
-</button>
-
-</div>
-
-</section>
-
-
-<script>
-
-/* =================================
-   PROFESSIONAL TOPIC DATABASE
-================================= */
-
-const studyTopics = {
-
-number:{
-title:"🔢 Number System",
-
-content:`
-<h3>📖 Number System क्या है?</h3>
-
-<p>
-संख्याओं के प्रकार और उनके गुणों का अध्ययन
-Number System कहलाता है।
-</p>
-
-<h3>मुख्य प्रकार</h3>
-
-<ul>
-<li>Natural Numbers – 1,2,3,4...</li>
-<li>Whole Numbers – 0,1,2,3...</li>
-<li>Integers – ..., -2,-1,0,1,2...</li>
-<li>Even Numbers – 2,4,6,8...</li>
-<li>Odd Numbers – 1,3,5,7...</li>
-</ul>
-
-<h3>💡 Example</h3>
-
-<p>
-24 एक Even Number है क्योंकि यह 2 से पूरी तरह divide होता है।
-</p>
-
-<h3>🎯 Exam Tip</h3>
-
-<p>
-Divisibility rules को अच्छी तरह याद करें।
-</p>
-`,
-
-percentage:{
-title:"📊 Percentage",
-
-content:`
-<h3>📖 Percentage</h3>
-
-<p>
-Percentage का अर्थ है किसी quantity को 100 के आधार पर व्यक्त करना।
-</p>
-
-<h3>Formula</h3>
-
-<pre>
-Percentage = (Part / Total) × 100
-</pre>
-
-<h3>💡 Example</h3>
-
-<p>
-यदि 500 में से 100 marks मिले:
-</p>
-
-<pre>
-(100 / 500) × 100 = 20%
-</pre>
-
-<h3>🎯 Exam Tip</h3>
-
-<p>
-10%, 20%, 25%, 50%, 75% की calculation जल्दी करना सीखें।
-</p>
-`,
-
-ratio:{
-title:"⚖️ Ratio & Proportion",
-
-content:`
-<h3>📖 Ratio</h3>
-
-<p>
-दो समान प्रकार की quantities की तुलना Ratio कहलाती है।
-</p>
-
-<pre>
-a : b
-</pre>
-
-<h3>💡 Example</h3>
-
-<p>
-यदि लड़के और लड़कियों की संख्या 20 और 30 है:
-</p>
-
-<pre>
-20 : 30 = 2 : 3
-</pre>
-
-<h3>Proportion</h3>
-
-<p>
-जब दो ratios बराबर हों तो उसे proportion कहते हैं।
-</p>
-`,
-
-average:{
-title:"📈 Average",
-
-content:`
-<h3>📖 Average</h3>
-
-<pre>
-Average = Sum of observations / Number of observations
-</pre>
-
-<h3>💡 Example</h3>
-
-<p>
-10, 20 और 30 का average:
-</p>
-
-<pre>
-(10 + 20 + 30) / 3
-= 60 / 3
-= 20
-</pre>
-
-<h3>🎯 Exam Tip</h3>
-
-<p>
-Average के questions में total और number of observations पर ध्यान दें।
-</p>
-`,
-
-profit:{
-title:"💰 Profit & Loss",
-
-content:`
-<h3>📖 Important Terms</h3>
-
-<p><b>CP</b> = Cost Price</p>
-<p><b>SP</b> = Selling Price</p>
-
-<h3>Profit</h3>
-
-<pre>
-Profit = SP - CP
-</pre>
-
-<h3>Loss</h3>
-
-<pre>
-Loss = CP - SP
-</pre>
-
-<h3>Profit %</h3>
-
-<pre>
-Profit% = Profit / CP × 100
-</pre>
-
-<h3>💡 Example</h3>
-
-<p>
-CP = ₹100 और SP = ₹120
-</p>
-
-<pre>
-Profit = 120 - 100
-      = ₹20
-
-Profit% = 20%
-</pre>
-`,
-
-interest:{
-title:"🏦 Simple & Compound Interest",
-
-content:`
-<h3>Simple Interest</h3>
-
-<pre>
-SI = (P × R × T) / 100
-</pre>
-
-<p>
-P = Principal<br>
-R = Rate<br>
-T = Time
-</p>
-
-<h3>💡 Example</h3>
-
-<p>
-P = ₹1000, R = 10%, T = 2 years
-</p>
-
-<pre>
-SI = 1000 × 10 × 2 / 100
-   = ₹200
-</pre>
-`,
-
-work:{
-title:"👷 Time & Work",
-
-content:`
-<h3>📖 Basic Concept</h3>
-
-<p>
-यदि कोई व्यक्ति किसी काम को कुछ दिनों में करता है,
-तो उसकी one-day work efficiency निकाली जा सकती है।
-</p>
-
-<pre>
-1 Day Work = 1 / Total Days
-</pre>
-
-<h3>💡 Example</h3>
-
-<p>
-A किसी काम को 10 दिन में करता है।
-</p>
-
-<pre>
-A का 1 दिन का काम = 1/10
-</pre>
-
-<h3>🎯 Exam Tip</h3>
-
-<p>
-LCM method से Time & Work के questions जल्दी solve किए जा सकते हैं।
-</p>
-`,
-
-speed:{
-title:"🚗 Time, Speed & Distance",
-
-content:`
-<h3>📖 Basic Formula</h3>
-
-<pre>
-Speed = Distance / Time
-
-Distance = Speed × Time
-
-Time = Distance / Speed
-</pre>
-
-<h3>💡 Example</h3>
-
-<p>
-यदि दूरी 100 km और समय 2 hours है:
-</p>
-
-<pre>
-Speed = 100 / 2
-      = 50 km/h
-</pre>
-`,
-
-algebra:{
-title:"➗ Algebra",
-
-content:`
-<h3>📖 Algebra</h3>
-
-<p>
-Algebra में numbers और variables जैसे x, y का उपयोग किया जाता है।
-</p>
-
-<h3>Important Identity</h3>
-
-<pre>
-(a+b)² = a² + 2ab + b²
-
-(a-b)² = a² - 2ab + b²
-
-a²-b² = (a+b)(a-b)
-</pre>
-
-<h3>💡 Example</h3>
-
-<pre>
-(x+2)²
-= x² + 4x + 4
-</pre>
-`,
-
-geometry:{
-title:"📐 Geometry",
-
-content:`
-<h3>📖 Geometry</h3>
-
-<p>
-Geometry में shapes, lines और angles का अध्ययन किया जाता है।
-</p>
-
-<h3>Triangle</h3>
-
-<p>
-Triangle की 3 sides होती हैं।
-</p>
-
-<pre>
-Triangle angles का sum = 180°
-</pre>
-
-<h3>Quadrilateral</h3>
-
-<pre>
-Angles का sum = 360°
-</pre>
-`,
-
-mensuration:{
-title:"📏 Mensuration",
-
-content:`
-<h3>📖 Rectangle</h3>
-
-<pre>
-Area = Length × Breadth
-
-Perimeter = 2(L+B)
-</pre>
-
-<h3>📖 Square</h3>
-
-<pre>
-Area = Side²
-
-Perimeter = 4 × Side
-</pre>
-
-<h3>📖 Circle</h3>
-
-<pre>
-Area = πr²
-
-Circumference = 2πr
-</pre>
-`,
-
-trigonometry:{
-title:"📐 Trigonometry",
-
-content:`
-<h3>📖 Basic Ratios</h3>
-
-<pre>
-sin θ = Perpendicular / Hypotenuse
-
-cos θ = Base / Hypotenuse
-
-tan θ = Perpendicular / Base
-</pre>
-
-<h3>Important Relation</h3>
-
-<pre>
-tan θ = sin θ / cos θ
-</pre>
-
-<h3>🎯 याद रखें</h3>
-
-<p>
-SOH – CAH – TOA
-</p>
-`,
-
-di:{
-title:"📊 Data Interpretation",
-
-content:`
-<h3>📖 Data Interpretation</h3>
-
-<p>
-Table, Bar Graph, Pie Chart और Line Graph से information निकालना
-Data Interpretation कहलाता है।
-</p>
-
-<h3>🎯 कैसे करें?</h3>
-
-<ol>
-<li>Question को ध्यान से पढ़ें।</li>
-<li>Table/Graph से सही data लें।</li>
-<li>Calculation करें।</li>
-<li>Options से answer verify करें।</li>
-</ol>
-
-<h3>💡 Tip</h3>
-
-<p>
-Calculation speed DI में बहुत महत्वपूर्ण है।
-</p>
-`
-}
-
-};
-
-
-/* =================================
-   TOPIC PRACTICE QUESTIONS
-================================= */
-
-const topicQuestions = {
-
-number:[
-["सबसे छोटी Natural Number कौन-सी है?",["0","1","2","-1"],1],
-["24 किस प्रकार की संख्या है?",["Odd","Even","Prime only","None"],1],
-["0 किसमें आता है?",["Whole Number","Natural only","Odd only","None"],0],
-["15 का अगला Odd Number?",["16","17","18","19"],1],
-["12 किससे divisible है?",["5","3","7","11"],1]
-],
-
-percentage:[
-["200 का 10% कितना है?",["10","20","30","40"],1],
-["500 का 20% कितना है?",["50","100","150","200"],1],
-["100 का 25%?",["20","25","30","50"],1],
-["400 का 50%?",["100","150","200","250"],2],
-["80 का 75%?",["40","50","60","70"],2]
-],
-
-ratio:[
-["20:30 का simplest ratio?",["1:2","2:3","3:4","4:5"],1],
-["2:3 में total 50 हो तो पहला भाग?",["15","20","25","30"],1],
-["3:2 में total 50 हो तो पहला भाग?",["20","25","30","35"],2],
-["4:5 में कुल parts?",["4","5","8","9"],3],
-["10:20 का simplest ratio?",["1:2","2:1","1:3","3:1"],0]
-],
-
-average:[
-["10 और 20 का average?",["10","15","20","25"],1],
-["5,10,15 का average?",["5","10","15","20"],1],
-["20,30,40 का average?",["20","25","30","35"],2],
-["4 और 8 का average?",["4","5","6","8"],2],
-["10,20,30,40 का average?",["20","25","30","35"],1]
-],
-
-profit:[
-["CP ₹100 और SP ₹120 हो तो profit?",["₹10","₹20","₹30","₹40"],1],
-["CP ₹500 और SP ₹450 हो तो?",["Profit ₹50","Loss ₹50","Profit ₹100","No loss"],1],
-["Profit = ?",["CP-SP","SP-CP","CP+SP","SP/CP"],1],
-["Loss = ?",["SP-CP","CP-SP","CP+SP","None"],1],
-["CP ₹100, SP ₹110 तो profit %?",["5%","10%","15%","20%"],1]
-],
-
-interest:[
-["SI का formula?",["P+R+T","P×R×T/100","P/R/T","P×T"],1],
-["₹1000 पर 10% और 1 year SI?",["₹10","₹50","₹100","₹200"],2],
-["Principal का अर्थ?",["मूलधन","ब्याज","दर","समय"],0],
-["Rate को किसमें लिखा जाता है?",["Meter","Percent","Kg","Liter"],1],
-["₹2000 का 10% SI 1 year?",["₹100","₹200","₹300","₹400"],1]
-],
-
-work:[
-["A 10 दिन में काम करता है। 1 दिन का work?",["1/5","1/10","1/20","10"],1],
-["काम और समय में relation?",["More efficiency → less time","More efficiency → more time","No relation","None"],0],
-["5 दिन में काम करने वाले का 1 day work?",["1/5","1/10","5","10"],0],
-["Time & Work में commonly क्या उपयोगी है?",["LCM","Square root only","Graph only","None"],0],
-["यदि काम 20 दिन में होता है तो 1 day work?",["1/10","1/20","20","10"],1]
-],
-
-speed:[
-["Speed का formula?",["Distance×Time","Distance/Time","Time/Distance","None"],1],
-["100 km को 2 घंटे में तय किया। Speed?",["25","40","50","100"],2],
-["Distance = ?",["Speed×Time","Speed/Time","Time/Speed","None"],0],
-["60 km/h की speed से 2 घंटे में distance?",["60","100","120","180"],2],
-["Time = ?",["Distance/Speed","Speed/Distance","Distance×Speed","None"],0]
-],
-
-algebra:[
-["(a+b)² का सही formula?",["a²+b²","a²+2ab+b²","a²-2ab+b²","a²-b²"],1],
-["a²-b² = ?",["(a+b)²","(a-b)²","(a+b)(a-b)","a+b"],2],
-["x एक क्या है?",["Variable","Constant only","Unit","Angle"],0],
-["(a-b)² = ?",["a²-2ab+b²","a²+2ab+b²","a²-b²","None"],0],
-["(x+2)² में constant term?",["2","4","x","x²"],1]
-],
-
-geometry:[
-["Triangle में कितनी sides?",["2","3","4","5"],1],
-["Triangle angles का sum?",["90°","180°","270°","360°"],1],
-["Square की sides?",["3","4","5","6"],1],
-["Quadrilateral angles का sum?",["180°","270°","360°","90°"],2],
-["Straight angle?",["90°","180°","270°","360°"],1]
-],
-
-mensuration:[
-["Rectangle का area?",["L+B","2(L+B)","L×B","L-B"],2],
-["Square का area?",["4a","a²","2a","a+a"],1],
-["Square perimeter?",["a²","2a","4a","a/4"],2],
-["Circle का area?",["2πr","πr²","πd","r²/2"],1],
-["Rectangle perimeter?",["L×B","2(L+B)","L+B","L-B"],1]
-],
-
-trigonometry:[
-["sin θ = ?",["P/H","B/H","P/B","H/P"],0],
-["cos θ = ?",["P/H","B/H","P/B","H/B"],1],
-["tan θ = ?",["P/H","B/H","P/B","H/P"],2],
-["tan θ = ?",["sin/cos","cos/sin","sin×cos","None"],0],
-["SOH में H का अर्थ?",["Height","Hypotenuse","Horizontal","None"],1]
-],
-
-di:[
-["DI का full form?",["Data Interpretation","Digital India","Data Information","Direct Information"],0],
-["DI में data कहाँ हो सकता है?",["Table","Graph","Chart","All"],3],
-["Graph से क्या निकाला जाता है?",["Data","Only color","Only shape","None"],0],
-["DI में calculation क्यों जरूरी है?",["Answer निकालने के लिए","Design के लिए","Color के लिए","None"],0],
-["Pie chart किसका representation है?",["Data","Only text","Code","None"],0]
-]
-
-};
-
-
-/* =================================
-   TOPIC VARIABLES
-================================= */
-
-let selectedTopic="";
-let selectedTopicQuestions=[];
-let topicIndex=0;
-let topicScore=0;
-let topicAnswered=false;
-
-
-/* =================================
-   OPEN THEORY
-================================= */
-
-function openTopic(topic){
-
-selectedTopic=topic;
-
-let data=studyTopics[topic];
-
-if(!data){
-alert("Topic उपलब्ध नहीं है।");
-return;
-}
-
-document.getElementById("topicTitle").innerHTML=data.title;
-
-document.getElementById("topicContent").innerHTML=
-data.content;
-
-document.getElementById("topicTheory").style.display="block";
-
-document.getElementById("topicPractice").style.display="none";
-
-document.getElementById("topicResult").style.display="none";
-
-document.getElementById("topicTheory").scrollIntoView({
-behavior:"smooth",
-block:"start"
-});
-
-}
-
-
-/* =================================
-   START PRACTICE
-================================= */
-
-function startTopicPractice(topic){
-
-selectedTopic=topic;
-
-if(!topicQuestions[topic]){
-alert("इस topic के questions अभी उपलब्ध नहीं हैं।");
-return;
-}
-
-selectedTopicQuestions=topicQuestions[topic];
-
-topicIndex=0;
-topicScore=0;
-
-document.getElementById("topicTheory").style.display="none";
-document.getElementById("topicPractice").style.display="block";
-document.getElementById("topicResult").style.display="none";
-
-document.getElementById("topicPractice").scrollIntoView({
-behavior:"smooth",
-block:"start"
-});
-
-showTopicQuestion();
-
-}
-
-
-/* =================================
-   PRACTICE FROM THEORY
-================================= */
-
-function startCurrentTopicPractice(){
-
-startTopicPractice(selectedTopic);
-
-}
-
-
-/* =================================
-   SHOW QUESTION
-================================= */
-
-function showTopicQuestion(){
-
-topicAnswered=false;
-
-let q=selectedTopicQuestions[topicIndex];
-
-document.getElementById("topicProgress").innerText=
-"Question "+
-(topicIndex+1)+
-" / "+
-selectedTopicQuestions.length;
-
-document.getElementById("topicQuestion").innerText=
-q[0];
-
-let options=
-document.getElementById("topicOptions");
-
-options.innerHTML="";
-
-document.getElementById("topicFeedback").innerText="";
-
-document.getElementById("topicNext").style.display="none";
-
-q[1].forEach(function(option,index){
-
-let btn=document.createElement("button");
-
-btn.className="option";
-
-btn.innerText=
-String.fromCharCode(65+index)+
-". "+
-option;
-
-btn.onclick=function(){
-
-checkTopicAnswer(index,btn);
-
-};
-
-options.appendChild(btn);
-
-});
-
-}
-
-
-/* =================================
-   CHECK ANSWER
-================================= */
-
-function checkTopicAnswer(index,button){
-
-if(topicAnswered)return;
-
-topicAnswered=true;
-
-let q=selectedTopicQuestions[topicIndex];
-
-let buttons=
-document.querySelectorAll("#topicOptions .option");
-
-buttons.forEach(function(btn,i){
-
-btn.disabled=true;
-
-if(i===q[2]){
-btn.classList.add("correct");
-}
-
-});
-
-if(index===q[2]){
-
-topicScore++;
-
-document.getElementById("topicFeedback").innerText=
-"✅ बिल्कुल सही!";
-
-}else{
-
-button.classList.add("wrong");
-
-document.getElementById("topicFeedback").innerText=
-"❌ गलत। सही उत्तर: "+
-q[1][q[2]];
-
-}
-
-document.getElementById("topicNext").style.display="block";
-
-}
-
-
-/* =================================
-   NEXT QUESTION
-================================= */
-
-function nextTopicQuestion(){
-
-topicIndex++;
-
-if(topicIndex>=selectedTopicQuestions.length){
-
-finishTopicPractice();
-
-}else{
-
-showTopicQuestion();
-
-}
-
-}
-
-
-/* =================================
-   RESULT
-================================= */
-
-function finishTopicPractice(){
-
-document.getElementById("topicPractice").style.display="none";
-
-document.getElementById("topicResult").style.display="block";
-
-let total=selectedTopicQuestions.length;
-
-let percentage=
-(topicScore/total)*100;
-
-document.getElementById("topicScore").innerText=
-topicScore+" / "+total;
-
-let message="";
-
-if(percentage>=80){
-
-message=
-"🏆 Excellent! आपकी तैयारी बहुत अच्छी है।";
-
-}else if(percentage>=60){
-
-message=
-"👍 अच्छा प्रदर्शन! थोड़ी और practice करें।";
-
-}else{
-
-message=
-"📚 Theory दोबारा पढ़ें और फिर Practice करें।";
-
-}
-
-document.getElementById("topicMessage").innerText=
-message;
-
-localStorage.setItem(
-"study_"+selectedTopic,
-topicScore+"/"+total
-);
-
-}
-
-
-/* =================================
-   RESTART
-================================= */
-
-function restartTopicPractice(){
-
-startTopicPractice(selectedTopic);
-
-}
-
-
-/* =================================
-   CLOSE THEORY
-================================= */
-
-function closeTopic(){
-
-document.getElementById("topicTheory").style.display="none";
-
-document.getElementById("study").scrollIntoView({
-behavior:"smooth"
-});
-
-}
-
-
-/* =================================
-   CLOSE PRACTICE
-================================= */
-
-function closeTopicPractice(){
-
-document.getElementById("topicResult").style.display="none";
-
-document.getElementById("topicPractice").style.display="none";
-
-document.getElementById("study").scrollIntoView({
-behavior:"smooth"
-});
-
-}
-
-</script>
-<section id="study" class="section">
-
-<h2 class="section-title">📚 Professional Study Center</h2>
-
 <p class="section-intro">
-Topic चुनें और सीधे Practice शुरू करें।
+पहले Topic पढ़ें, फिर Practice करें और अंत में Mock Test दें।
 </p>
 
 
 <div class="grid">
 
 
-<div class="card topic-card">
+<div class="card subject-card">
 
 <div class="icon">➗</div>
 
-<span class="badge">Maths</span>
-
-<h3>Percentage & Arithmetic</h3>
+<h3>Mathematics</h3>
 
 <p>
-Basic calculation, percentage, ratio,
-average, profit-loss आदि।
+Percentage, Ratio, Average, Profit-Loss,
+Time & Work, Geometry आदि।
 </p>
 
-<button class="practice"
-onclick="startTest('math')">
-▶ Practice शुरू करें
+<button onclick="openTopics('math')">
+Topics देखें
+</button>
+
+<button onclick="startTest('math')">
+Practice शुरू करें
 </button>
 
 </div>
 
 
-<div class="card topic-card">
+<div class="card subject-card">
 
 <div class="icon">🧠</div>
 
-<span class="badge">Reasoning</span>
-
-<h3>General Reasoning</h3>
+<h3>Reasoning</h3>
 
 <p>
-Series, analogy, classification,
-direction और basic logic।
+Series, Analogy, Coding-Decoding,
+Direction, Blood Relation आदि।
 </p>
 
-<button class="practice"
-onclick="startTest('reasoning')">
-▶ Practice शुरू करें
+<button onclick="openTopics('reasoning')">
+Topics देखें
+</button>
+
+<button onclick="startTest('reasoning')">
+Practice शुरू करें
 </button>
 
 </div>
 
 
-<div class="card topic-card">
+<div class="card subject-card">
 
 <div class="icon">🔤</div>
 
-<span class="badge">English</span>
-
-<h3>English Grammar & Vocabulary</h3>
+<h3>English</h3>
 
 <p>
-Synonym, antonym, grammar,
-spelling और vocabulary।
+Grammar, Vocabulary, Synonym,
+Antonym, Articles आदि।
 </p>
 
-<button class="practice"
-onclick="startTest('english')">
-▶ Practice शुरू करें
+<button onclick="openTopics('english')">
+Topics देखें
+</button>
+
+<button onclick="startTest('english')">
+Practice शुरू करें
 </button>
 
 </div>
 
 
-<div class="card topic-card">
+<div class="card subject-card">
 
 <div class="icon">🇮🇳</div>
 
-<span class="badge">GK / GS</span>
-
-<h3>General Knowledge</h3>
+<h3>GK / GS</h3>
 
 <p>
-History, Polity, Geography,
+History, Geography, Polity,
 Science और Bihar GK।
 </p>
 
-<button class="practice"
-onclick="startTest('gk')">
-▶ Practice शुरू करें
+<button onclick="openTopics('gk')">
+Topics देखें
+</button>
+
+<button onclick="startTest('gk')">
+Practice शुरू करें
 </button>
 
 </div>
 
 
-<div class="card topic-card">
+<div class="card subject-card">
 
 <div class="icon">📰</div>
 
-<span class="badge">Current Affairs</span>
-
-<h3>Current Affairs & Safety</h3>
+<h3>Current Affairs</h3>
 
 <p>
-Official information verify करने
-और current affairs practice।
+Official source verification,
+government schemes और exam awareness।
 </p>
 
-<button class="practice"
-onclick="startTest('current')">
-▶ Practice शुरू करें
+<button onclick="openTopics('current')">
+Topics देखें
+</button>
+
+<button onclick="startTest('current')">
+Practice शुरू करें
 </button>
 
 </div>
+
+
+</div>
+
+
+<!-- TOPICS -->
+
+<div id="topicsBox" class="feature" style="display:none">
+
+<h3 id="topicTitle"></h3>
+
+<div id="topicContent" class="topic-list"></div>
+
+<br>
+
+<button onclick="closeTopics()">
+❌ Close
+</button>
 
 </div>
 
@@ -1778,20 +749,22 @@ onclick="startTest('current')">
 
 
 
-<!-- QUIZ -->
+<!-- ================= QUIZ ================= -->
 
 <section id="quiz" class="section">
 
-<h2 class="section-title">📝 Online Practice Test</h2>
+<h2 class="section-title">
+📝 Practice Test
+</h2>
 
 <div class="quiz-container">
 
-<div id="quizStart"
-style="text-align:center">
+
+<div id="quizStart" style="text-align:center">
 
 <p>
-ऊपर से कोई Topic चुनकर
-<strong>Practice शुरू करें</strong>।
+Study Center से कोई subject चुनकर
+Practice शुरू करें।
 </p>
 
 </div>
@@ -1801,6 +774,11 @@ style="text-align:center">
 
 <div id="progress" class="progress"></div>
 
+<div class="progress-bar">
+<div id="progressFill" class="progress-fill"></div>
+</div>
+
+
 <div class="question">
 
 <h3 id="question"></h3>
@@ -1809,7 +787,8 @@ style="text-align:center">
 
 <div id="feedback" class="feedback"></div>
 
-<button id="nextBtn"
+<button
+id="nextBtn"
 class="next-btn"
 onclick="nextQuestion()">
 
@@ -1841,17 +820,39 @@ Next Question ➡️
 </div>
 
 
+</div>
+
+</section>
 
 
-<!-- JOBS -->
 
-<section id="jobs" class="section">
+<!-- ==================================================
+                    LAND RECORD
+=================================================== -->
 
-<h2 class="section-title">💼 Jobs & Career</h2>
+<section id="land" class="section">
+
+<h2 class="section-title">
+🏡 Bihar Land Record Center
+</h2>
 
 <p class="section-intro">
-Official recruitment websites और job portals।
+खतियान, जमाबंदी, दाखिल-खारिज और परिमार्जन
+के लिए official portals का उपयोग करें।
 </p>
+
+
+<div class="land-warning">
+
+<h3>⚠️ जरूरी सूचना</h3>
+
+<p>
+Website अपने आप सरकारी database में land record search
+नहीं कर सकती। इसलिए यहाँ fake "Record Found"
+result दिखाने के बजाय सीधे official Bihar portals दिए गए हैं।
+</p>
+
+</div>
 
 
 <div class="grid">
@@ -1859,132 +860,22 @@ Official recruitment websites और job portals।
 
 <div class="card">
 
-<div class="icon">🏛️</div>
+<div class="icon">📜</div>
 
-<h3>Government Jobs</h3>
-
-<p>SSC, Railway, Banking आदि।</p>
-
-<a class="service-link"
-href="https://ssc.gov.in/"
-target="_blank">
-SSC Official
-</a>
-
-<a class="service-link"
-href="https://www.rrbapply.gov.in/"
-target="_blank">
-Railway Recruitment
-</a>
-
-<a class="service-link"
-href="https://www.ibps.in/"
-target="_blank">
-IBPS
-</a>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🏢</div>
-
-<h3>Private Jobs</h3>
-
-<p>Office, Back Office, BPO और Customer Support.</p>
-
-<a class="service-link"
-href="https://www.naukri.com/"
-target="_blank">
-Naukri
-</a>
-
-<a class="service-link"
-href="https://www.linkedin.com/jobs/"
-target="_blank">
-LinkedIn Jobs
-</a>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🏠</div>
-
-<h3>Work From Home</h3>
-
-<p>Remote और Customer Support jobs.</p>
-
-<a class="service-link"
-href="https://www.naukri.com/work-from-home-jobs"
-target="_blank">
-WFH Jobs
-</a>
-
-</div>
-
-</div>
-
-
-<div class="warning">
-
-<strong>⚠️ Job Fraud से सावधान</strong>
+<h3>Online Jamabandi</h3>
 
 <p>
-नौकरी के नाम पर OTP, UPI PIN, ATM PIN
-या bank password कभी share न करें।
-Unknown व्यक्ति को advance payment न दें।
+Bihar Bhumi के official portal पर
+जमाबंदी/भूमि रिकॉर्ड देखें।
 </p>
 
-</div>
-
-</section>
-
-
-
-<!-- LAND RECORD -->
-
-<section id="land" class="section">
-
-<h2 class="section-title">🏡 Bihar Land Record Center</h2>
-
-<p class="section-intro">
-Bihar के official land-record portals तक आसान पहुँच।
-</p>
-
-
-<div class="success">
-
-<strong>✅ Important:</strong>
-
-<p>
-Land Record का वास्तविक data सरकारी server पर रहता है।
-इस website में नकली search result दिखाने के बजाय
-official Bihar portal पर भेजा जा रहा है।
-</p>
-
-</div>
-
-
-<div class="grid" style="margin-top:20px">
-
-
-<div class="card">
-
-<div class="icon">📖</div>
-
-<h3>Jamabandi / Register-II</h3>
-
-<p>
-जमाबंदी पंजी और भूमि विवरण देखने के लिए।
-</p>
-
-<a class="service-link"
+<a
+class="service-link"
 href="https://biharbhumi.bihar.gov.in/"
 target="_blank">
-🔎 Official BiharBhumi
+
+Bihar Bhumi खोलें ↗
+
 </a>
 
 </div>
@@ -1992,18 +883,22 @@ target="_blank">
 
 <div class="card">
 
-<div class="icon">🔄</div>
+<div class="icon">🗺️</div>
 
-<h3>Dakhil-Kharij</h3>
+<h3>Bhulekh / Land Record</h3>
 
 <p>
-Online Mutation application और status।
+खाता, खेसरा, जमाबंदी आदि की जानकारी
+official portal से देखें।
 </p>
 
-<a class="service-link"
+<a
+class="service-link"
 href="https://biharbhumi.bihar.gov.in/"
 target="_blank">
-Open Official Portal
+
+Official Land Record ↗
+
 </a>
 
 </div>
@@ -2016,13 +911,17 @@ Open Official Portal
 <h3>Parimarjan Plus</h3>
 
 <p>
-गलत digitized Jamabandi entries में सुधार के लिए।
+Digital land record में correction/
+rectification के लिए official portal।
 </p>
 
-<a class="service-link"
-href="https://biharbhumi.bihar.gov.in/"
+<a
+class="service-link"
+href="https://parimarjan.bihar.gov.in/"
 target="_blank">
-Open Parimarjan Plus
+
+Parimarjan Plus ↗
+
 </a>
 
 </div>
@@ -2030,236 +929,56 @@ Open Parimarjan Plus
 
 <div class="card">
 
-<div class="icon">🗺️</div>
+<div class="icon">🏛️</div>
 
-<h3>Bhu-Naksha</h3>
+<h3>Bihar Revenue Department</h3>
 
 <p>
-Revenue maps देखने के लिए official service।
+राजस्व एवं भूमि सुधार विभाग की official website।
 </p>
 
-<a class="service-link"
-href="https://biharbhumi.bihar.gov.in/"
+<a
+class="service-link"
+href="https://land.bihar.gov.in/"
 target="_blank">
-Open Bhu-Naksha
+
+Revenue Department ↗
+
 </a>
 
 </div>
 
 
-<div class="card">
+</div>
 
-<div class="icon">📜</div>
 
-<h3>Bhu-Abhilekh</h3>
+<div class="official">
+
+<h3>✅ Land Record में सामान्यतः क्या जानकारी मिल सकती है?</h3>
 
 <p>
-Scanned land records और digital copies।
-</p>
-
-<a class="service-link"
-href="https://bhuabhilekh.bihar.gov.in/"
-target="_blank">
-Open Bhu-Abhilekh
-</a>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">💰</div>
-
-<h3>Bhू-Lagaan</h3>
-
-<p>
-Online land revenue / lagaan services।
-</p>
-
-<a class="service-link"
-href="https://biharbhumi.bihar.gov.in/"
-target="_blank">
-Open BiharBhumi
-</a>
-
-</div>
-
-</div>
-
-
-<!-- LAND CONVERTER -->
-
-<div class="section"
-style="margin-top:25px;padding:20px">
-
-<h2 class="section-title">
-📐 Decimal ↔ Katha Converter
-</h2>
-
-<p class="section-intro">
-Land area calculation के लिए उपयोग करें।
-</p>
-
-
-<div class="grid">
-
-
-<div class="tool">
-
-<h3>Decimal → Katha</h3>
-
-<input
-id="decimalInput"
-type="number"
-step="0.001"
-placeholder="Decimal डालें">
-
-<button onclick="decimalToKatha()">
-Convert
-</button>
-
-<p id="decimalResult"
-class="output"></p>
-
-</div>
-
-
-<div class="tool">
-
-<h3>Katha → Decimal</h3>
-
-<input
-id="kathaInput"
-type="number"
-step="0.001"
-placeholder="Katha डालें">
-
-<button onclick="kathaToDecimal()">
-Convert
-</button>
-
-<p id="kathaResult"
-class="output"></p>
-
-</div>
-
-
-<div class="tool">
-
-<h3>Decimal → Sq.ft</h3>
-
-<input
-id="decimalSqftInput"
-type="number"
-step="0.001"
-placeholder="Decimal डालें">
-
-<button onclick="decimalToSqft()">
-Convert
-</button>
-
-<p id="decimalSqftResult"
-class="output"></p>
-
-</div>
-
-
-<div class="tool">
-
-<h3>Sq.ft → Decimal</h3>
-
-<input
-id="sqftDecimalInput"
-type="number"
-step="0.01"
-placeholder="Square feet डालें">
-
-<button onclick="sqftToDecimal()">
-Convert
-</button>
-
-<p id="sqftDecimalResult"
-class="output"></p>
-
-</div>
-
-</div>
-
-
-<div class="warning">
-
-<strong>⚠️ ध्यान दें:</strong>
-
-<p>
-Katha का स्थानीय माप क्षेत्र के अनुसार बदल सकता है।
-इस converter में Bihar में commonly used
-<strong>1 Katha ≈ 3.125 Decimal</strong> का default रखा गया है।
-रजिस्ट्री/सरकारी रिकॉर्ड के लिए अपने स्थानीय अंचल के
-माप को प्राथमिकता दें।
+• जिला<br>
+• अंचल<br>
+• मौजा<br>
+• खाता संख्या<br>
+• खेसरा संख्या<br>
+• जमाबंदी<br>
+• रैयत/खातेदार की जानकारी<br>
+• भूमि का क्षेत्रफल
 </p>
 
 </div>
 
 
-<table class="unit-table">
+<div class="feature">
 
-<tr>
-<th>Unit</th>
-<th>Approximate Conversion</th>
-</tr>
-
-<tr>
-<td>1 Decimal</td>
-<td>435.6 Sq.ft</td>
-</tr>
-
-<tr>
-<td>1 Katha</td>
-<td>≈ 3.125 Decimal</td>
-</tr>
-
-<tr>
-<td>1 Katha</td>
-<td>≈ 1361.25 Sq.ft</td>
-</tr>
-
-</table>
-
-</div>
-
-
-<div class="feature" style="margin-top:20px">
-
-<h3>📚 Land Record में क्या-क्या देखें?</h3>
-
-<br>
+<h3>🔐 सावधानी</h3>
 
 <p>
-<b>1. खाता संख्या</b> — भूमि खाते की पहचान।
-</p>
-
-<p>
-<b>2. खेसरा संख्या</b> — जमीन के plot की पहचान।
-</p>
-
-<p>
-<b>3. जमाबंदी</b> — भूमि से संबंधित registered revenue record।
-</p>
-
-<p>
-<b>4. रकबा</b> — भूमि का क्षेत्रफल।
-</p>
-
-<p>
-<b>5. लगान</b> — भूमि से संबंधित राजस्व जानकारी।
-</p>
-
-<p>
-<b>6. दाखिल-खारिज</b> — ownership/record change की प्रक्रिया।
-</p>
-
-<p>
-<b>7. Parimarjan Plus</b> — digitized Jamabandi में गलत entries सुधारने की service।
+किसी unknown व्यक्ति को OTP, Aadhaar OTP,
+UPI PIN, ATM PIN या banking password न दें।
+Land record के लिए केवल official government portal
+का उपयोग करें।
 </p>
 
 </div>
@@ -2268,11 +987,408 @@ Katha का स्थानीय माप क्षेत्र के अन
 
 
 
-<!-- TOOLS -->
+<!-- ==================================================
+                  LAND CALCULATOR
+=================================================== -->
+
+<section id="landCalculator" class="section">
+
+<h2 class="section-title">
+📐 Advanced Land Area Calculator
+</h2>
+
+<p class="section-intro">
+Decimal, Katha, Sq.ft और Sq.m में area calculate करें।
+</p>
+
+
+<div class="grid">
+
+
+<div class="tool">
+
+<h3>📏 Length × Width</h3>
+
+<input
+id="landLength"
+type="number"
+step="any"
+placeholder="Length (feet)">
+
+<input
+id="landWidth"
+type="number"
+step="any"
+placeholder="Width (feet)">
+
+<button onclick="calculateLand()">
+Calculate
+</button>
+
+<div id="landCalcResult" class="output"></div>
+
+</div>
+
+
+<div class="tool">
+
+<h3>🔢 Square Feet → Decimal / Katha</h3>
+
+<input
+id="sqftInput"
+type="number"
+step="any"
+placeholder="Square Feet">
+
+<label>
+Katha का local size (sq.ft)
+</label>
+
+<input
+id="kathaSize"
+type="number"
+step="any"
+value="1361.25">
+
+<button onclick="sqftConvert()">
+Convert
+</button>
+
+<div id="sqftResult" class="output"></div>
+
+</div>
+
+
+<div class="tool">
+
+<h3>🔢 Decimal → Katha</h3>
+
+<input
+id="decimalInput"
+type="number"
+step="any"
+placeholder="Decimal">
+
+<input
+id="decimalKathaSize"
+type="number"
+step="any"
+value="3.125"
+placeholder="Decimal per Katha">
+
+<button onclick="decimalConvert()">
+Convert
+</button>
+
+<div id="decimalResult" class="output"></div>
+
+</div>
+
+
+<div class="tool">
+
+<h3>📐 Square Meter → Decimal</h3>
+
+<input
+id="sqmInput"
+type="number"
+step="any"
+placeholder="Square Meter">
+
+<button onclick="sqmConvert()">
+Convert
+</button>
+
+<div id="sqmResult" class="output"></div>
+
+</div>
+
+
+</div>
+
+
+<div class="land-warning">
+
+<h3>⚠️ Katha conversion में महत्वपूर्ण बात</h3>
+
+<p>
+Katha का वास्तविक size बिहार के अलग-अलग क्षेत्रों में
+अलग हो सकता है। इसलिए calculator में Katha size
+editable रखा गया है। अपने स्थानीय registry/revenue
+record के अनुसार सही Katha size डालें।
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- ==================================================
+                       MOVIES
+=================================================== -->
+
+<section id="movies" class="section">
+
+<h2 class="section-title">
+🎬 Legal Movies Center
+</h2>
+
+<p class="section-intro">
+नई फिल्मों को legally देखने के लिए official platforms।
+</p>
+
+
+<div class="movie-note">
+
+<h3>⚠️ Copyright Safety</h3>
+
+<p>
+नई released movies को बिना अधिकार free-download करवाने
+वाला section नहीं बनाया गया है। यहाँ केवल legal/official
+watching options दिए जा सकते हैं।
+</p>
+
+</div>
+
+
+<div class="grid">
+
+
+<div class="card movie-card">
+
+<div class="icon">🎬</div>
+
+<h3>Netflix</h3>
+
+<p>
+Movies और web series के लिए official streaming platform।
+</p>
+
+<a
+class="service-link"
+href="https://www.netflix.com/in/"
+target="_blank">
+
+Netflix खोलें ↗
+
+</a>
+
+</div>
+
+
+<div class="card movie-card">
+
+<div class="icon">▶️</div>
+
+<h3>Prime Video</h3>
+
+<p>
+Movies और entertainment content।
+</p>
+
+<a
+class="service-link"
+href="https://www.primevideo.com/"
+target="_blank">
+
+Prime Video ↗
+
+</a>
+
+</div>
+
+
+<div class="card movie-card">
+
+<div class="icon">🟣</div>
+
+<h3>JioHotstar</h3>
+
+<p>
+Movies, shows और entertainment content।
+</p>
+
+<a
+class="service-link"
+href="https://www.hotstar.com/in/"
+target="_blank">
+
+JioHotstar ↗
+
+</a>
+
+</div>
+
+
+<div class="card movie-card">
+
+<div class="icon">🍿</div>
+
+<h3>YouTube Movies</h3>
+
+<p>
+Officially available movies को rent/buy/watch करें।
+</p>
+
+<a
+class="service-link"
+href="https://www.youtube.com/movies"
+target="_blank">
+
+YouTube Movies ↗
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="official">
+
+<h3>💡 New Release Movie कैसे ढूँढें?</h3>
+
+<p>
+1. Movie का नाम search करें।<br>
+2. Official OTT platform देखें।<br>
+3. Rent/Buy या subscription option देखें।<br>
+4. Unknown APK या torrent website से बचें।
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- ==================================================
+                         JOBS
+=================================================== -->
+
+<section id="jobs" class="section">
+
+<h2 class="section-title">
+💼 Jobs & Career
+</h2>
+
+<p class="section-intro">
+Government और private jobs के useful official/known portals।
+</p>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<div class="icon">🏛️</div>
+
+<h3>Government Jobs</h3>
+
+<a
+class="service-link"
+href="https://ssc.gov.in/"
+target="_blank">
+
+SSC Official
+
+</a>
+
+<a
+class="service-link"
+href="https://www.rrbapply.gov.in/"
+target="_blank">
+
+Railway Recruitment
+
+</a>
+
+<a
+class="service-link"
+href="https://www.ibps.in/"
+target="_blank">
+
+IBPS
+
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🏢</div>
+
+<h3>Private Jobs</h3>
+
+<a
+class="service-link"
+href="https://www.naukri.com/"
+target="_blank">
+
+Naukri
+
+</a>
+
+<a
+class="service-link"
+href="https://www.linkedin.com/jobs/"
+target="_blank">
+
+LinkedIn Jobs
+
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🏠</div>
+
+<h3>Work From Home</h3>
+
+<a
+class="service-link"
+href="https://www.naukri.com/work-from-home-jobs"
+target="_blank">
+
+WFH Jobs
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="feature">
+
+<h3>⚠️ Job Fraud से सावधान</h3>
+
+<p>
+नौकरी के नाम पर OTP, UPI PIN, ATM PIN या bank password
+किसी को न दें। Unknown व्यक्ति को advance payment
+करने से पहले company और vacancy verify करें।
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- ==================================================
+                         TOOLS
+=================================================== -->
 
 <section id="tools" class="section">
 
-<h2 class="section-title">🧮 Useful Tools</h2>
+<h2 class="section-title">
+🧮 Useful Tools
+</h2>
 
 
 <div class="grid">
@@ -2290,8 +1406,7 @@ placeholder="Example: 25+50*2">
 Calculate
 </button>
 
-<p id="calcResult"
-class="output"></p>
+<p id="calcResult" class="output"></p>
 
 </div>
 
@@ -2314,8 +1429,7 @@ placeholder="Total Marks">
 Calculate
 </button>
 
-<p id="percentageResult"
-class="output"></p>
+<p id="percentageResult" class="output"></p>
 
 </div>
 
@@ -2327,19 +1441,20 @@ class="output"></p>
 <input
 id="length"
 type="number"
-placeholder="Length (meter)">
+step="any"
+placeholder="Length">
 
 <input
 id="width"
 type="number"
-placeholder="Width (meter)">
+step="any"
+placeholder="Width">
 
 <button onclick="area()">
 Calculate
 </button>
 
-<p id="areaResult"
-class="output"></p>
+<p id="areaResult" class="output"></p>
 
 </div>
 
@@ -2351,125 +1466,17 @@ class="output"></p>
 <input
 id="meter"
 type="number"
+step="any"
 placeholder="Meter">
 
 <button onclick="meterToFeet()">
 Convert
 </button>
 
-<p id="feetResult"
-class="output"></p>
+<p id="feetResult" class="output"></p>
 
 </div>
 
-</div>
-
-</section>
-
-
-
-<!-- SERVICES -->
-
-<section id="services" class="section">
-
-<h2 class="section-title">🏛️ Government Services</h2>
-
-<p class="section-intro">
-Official websites के links।
-</p>
-
-
-<div class="grid">
-
-
-<div class="card">
-
-<div class="icon">🪪</div>
-
-<h3>Aadhaar</h3>
-
-<a class="service-link"
-href="https://uidai.gov.in/"
-target="_blank">
-UIDAI Official
-</a>
-
-<a class="service-link"
-href="https://myaadhaar.uidai.gov.in/"
-target="_blank">
-MyAadhaar
-</a>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">💳</div>
-
-<h3>PAN Card</h3>
-
-<a class="service-link"
-href="https://www.incometax.gov.in/"
-target="_blank">
-Income Tax
-</a>
-
-<a class="service-link"
-href="https://www.pan.utiitsl.com/"
-target="_blank">
-UTIITSL PAN
-</a>
-
-<a class="service-link"
-href="https://tinpan.proteantech.in/"
-target="_blank">
-Protean PAN
-</a>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">📜</div>
-
-<h3>Bihar Certificates</h3>
-
-<a class="service-link"
-href="https://serviceonline.bihar.gov.in/"
-target="_blank">
-Bihar ServicePlus
-</a>
-
-<a class="service-link"
-href="https://www.india.gov.in/"
-target="_blank">
-India.gov.in
-</a>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🎓</div>
-
-<h3>Education</h3>
-
-<a class="service-link"
-href="https://scholarships.gov.in/"
-target="_blank">
-National Scholarship Portal
-</a>
-
-<a class="service-link"
-href="https://www.nta.ac.in/"
-target="_blank">
-NTA
-</a>
-
-</div>
 
 </div>
 
@@ -2477,11 +1484,15 @@ NTA
 
 
 
-<!-- CODING -->
+<!-- ==================================================
+                         CODING
+=================================================== -->
 
 <section id="coding" class="section">
 
-<h2 class="section-title">💻 Coding Learning</h2>
+<h2 class="section-title">
+💻 Coding Learning
+</h2>
 
 
 <div class="grid">
@@ -2513,8 +1524,8 @@ NTA
 
 <pre>
 body{
- background:#f4f7fb;
- color:#222;
+  background:#f4f7fb;
+  color:#222;
 }
 </pre>
 
@@ -2541,20 +1552,161 @@ Run Example
 
 </div>
 
+
 </div>
 
 </section>
 
 
 
-<!-- SUPPORT -->
+<!-- ==================================================
+                    GOVERNMENT SERVICES
+=================================================== -->
+
+<section id="services" class="section">
+
+<h2 class="section-title">
+🏛️ Government Services
+</h2>
+
+<div class="grid">
+
+
+<div class="card">
+
+<div class="icon">🪪</div>
+
+<h3>Aadhaar</h3>
+
+<a
+class="service-link"
+href="https://uidai.gov.in/"
+target="_blank">
+
+UIDAI Official
+
+</a>
+
+<a
+class="service-link"
+href="https://myaadhaar.uidai.gov.in/"
+target="_blank">
+
+MyAadhaar
+
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">💳</div>
+
+<h3>PAN Card</h3>
+
+<a
+class="service-link"
+href="https://www.incometax.gov.in/"
+target="_blank">
+
+Income Tax
+
+</a>
+
+<a
+class="service-link"
+href="https://www.pan.utiitsl.com/"
+target="_blank">
+
+UTIITSL PAN
+
+</a>
+
+<a
+class="service-link"
+href="https://tinpan.proteantech.in/services/pan/pan-index"
+target="_blank">
+
+Protean PAN
+
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📜</div>
+
+<h3>Bihar Certificates</h3>
+
+<a
+class="service-link"
+href="https://serviceonline.bihar.gov.in/"
+target="_blank">
+
+Bihar ServicePlus
+
+</a>
+
+<a
+class="service-link"
+href="https://www.india.gov.in/"
+target="_blank">
+
+India.gov.in
+
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎓</div>
+
+<h3>Education</h3>
+
+<a
+class="service-link"
+href="https://scholarships.gov.in/"
+target="_blank">
+
+Scholarship Portal
+
+</a>
+
+<a
+class="service-link"
+href="https://www.nta.ac.in/"
+target="_blank">
+
+NTA Official
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ==================================================
+                         SUPPORT
+=================================================== -->
 
 <section id="support" class="section">
 
-<h2 class="section-title">💬 Support</h2>
+<h2 class="section-title">
+💬 Customer Support
+</h2>
 
 <p class="section-intro">
-Website से जुड़ी समस्या के लिए संपर्क करें।
+किसी समस्या या सुझाव के लिए संपर्क करें।
 </p>
 
 
@@ -2568,12 +1720,12 @@ Website से जुड़ी समस्या के लिए संपर�
 <h3>WhatsApp</h3>
 
 <p>
-Direct WhatsApp message भेजें।
+सीधे WhatsApp पर message भेजें।
 </p>
 
 <a
 class="service-link"
-href="https://wa.me/919905459779?text=Hello%20Learn%20%26%20Help%20India%2C%20mujhe%20website%20par%20help%20chahiye."
+href="https://wa.me/919905459779?text=Hello%20Learn%20%26%20Help%20India%2C%20mujhe%20website%20ke%20baare%20me%20help%20chahiye."
 target="_blank">
 
 Open WhatsApp
@@ -2595,7 +1747,7 @@ anmol2842001@gmail.com
 
 <a
 class="service-link"
-href="mailto:anmol2842001@gmail.com?subject=Learn%20%26%20Help%20India%20Support&body=Hello%20Learn%20%26%20Help%20India%2C%0A%0AMujhe%20website%20par%20help%20chahiye."
+href="mailto:anmol2842001@gmail.com?subject=Learn%20%26%20Help%20India%20Support&body=Hello%20Learn%20%26%20Help%20India%2C%0A%0AMujhe%20website%20ke%20baare%20me%20help%20chahiye."
 >
 
 Send Email
@@ -2625,34 +1777,41 @@ Call Support
 
 </div>
 
+
 </div>
 
 
-<div class="feature" style="margin-top:20px">
+<div class="feature">
 
 <h3>❓ FAQ</h3>
 
 <br>
 
 <p>
-<b>Q. Land Record का result website पर सीधे क्यों नहीं आता?</b><br>
-क्योंकि वास्तविक भूमि data सरकारी server पर है। इसलिए
-official BiharBhumi portal से search करना सुरक्षित है।
+<b>Q. Land record कहाँ check करें?</b><br>
+Bihar Bhumi के official portal का उपयोग करें।
 </p>
 
 <br>
 
 <p>
-<b>Q. Parimarjan कहाँ से करें?</b><br>
-Land Record section में दिए गए official BiharBhumi link से
-Parimarjan Plus service खोलें।
+<b>Q. Parimarjan कहाँ करें?</b><br>
+Parimarjan Plus के official portal से।
 </p>
 
 <br>
 
 <p>
-<b>Q. Job के लिए पैसे देने चाहिए?</b><br>
-Unknown व्यक्ति को advance payment न करें।
+<b>Q. New movie कहाँ देखें?</b><br>
+जिस platform पर movie legally available हो,
+वहाँ से देखें।
+</p>
+
+<br>
+
+<p>
+<b>Q. Quiz कैसे करें?</b><br>
+Study Center → Subject → Practice शुरू करें।
 </p>
 
 </div>
@@ -2661,71 +1820,7 @@ Unknown व्यक्ति को advance payment न करें।
 
 
 
-<!-- MOVIES -->
-
-<section class="section">
-
-<h2 class="section-title">🎬 Movies & Entertainment</h2>
-
-<p class="section-intro">
-Legal तरीके से movies देखने के लिए official platforms।
-</p>
-
-
-<div class="grid">
-
-
-<div class="card">
-
-<div class="icon">🎬</div>
-
-<h3>Official Streaming</h3>
-
-<p>
-New release movies को केवल legal
-streaming/rental platforms से देखें।
-</p>
-
-<a class="service-link"
-href="https://www.netflix.com/"
-target="_blank">
-Netflix
-</a>
-
-<a class="service-link"
-href="https://www.primevideo.com/"
-target="_blank">
-Prime Video
-</a>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🍿</div>
-
-<h3>Legal Movies</h3>
-
-<p>
-Website पर pirated movie download links
-नहीं रखे जाएंगे।
-</p>
-
-<div class="warning">
-Copyright-protected movies को बिना अनुमति
-free download करवाना legal नहीं है।
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- PURPOSE -->
+<!-- ================= PURPOSE ================= -->
 
 <section class="section">
 
@@ -2735,8 +1830,7 @@ free download करवाना legal नहीं है।
 
 <p>
 Learn & Help India का उद्देश्य है कि
-सही, उपयोगी और सुरक्षित जानकारी
-लोगों तक आसानी से पहुँचे।
+सही और उपयोगी जानकारी लोगों तक आसानी से पहुँचे।
 </p>
 
 <br>
@@ -2749,50 +1843,45 @@ Learn & Help India का उद्देश्य है कि
 
 </section>
 
+
 </div>
 
 
-
-<!-- FOOTER -->
+<!-- ==================================================
+                         FOOTER
+=================================================== -->
 
 <footer>
 
 <h2>🌏 Learn & Help India</h2>
 
-<p>Learn • Grow • Help 🇮🇳</p>
+<p>
+Learn • Grow • Help 🇮🇳
+</p>
 
 
 <div class="footer-contact">
 
-<p>
-📞 <a href="tel:9905459779">
-9905459779
+<a href="tel:9905459779">
+📞 9905459779
 </a>
-</p>
 
-<p>
-📧 <a href="mailto:anmol2842001@gmail.com">
-anmol2842001@gmail.com
+<a href="mailto:anmol2842001@gmail.com">
+📧 anmol2842001@gmail.com
 </a>
-</p>
 
-<p>
-
-💬
 <a
-href="https://wa.me/919905459779?text=Hello%20Learn%20%26%20Help%20India%2C%20mujhe%20website%20par%20help%20chahiye."
+href="https://wa.me/919905459779?text=Hello%20Learn%20%26%20Help%20India%2C%20mujhe%20website%20ke%20baare%20me%20help%20chahiye."
 target="_blank">
 
-WhatsApp पर संपर्क करें
+💬 WhatsApp Support
 
 </a>
-
-</p>
 
 </div>
 
 
-<p style="margin-top:15px">
+<p>
 © 2026 Learn & Help India
 </p>
 
@@ -2802,12 +1891,11 @@ WhatsApp पर संपर्क करें
 
 <script>
 
-/* =====================================================
-   QUESTION DATABASE
-===================================================== */
+/* ==================================================
+                    STUDY DATABASE
+=================================================== */
 
 const questions={
-
 
 math:[
 
@@ -2864,724 +1952,9 @@ math:[
 
 ],
 
-
 reasoning:[
 
 ["2,4,6,8,?",["9","10","11","12"],1],
 ["3,6,12,24,?",["36","42","48","50"],2],
 ["1,4,9,16,?",["20","24","25","30"],2],
-["Book : Read :: Food : ?",["Cook","Eat","Buy","Sell"],1],
-["Bird : Fly :: Fish : ?",["Run","Walk","Swim","Jump"],2],
-["Pen : Write :: Knife : ?",["Cut","Read","Draw","Open"],0],
-["CAT → DBU, DOG → ?",["EPH","EOH","FPH","DPE"],0],
-["A=1,B=2,C=3, CAB = ?",["5","6","7","8"],2],
-["5,10,15,20,?",["22","25","30","35"],1],
-["10,20,40,80,?",["100","120","160","180"],2],
-["100,90,80,70,?",["50","60","65","75"],1],
-["A,C,E,G,?",["H","I","J","K"],1],
-["Z,X,V,T,?",["R","S","Q","P"],0],
-["Monday के बाद?",["Sunday","Tuesday","Friday","Saturday"],1],
-["January के बाद?",["March","April","February","May"],2],
-["North का opposite?",["East","South","West","North"],1],
-["East का opposite?",["West","North","South","East"],0],
-["Mother's son is your?",["Father","Brother","Uncle","Cousin"],1],
-["Father's daughter is your?",["Sister","Mother","Aunt","Cousin"],0],
-["Odd one out?",["Apple","Mango","Potato","Banana"],2],
-["Odd one out?",["Dog","Cat","Cow","Rose"],3],
-["Odd one out?",["2","4","6","9"],3],
-["2,3,5,7,?",["9","10","11","12"],2],
-["1,2,4,8,?",["10","12","16","18"],2],
-["11,22,33,44,?",["50","55","60","66"],1],
-["100,50,25,?",["10","12.5","15","20"],1],
-["3,9,27,?",["54","72","81","90"],2],
-["4,16,64,?",["128","192","256","300"],2],
-["8,16,24,32,?",["36","40","42","48"],1],
-["20,18,16,14,?",["10","11","12","13"],2],
-["If today Monday, tomorrow?",["Sunday","Tuesday","Wednesday","Friday"],1],
-["If yesterday Friday, today?",["Thursday","Friday","Saturday","Sunday"],2],
-["Clock has how many hours?",["10","12","14","24"],1],
-["Triangle has sides?",["2","3","4","5"],1],
-["Square has sides?",["3","4","5","6"],1],
-["Opposite of UP?",["Down","Left","Right","Back"],0],
-["Opposite of LEFT?",["Up","Down","Right","Front"],2],
-["If A>B and B>C, then?",["A<C","A=C","A>C","None"],2],
-["If 1=3, 2=6, 3=9, 4=?",["10","12","14","16"],1],
-["Which is smallest?",["0.1","0.01","1","10"],1],
-["Which is largest?",["0.5","0.05","5","0.005"],2],
-["A is before B. B is before C. Who is first?",["A","B","C","None"],0],
-["Which is a vehicle?",["Car","Apple","Table","Book"],0],
-["Which is a fruit?",["Potato","Carrot","Mango","Rice"],2],
-["Which is a color?",["Red","Dog","Chair","Book"],0],
-["Which is a number?",["Five","Table","Blue","Cat"],0],
-["Which comes first alphabetically?",["Dog","Apple","Cat","Ball"],1],
-["Which comes last alphabetically?",["Apple","Ball","Cat","Dog"],3],
-["If 5 workers do job in 5 days, concept is?",["Work","Color","Direction","Shape"],0]
-
-],
-
-
-english:[
-
-["Synonym of Happy?",["Sad","Glad","Angry","Weak"],1],
-["Antonym of Hot?",["Warm","Cold","Heat","Fire"],1],
-["Choose article: ___ apple",["a","an","the","no article"],1],
-["He ___ to school every day.",["go","goes","going","gone"],1],
-["Plural of Child?",["Childs","Childes","Children","Childrens"],2],
-["Opposite of Early?",["Fast","Late","Quick","Soon"],1],
-["Synonym of Big?",["Small","Large","Tiny","Short"],1],
-["I ___ a student.",["am","is","are","be"],0],
-["Antonym of Good?",["Best","Bad","Better","Fine"],1],
-["Synonym of Begin?",["End","Start","Stop","Close"],1],
-["Plural of Man?",["Mans","Men","Mens","Manes"],1],
-["Plural of Woman?",["Womans","Women","Womens","Woman"],1],
-["Past tense of Go?",["Goed","Gone","Went","Going"],2],
-["Past tense of Eat?",["Ate","Eaten","Eating","Eats"],0],
-["She ___ singing.",["is","are","am","be"],0],
-["They ___ playing.",["is","am","are","be"],2],
-["He has ___ umbrella.",["a","an","the","no"],1],
-["I saw ___ moon.",["a","an","the","no"],2],
-["Correct spelling?",["Beautifull","Beautiful","Beutiful","Beautifal"],1],
-["Correct spelling?",["Receive","Recieve","Receeve","Receve"],0],
-["Synonym of Quick?",["Slow","Fast","Weak","Late"],1],
-["Antonym of Strong?",["Powerful","Weak","Hard","Big"],1],
-["Synonym of Smart?",["Clever","Dull","Slow","Weak"],0],
-["Antonym of Rich?",["Poor","Strong","Big","Happy"],0],
-["A person who teaches?",["Doctor","Teacher","Driver","Farmer"],1],
-["A person who treats patients?",["Teacher","Doctor","Farmer","Pilot"],1],
-["A place where books are kept?",["Library","Hospital","Market","Station"],0],
-["A place where trains stop?",["Airport","Station","School","Bank"],1],
-["Choose noun: The boy runs.",["boy","runs","the","none"],0],
-["Choose verb: The boy runs.",["boy","runs","the","none"],1],
-["Choose adjective: A tall boy.",["A","tall","boy","none"],1],
-["Choose pronoun: He is here.",["He","is","here","none"],0],
-["I ___ coffee.",["drink","drinks","drank","drinking"],0],
-["She ___ coffee.",["drink","drinks","drank","drinking"],1],
-["They ___ cricket.",["plays","play","playing","played"],1],
-["We ___ students.",["is","am","are","be"],2],
-["He ___ a car.",["have","has","having","had"],1],
-["I ___ two brothers.",["has","have","having","had"],1],
-["Opposite of Old?",["Young","Big","Small","Fast"],0],
-["Opposite of Clean?",["Pure","Dirty","Good","Fresh"],1],
-["Synonym of Small?",["Little","Large","Huge","Tall"],0],
-["Synonym of Angry?",["Furious","Happy","Calm","Glad"],0],
-["Antonym of Light?",["Bright","Dark","White","Clear"],1],
-["Antonym of Easy?",["Simple","Hard","Soft","Fast"],1],
-["Honest starts with?",["a","an","the","no article"],1],
-["Book is a?",["Noun","Verb","Adjective","Adverb"],0],
-["Run can be a?",["Verb","Noun only","Article","Pronoun"],0],
-["Beautiful is a?",["Noun","Verb","Adjective","Article"],2],
-["Slowly is an?",["Noun","Verb","Adjective","Adverb"],3],
-["Question sentence ends with?",[".","!",",","?"],3]
-
-],
-
-
-gk:[
-
-["भारतीय संविधान का अनुच्छेद 14 किससे संबंधित है?",["समानता","स्वतंत्रता","धर्म","शिक्षा"],0],
-["भारत का राष्ट्रीय पशु?",["सिंह","बाघ","हाथी","मोर"],1],
-["भारत में संविधान कब लागू हुआ?",["15 अगस्त 1947","26 नवंबर 1949","26 जनवरी 1950","2 अक्टूबर 1950"],2],
-["भारत की राजधानी?",["मुंबई","कोलकाता","नई दिल्ली","चेन्नई"],2],
-["क्षेत्रफल में सबसे बड़ा राज्य?",["मध्य प्रदेश","राजस्थान","उत्तर प्रदेश","महाराष्ट्र"],1],
-["भारत की संसद के कितने सदन हैं?",["एक","दो","तीन","चार"],1],
-["भारत में मतदान की न्यूनतम आयु?",["16","18","21","25"],1],
-["RBI की स्थापना?",["1935","1947","1950","1955"],0],
-["भारत का राष्ट्रीय पक्षी?",["कबूतर","मोर","तोता","हंस"],1],
-["भारत का राष्ट्रीय फूल?",["गुलाब","कमल","सूरजमुखी","चंपा"],1],
-["भारत का राष्ट्रीय फल?",["आम","सेब","केला","संतरा"],0],
-["भारत का राष्ट्रीय खेल आधिकारिक रूप से?",["हॉकी","क्रिकेट","कोई घोषित नहीं","फुटबॉल"],2],
-["गंगा नदी का उद्गम?",["गोमुख","अरावली","सतपुड़ा","नीलगिरि"],0],
-["सूर्य के सबसे निकट ग्रह?",["पृथ्वी","शुक्र","बुध","मंगल"],2],
-["पृथ्वी का उपग्रह?",["सूर्य","चंद्रमा","मंगल","शुक्र"],1],
-["जल का रासायनिक सूत्र?",["CO2","H2O","O2","NaCl"],1],
-["ऑक्सीजन का प्रतीक?",["O","Ox","Og","C"],0],
-["सोने का रासायनिक प्रतीक?",["Ag","Au","Fe","Cu"],1],
-["भारत का पहला राष्ट्रपति?",["राजेंद्र प्रसाद","नेहरू","पटेल","राधाकृष्णन"],0],
-["भारत के पहले प्रधानमंत्री?",["गांधी","नेहरू","पटेल","राजेंद्र प्रसाद"],1],
-["1857 का विद्रोह किस वर्ष?",["1757","1857","1947","1885"],1],
-["भारतीय राष्ट्रीय कांग्रेस की स्थापना?",["1885","1905","1947","1857"],0],
-["भारत स्वतंत्र हुआ?",["1942","1945","1947","1950"],2],
-["गांधीजी का जन्म?",["1869","1875","1885","1890"],0],
-["दांडी मार्च किससे संबंधित?",["नमक","कपड़ा","शिक्षा","रेल"],0],
-["भारत का सर्वोच्च न्यायालय कहाँ?",["मुंबई","नई दिल्ली","पटना","कोलकाता"],1],
-["लोकसभा का कार्यकाल सामान्यतः?",["3","4","5","6"],2],
-["राज्यसभा एक?",["स्थायी सदन","अस्थायी सदन","न्यायालय","मंत्रालय"],0],
-["भारत में मौलिक अधिकार कितने हैं?",["5","6","7","8"],1],
-["अनुच्छेद 21 किससे संबंधित?",["जीवन और व्यक्तिगत स्वतंत्रता","समानता","धर्म","शिक्षा"],0],
-["अनुच्छेद 32 किससे संबंधित?",["संवैधानिक उपचार","समानता","नागरिकता","चुनाव"],0],
-["भारत का राष्ट्रीय चिन्ह?",["सारनाथ सिंह स्तंभ","कमल","मोर","तिरंगा"],0],
-["तिरंगे में कितने मुख्य रंग?",["2","3","4","5"],1],
-["अशोक चक्र में कितनी तीलियाँ?",["12","18","24","32"],2],
-["बिहार की राजधानी?",["गया","पटना","मुजफ्फरपुर","भागलपुर"],1],
-["बिहार दिवस?",["22 मार्च","15 अगस्त","26 जनवरी","2 अक्टूबर"],0],
-["नालंदा किसके लिए प्रसिद्ध?",["प्राचीन विश्वविद्यालय","समुद्र","रेगिस्तान","बंदरगाह"],0],
-["पृथ्वी सूर्य की परिक्रमा लगभग?",["24 घंटे","30 दिन","365 दिन","100 दिन"],2],
-["पृथ्वी अपने अक्ष पर घूमती है?",["लगभग 24 घंटे","12 घंटे","7 दिन","365 दिन"],0],
-["विटामिन C का स्रोत?",["नींबू","चावल","तेल","नमक"],0],
-["रक्त का लाल रंग किससे?",["हीमोग्लोबिन","कैल्शियम","आयोडीन","प्लाज्मा"],0],
-["पौधे प्रकाश संश्लेषण में क्या लेते हैं?",["CO2","O2","N2","H2"],0],
-["वयस्क मनुष्य के सामान्यतः कितने दाँत?",["28","30","32","36"],2],
-["बल की SI इकाई?",["जूल","न्यूटन","वाट","पास्कल"],1],
-["ऊर्जा की SI इकाई?",["जूल","न्यूटन","वाट","मीटर"],0],
-["विद्युत धारा की SI इकाई?",["वोल्ट","एम्पियर","ओम","वाट"],1],
-["प्रतिरोध की SI इकाई?",["ओम","वोल्ट","एम्पियर","जूल"],0],
-["भारत का राष्ट्रीय ध्वज किस रंगों का है?",["केसरिया-सफेद-हरा","लाल-पीला-नीला","हरा-लाल-काला","नीला-सफेद"],0]
-
-],
-
-
-current:[
-
-["Current Affairs में जानकारी कहाँ से verify करें?",["Official source","Random post","Unknown message","Comment"],0],
-["सरकारी announcement के लिए?",["Official website","Forwarded message","Random video","Unknown account"],0],
-["Job vacancy में क्या देखना चाहिए?",["Official notification","सिर्फ salary","Photo","Agent"],0],
-["News की authenticity कैसे जाँचें?",["Credible sources","Random post","Forward","Unknown account"],0],
-["सरकारी नौकरी में final authority?",["Official notification","WhatsApp group","Agent","Random blog"],0],
-["Online fraud में OTP किसे दें?",["किसी को नहीं","Friend","Agent","Unknown caller"],0],
-["UPI PIN किसके साथ share करें?",["किसी के साथ नहीं","Customer care","Friend","Seller"],0],
-["Cyber safety में क्या जरूरी?",["Strong password","Same password everywhere","OTP share","PIN share"],0],
-["Fake job पहचानने का संकेत?",["Advance payment demand","Official notice","Interview","Company website"],0],
-["Current news पढ़ने का अच्छा तरीका?",["Multiple credible sources","One random message","Forward","Comment"],0],
-["Government scheme verify कहाँ?",["Official portal","Random reel","Unknown group","Agent"],0],
-["Exam date verify कहाँ?",["Official notification","YouTube comment","WhatsApp","Friend"],0],
-["Admit card कहाँ से?",["Official exam website","Random website","Agent","Social comment"],0],
-["Result कहाँ verify करें?",["Official result portal","Forward","Unknown link","Random post"],0],
-["Cyber crime report के लिए भारत में?",["1930","100 only","101","108"],0],
-["Aadhaar official authority?",["UIDAI","RBI","SEBI","CBI"],0],
-["PAN किस विभाग से संबंधित?",["Income Tax Department","Railway","Police","Education"],0],
-["RBI किस क्षेत्र से संबंधित?",["Banking","Education","Railway","Agriculture only"],0],
-["SSC का संबंध?",["Staff Selection Commission","Sports Selection Council","State Service College","None"],0],
-["UPI का full form?",["Unified Payments Interface","Universal Payment India","United Payment Internet","None"],0],
-["OTP का अर्थ?",["One Time Password","Online Transfer Pin","Open Transfer Password","None"],0],
-["Digital payment में PIN?",["गोपनीय रखना चाहिए","Share करना चाहिए","Post करना चाहिए","Send करना चाहिए"],0],
-["Fake website से बचने का तरीका?",["URL verify करें","Link blindly open करें","OTP दें","Password दें"],0],
-["Government website में अक्सर domain?",[".gov.in","random.com","free.in","unknown"],0],
-["PAN application के लिए official providers?",["Protean/UTIITSL","Unknown agents","Random apps","Social media"],0],
-["Aadhaar services की official authority?",["UIDAI","SSC","RBI","NTA"],0],
-["Education scholarship portal?",["National Scholarship Portal","Random page","Agent","Unknown"],0],
-["Exam preparation में क्या जरूरी?",["Regular practice","Only guessing","No revision","Only videos"],0],
-["Current Affairs के लिए revision?",["Regular","Never","Once a year","None"],0],
-["Official notice में क्या देखें?",["Date and eligibility","Only image","Only salary","Comments"],0],
-["Job application में documents?",["Official requirements देखें","Anything भेजें","OTP भेजें","PIN भेजें"],0],
-["Fraud call में bank PIN?",["नहीं बताना","बताना","SMS करना","WhatsApp करना"],0],
-["Unknown APK install?",["Avoid करें","Install करें","Forward करें","Share करें"],0],
-["Browser warning पर?",["Source verify करें","Ignore security","Install anything","Share OTP"],0],
-["Password कैसा होना चाहिए?",["Strong and unique","123456","Name only","Phone only"],0],
-["Public Wi-Fi पर sensitive login?",["सावधानी रखें","Always safe","PIN share","OTP share"],0],
-["Official email पहचानने में?",["Domain verify करें","Name देखकर भरोसा","Photo देखकर","Forward देखकर"],0],
-["Scam link में अक्सर?",["Urgency/pressure","Official verification","Clear policy","Trusted domain"],0],
-["Online form भरते समय?",["URL verify करें","Unknown link","Agent password","OTP share"],0],
-["Government portal पर payment?",["Official portal से","Random UPI","Unknown QR","Agent"],0],
-["Current Affairs में fact check?",["Yes","No","Never","Only comments"],0],
-["News headline देखकर?",["पूरी खबर/विश्वसनीय source देखें","तुरंत forward","तुरंत believe","Ignore source"],0],
-["Job offer में interview?",["Company verify करें","Money भेजें","OTP दें","PIN दें"],0],
-["Work from home scam से बचें?",["Advance fee से सावधान","Fee भेजें","OTP दें","Password दें"],0],
-["Online privacy?",["Personal data protect करें","Public करें","Password share","OTP share"],0],
-["Aadhaar OTP?",["किसी से share न करें","Agent को दें","Friend को दें","Post करें"],0],
-["PAN details?",["Official portal पर ही दें","Random link","Unknown person","Social media"],0],
-["Competitive exam में mock test?",["Practice के लिए useful","Never useful","Only guessing","No"],0],
-["Learning का अच्छा तरीका?",["Practice + Revision","Only reading once","No practice","Only guessing"],0]
-
-]
-
-};
-
-
-
-/* =====================================================
-   QUIZ SYSTEM
-===================================================== */
-
-let currentSubject="";
-let currentQuestions=[];
-let currentIndex=0;
-let currentScore=0;
-let answered=false;
-
-
-function startTest(subject){
-
-if(!questions[subject]){
-alert("Questions उपलब्ध नहीं हैं।");
-return;
-}
-
-currentSubject=subject;
-currentQuestions=questions[subject];
-currentIndex=0;
-currentScore=0;
-
-document.getElementById("quizStart").style.display="none";
-document.getElementById("quizBox").style.display="block";
-document.getElementById("result").style.display="none";
-
-document.getElementById("quiz").scrollIntoView({
-behavior:"smooth"
-});
-
-showQuestion();
-
-}
-
-
-function showQuestion(){
-
-answered=false;
-
-let q=currentQuestions[currentIndex];
-
-document.getElementById("progress").innerText=
-"Question "+(currentIndex+1)+" / "+currentQuestions.length;
-
-document.getElementById("question").innerText=q[0];
-
-let options=document.getElementById("options");
-
-options.innerHTML="";
-
-document.getElementById("feedback").innerText="";
-
-document.getElementById("nextBtn").style.display="none";
-
-
-q[1].forEach(function(option,index){
-
-let btn=document.createElement("button");
-
-btn.className="option";
-
-btn.innerText=
-String.fromCharCode(65+index)+". "+option;
-
-btn.onclick=function(){
-
-checkAnswer(index,btn);
-
-};
-
-options.appendChild(btn);
-
-});
-
-}
-
-
-function checkAnswer(index,button){
-
-if(answered)return;
-
-answered=true;
-
-let q=currentQuestions[currentIndex];
-
-let buttons=document.querySelectorAll(".option");
-
-
-buttons.forEach(function(btn,i){
-
-btn.disabled=true;
-
-if(i===q[2]){
-btn.classList.add("correct");
-}
-
-});
-
-
-if(index===q[2]){
-
-currentScore++;
-
-document.getElementById("feedback").innerText=
-"✅ सही उत्तर!";
-
-}else{
-
-button.classList.add("wrong");
-
-document.getElementById("feedback").innerText=
-"❌ गलत। सही उत्तर: "+q[1][q[2]];
-
-}
-
-
-document.getElementById("nextBtn").style.display="block";
-
-}
-
-
-function nextQuestion(){
-
-currentIndex++;
-
-if(currentIndex>=currentQuestions.length){
-
-finishTest();
-
-}else{
-
-showQuestion();
-
-}
-
-}
-
-
-function finishTest(){
-
-document.getElementById("quizBox").style.display="none";
-
-document.getElementById("result").style.display="block";
-
-document.getElementById("score").innerText=
-currentScore+" / "+currentQuestions.length;
-
-
-let percent=
-(currentScore/currentQuestions.length)*100;
-
-
-let message="";
-
-
-if(percent>=80){
-
-message=
-"🎉 बहुत बढ़िया! आपकी तैयारी बहुत अच्छी है।";
-
-}else if(percent>=50){
-
-message=
-"👍 अच्छी कोशिश! अब revision और practice बढ़ाएँ।";
-
-}else{
-
-message=
-"📚 Basic concepts revise करें और फिर test दें।";
-
-}
-
-
-document.getElementById("message").innerText=message;
-
-
-localStorage.setItem(
-"lastScore",
-currentScore+"/"+currentQuestions.length
-);
-
-}
-
-
-function restartTest(){
-
-startTest(currentSubject);
-
-}
-
-
-function goStudy(){
-
-document.getElementById("study").scrollIntoView({
-behavior:"smooth"
-});
-
-}
-
-
-
-/* =====================================================
-   CALCULATOR
-===================================================== */
-
-function calculate(){
-
-let value=
-document.getElementById("calcInput").value.trim();
-
-
-if(!value){
-
-document.getElementById("calcResult").innerText=
-"❌ Calculation लिखें।";
-
-return;
-
-}
-
-
-try{
-
-if(!/^[0-9+\-*/().% ]+$/.test(value)){
-throw new Error();
-}
-
-let answer=
-Function(
-'"use strict";return ('+value+')'
-)();
-
-
-document.getElementById("calcResult").innerText=
-"उत्तर: "+answer;
-
-}catch(e){
-
-document.getElementById("calcResult").innerText=
-"❌ Calculation गलत है।";
-
-}
-
-}
-
-
-
-/* =====================================================
-   PERCENTAGE
-===================================================== */
-
-function percentage(){
-
-let obtained=
-Number(document.getElementById("obtained").value);
-
-let total=
-Number(document.getElementById("total").value);
-
-
-if(total<=0){
-
-document.getElementById("percentageResult").innerText=
-"❌ Total marks डालें।";
-
-return;
-
-}
-
-
-let result=
-(obtained/total)*100;
-
-
-document.getElementById("percentageResult").innerText=
-"Percentage: "+result.toFixed(2)+"%";
-
-}
-
-
-
-/* =====================================================
-   AREA
-===================================================== */
-
-function area(){
-
-let length=
-Number(document.getElementById("length").value);
-
-let width=
-Number(document.getElementById("width").value);
-
-
-if(length<=0 || width<=0){
-
-document.getElementById("areaResult").innerText=
-"❌ Length और Width डालें।";
-
-return;
-
-}
-
-
-document.getElementById("areaResult").innerText=
-"Area: "+(length*width).toFixed(2)+" m²";
-
-}
-
-
-
-/* =====================================================
-   METER TO FEET
-===================================================== */
-
-function meterToFeet(){
-
-let meter=
-Number(document.getElementById("meter").value);
-
-
-if(meter<0 || isNaN(meter)){
-
-document.getElementById("feetResult").innerText=
-"❌ सही meter डालें।";
-
-return;
-
-}
-
-
-document.getElementById("feetResult").innerText=
-meter+" meter = "+
-(meter*3.28084).toFixed(3)+" feet";
-
-}
-
-
-
-/* =====================================================
-   LAND AREA CONVERTER
-===================================================== */
-
-/*
-   1 Decimal = 435.6 sq.ft
-   Default Bihar commonly used:
-   1 Katha = 3.125 Decimal
-
-   Local measurement may vary.
-*/
-
-const DECIMAL_PER_KATHA=3.125;
-
-const SQFT_PER_DECIMAL=435.6;
-
-
-function decimalToKatha(){
-
-let decimal=
-Number(document.getElementById("decimalInput").value);
-
-
-if(decimal<0 || isNaN(decimal)){
-
-document.getElementById("decimalResult").innerText=
-"❌ Decimal डालें।";
-
-return;
-
-}
-
-
-let katha=
-decimal/DECIMAL_PER_KATHA;
-
-
-document.getElementById("decimalResult").innerText=
-decimal+" Decimal ≈ "+
-katha.toFixed(4)+" Katha";
-
-}
-
-
-function kathaToDecimal(){
-
-let katha=
-Number(document.getElementById("kathaInput").value);
-
-
-if(katha<0 || isNaN(katha)){
-
-document.getElementById("kathaResult").innerText=
-"❌ Katha डालें।";
-
-return;
-
-}
-
-
-let decimal=
-katha*DECIMAL_PER_KATHA;
-
-
-document.getElementById("kathaResult").innerText=
-katha+" Katha ≈ "+
-decimal.toFixed(4)+" Decimal";
-
-}
-
-
-function decimalToSqft(){
-
-let decimal=
-Number(document.getElementById("decimalSqftInput").value);
-
-
-if(decimal<0 || isNaN(decimal)){
-
-document.getElementById("decimalSqftResult").innerText=
-"❌ Decimal डालें।";
-
-return;
-
-}
-
-
-let sqft=
-decimal*SQFT_PER_DECIMAL;
-
-
-document.getElementById("decimalSqftResult").innerText=
-decimal+" Decimal ≈ "+
-sqft.toFixed(2)+" Sq.ft";
-
-}
-
-
-function sqftToDecimal(){
-
-let sqft=
-Number(document.getElementById("sqftDecimalInput").value);
-
-
-if(sqft<0 || isNaN(sqft)){
-
-document.getElementById("sqftDecimalResult").innerText=
-"❌ Sq.ft डालें।";
-
-return;
-
-}
-
-
-let decimal=
-sqft/SQFT_PER_DECIMAL;
-
-
-document.getElementById("sqftDecimalResult").innerText=
-sqft+" Sq.ft ≈ "+
-decimal.toFixed(4)+" Decimal";
-
-}
-
-
-
-/* =====================================================
-   CODING DEMO
-===================================================== */
-
-function hello(){
-
-alert(
-"🇮🇳 Hello India!\n\n"+
-"JavaScript सही तरह से काम कर रहा है।"
-);
-
-}
-
-
-
-/* =====================================================
-   PAGE LOAD
-===================================================== */
-
-window.addEventListener("load",function(){
-
-console.log(
-"Learn & Help India loaded successfully."
-);
-
-});
-
-</script>
-
-</body>
-</html>
+["Book : Read :: Food : ?",["Cook
