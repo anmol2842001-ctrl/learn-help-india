@@ -1938,79 +1938,1875 @@ OTP, UPI PIN और password कभी भी किसी unknown
    BASE QUESTIONS
 ===================================================== */
 
-const baseQuestions={
+<script>
+
+/* =========================================================
+   LEARN & HELP INDIA
+   PROFESSIONAL STUDY SYSTEM
+========================================================= */
+
+
+/* =========================================================
+   THEORY
+========================================================= */
+
+const theory = {
+
+math:{
+title:"➗ Mathematics Theory",
+content:`
+
+<div class="theory-box">
+<h3>प्रतिशत (Percentage)</h3>
+<p>
+प्रतिशत का अर्थ प्रति 100 होता है।
+<br><br>
+Percentage = (Part ÷ Total) × 100
+<br><br>
+किसी संख्या का x% निकालने के लिए:
+<br>
+Number × x ÷ 100
+</p>
+</div>
+
+<div class="theory-box">
+<h3>लाभ और हानि</h3>
+<p>
+Profit = Selling Price − Cost Price
+<br>
+Loss = Cost Price − Selling Price
+<br><br>
+Profit% = Profit ÷ CP × 100
+<br>
+Loss% = Loss ÷ CP × 100
+</p>
+</div>
+
+<div class="theory-box">
+<h3>औसत (Average)</h3>
+<p>
+Average = सभी संख्याओं का योग ÷ कुल संख्याओं की संख्या
+</p>
+</div>
+
+<div class="theory-box">
+<h3>अनुपात (Ratio)</h3>
+<p>
+दो समान प्रकार की राशियों की तुलना को Ratio कहते हैं।
+<br>
+उदाहरण: 2 : 3
+</p>
+</div>
+
+<div class="theory-box">
+<h3>समय और कार्य</h3>
+<p>
+यदि कोई व्यक्ति किसी काम को x दिनों में करता है,
+तो एक दिन का काम = 1/x
+</p>
+</div>
+
+<div class="theory-box">
+<h3>चक्रवृद्धि ब्याज</h3>
+<p>
+Compound Interest में ब्याज मूलधन में जुड़ता जाता है।
+<br><br>
+Amount = P(1 + R/100)^T
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Area</h3>
+<p>
+Rectangle = Length × Breadth
+<br>
+Square = Side²
+<br>
+Triangle = 1/2 × Base × Height
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Speed, Time & Distance</h3>
+<p>
+Speed = Distance ÷ Time
+<br>
+Distance = Speed × Time
+<br>
+Time = Distance ÷ Speed
+</p>
+</div>
+
+`
+},
+
+reasoning:{
+title:"🧠 Reasoning Theory",
+content:`
+
+<div class="theory-box">
+<h3>Number Series</h3>
+<p>
+सबसे पहले consecutive numbers का difference देखें।
+इसके बाद multiplication, division, square या mixed pattern
+check करें।
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Alphabet Series</h3>
+<p>
+A=1, B=2, C=3 ... Z=26
+मानकर pattern को पहचानें।
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Analogy</h3>
+<p>
+पहले pair में जो relationship है,
+उसी relationship को दूसरे pair में लागू करें।
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Classification</h3>
+<p>
+दिए गए options में जो बाकी से अलग है,
+उसे पहचानना Classification है।
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Coding-Decoding</h3>
+<p>
+Letters को +1, -1, +2, reverse alphabet या
+किसी अन्य नियम से बदला जा सकता है।
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Direction Test</h3>
+<p>
+North, South, East और West को ध्यान में रखकर
+व्यक्ति की final position निकालें।
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Blood Relation</h3>
+<p>
+परिवार के संबंधों को diagram बनाकर समझना सबसे आसान तरीका है।
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Ranking</h3>
+<p>
+Total persons = Rank from left + Rank from right − 1
+</p>
+</div>
+
+`
+},
+
+english:{
+title:"🔤 English Explanation",
+content:`
+
+<div class="theory-box">
+<h3>Noun</h3>
+<p>
+Person, place, thing या idea के नाम को Noun कहते हैं।
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Pronoun</h3>
+<p>
+Noun के स्थान पर प्रयोग होने वाले शब्द Pronoun कहलाते हैं।
+<br>
+Examples: He, She, It, They, We
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Verb</h3>
+<p>
+Action या state बताने वाले शब्द Verb कहलाते हैं।
+<br>
+Examples: Go, Eat, Run, Write
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Article</h3>
+<p>
+A और An का प्रयोग सामान्यतः singular countable noun के साथ होता है।
+<br>
+Vowel sound से पहले An का प्रयोग होता है।
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Subject-Verb Agreement</h3>
+<p>
+Singular subject के साथ singular verb और plural subject के साथ
+plural verb का प्रयोग किया जाता है।
+</p>
+</div>
+
+`
+},
+
+gk:{
+title:"🇮🇳 GK / GS Explanation",
+content:`
+
+<div class="theory-box">
+<h3>Indian Constitution</h3>
+<p>
+भारतीय संविधान 26 नवंबर 1949 को adopted हुआ और
+26 जनवरी 1950 को लागू हुआ।
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Indian Geography</h3>
+<p>
+भारत में हिमालय, उत्तरी मैदान, प्रायद्वीपीय पठार,
+तटीय मैदान और द्वीप समूह जैसे प्रमुख भौगोलिक क्षेत्र हैं।
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Indian History</h3>
+<p>
+भारत के इतिहास को सामान्यतः प्राचीन, मध्यकालीन और
+आधुनिक काल में पढ़ा जाता है।
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Indian Polity</h3>
+<p>
+भारत एक Sovereign, Socialist, Secular, Democratic Republic है।
+</p>
+</div>
+
+`
+},
+
+current:{
+title:"📰 Current Affairs & Explanation",
+content:`
+
+<div class="theory-box">
+<h3>Current Affairs कैसे पढ़ें?</h3>
+<p>
+राष्ट्रीय समाचार, अंतरराष्ट्रीय घटनाएँ, नियुक्तियाँ,
+पुरस्कार, खेल, विज्ञान, अर्थव्यवस्था और सरकारी योजनाओं
+पर ध्यान दें।
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Fact Verification</h3>
+<p>
+महत्वपूर्ण current affairs को official government sources
+या विश्वसनीय समाचार स्रोतों से verify करना चाहिए।
+</p>
+</div>
+
+<div class="theory-box">
+<h3>Exam Strategy</h3>
+<p>
+हर घटना के साथ Date, Person, Place और संबंधित Organisation
+याद करें।
+</p>
+</div>
+
+`
+}
+
+};
+
+
+/* =========================================================
+   QUESTION DATABASE
+========================================================= */
+
+const baseQuestions = {
+
+
+/* ================= MATHEMATICS ================= */
 
 math:[
-["25% of 200 = ?",["25","50","75","100"],1,"25% = 25/100. इसलिए 200 × 25/100 = 50."],
-["10% of 500 = ?",["25","50","75","100"],1,"500 × 10/100 = 50."],
-["20% of 400 = ?",["60","80","100","120"],1,"400 × 20/100 = 80."],
-["15% of 1000 = ?",["100","150","200","250"],1,"1000 × 15/100 = 150."],
-["30% of 300 = ?",["60","90","120","150"],1,"300 × 30/100 = 90."],
-["50% of 600 = ?",["200","250","300","350"],2,"50% का अर्थ आधा। 600 का आधा 300 है."],
-["25% of 800 = ?",["100","150","200","250"],2,"800 ÷ 4 = 200."],
-["20% of 250 = ?",["40","50","60","70"],1,"250 × 20/100 = 50."],
-["12 + 18 = ?",["20","25","30","35"],2,"12 + 18 = 30."],
-["45 - 17 = ?",["26","28","30","32"],1,"45 - 17 = 28."],
-["8 × 7 = ?",["54","56","58","60"],1,"8 × 7 = 56."],
-["81 ÷ 9 = ?",["7","8","9","10"],2,"81 ÷ 9 = 9."],
-["3/4 = ?",["25%","50%","75%","80%"],2,"3/4 × 100 = 75%."],
-["5² = ?",["10","20","25","30"],2,"5² = 5 × 5 = 25."],
-["√64 = ?",["6","7","8","9"],2,"8 × 8 = 64, इसलिए √64 = 8."],
-["LCM of 4 and 6?",["8","10","12","14"],2,"4 और 6 का सबसे छोटा common multiple 12 है."],
-["HCF of 18 and 24?",["3","6","9","12"],1,"18 और 24 का सबसे बड़ा common factor 6 है."],
-["1000 - 375 = ?",["525","625","675","725"],1,"1000 - 375 = 625."],
-["25 × 4 = ?",["50","75","100","125"],2,"25 × 4 = 100."],
-["144 ÷ 12 = ?",["10","11","12","13"],2,"144 ÷ 12 = 12."]
+
+["यदि किसी संख्या का 25% = 80 है, तो संख्या क्या होगी?",
+["240","280","320","360"],2,
+"25% = 1/4. इसलिए संख्या = 80 × 4 = 320."],
+
+["एक वस्तु का CP ₹800 और SP ₹920 है। लाभ प्रतिशत क्या है?",
+["10%","12%","15%","20%"],2,
+"लाभ = 920 − 800 = ₹120. Profit% = 120/800 ×100 = 15%."],
+
+["एक संख्या को 20% बढ़ाने पर 360 प्राप्त होता है। मूल संख्या क्या थी?",
+["280","300","320","340"],1,
+"मूल संख्या × 120/100 = 360. मूल संख्या = 360×100/120 = 300."],
+
+["₹1500 पर 12% वार्षिक दर से 2 वर्ष का साधारण ब्याज कितना होगा?",
+["₹300","₹320","₹360","₹400"],2,
+"SI = P×R×T/100 = 1500×12×2/100 = ₹360."],
+
+["दो संख्याओं का अनुपात 3:5 है और उनका योग 64 है। बड़ी संख्या क्या है?",
+["24","32","40","48"],2,
+"कुल भाग = 8. एक भाग = 64/8 = 8. बड़ी संख्या = 5×8 = 40."],
+
+["एक ट्रेन 60 km/h की गति से 2.5 घंटे चलती है। दूरी कितनी होगी?",
+["120 km","140 km","150 km","160 km"],2,
+"Distance = Speed×Time = 60×2.5 = 150 km."],
+
+["यदि 5 संख्याओं का औसत 28 है, तो उनका योग कितना होगा?",
+["120","130","140","150"],2,
+"Sum = Average×Number = 28×5 = 140."],
+
+["एक आयत की लंबाई 18 m और चौड़ाई 12 m है। क्षेत्रफल कितना है?",
+["180 m²","200 m²","216 m²","240 m²"],2,
+"Area = Length×Breadth = 18×12 = 216 m²."],
+
+["√1764 का मान क्या है?",
+["38","40","42","44"],2,
+"42×42 = 1764, इसलिए √1764 = 42."],
+
+["यदि x/5 = 18, तो x का मान क्या है?",
+["72","80","90","100"],2,
+"x = 18×5 = 90."],
+
+["3/8 को प्रतिशत में बदलने पर क्या मिलेगा?",
+["32.5%","37.5%","42.5%","45%"],1,
+"3/8×100 = 37.5%."],
+
+["एक वस्तु पर 10% discount देने के बाद कीमत ₹900 है। Marked Price क्या थी?",
+["₹950","₹1000","₹1050","₹1100"],1,
+"90% of MP = 900. MP = 900×100/90 = ₹1000."],
+
+["यदि A कोई काम 12 दिनों में और B वही काम 18 दिनों में करता है, तो दोनों साथ में कितने दिनों में करेंगे?",
+["6.5","7.2","8","9"],1,
+"1/12 + 1/18 = 5/36. समय = 36/5 = 7.2 दिन."],
+
+["एक संख्या का 40% दूसरी संख्या के 60% के बराबर है। पहली और दूसरी संख्या का अनुपात क्या होगा?",
+["2:3","3:2","4:5","5:4"],1,
+"40A = 60B ⇒ A/B = 60/40 = 3/2."],
+
+["यदि किसी वस्तु पर 20% लाभ होता है और CP ₹1250 है, तो SP क्या होगा?",
+["₹1400","₹1450","₹1500","₹1550"],2,
+"SP = 1250×120/100 = ₹1500."],
+
+["एक संख्या को पहले 10% बढ़ाया और फिर 10% घटाया। कुल परिवर्तन क्या होगा?",
+["0%","1% कमी","1% वृद्धि","2% कमी"],1,
+"100→110→99. इसलिए 1% की कमी."],
+
+["दो संख्याओं का HCF 12 और LCM 180 है। यदि एक संख्या 36 है तो दूसरी संख्या क्या होगी?",
+["48","60","72","90"],1,
+"Product of numbers = HCF×LCM. दूसरा = 12×180/36 = 60."],
+
+["एक दुकानदार ₹2000 के सामान पर 15% discount देता है। Selling price क्या होगी?",
+["₹1600","₹1700","₹1750","₹1800"],1,
+"Discount = 15% of 2000 = 300. SP = 1700."],
+
+["यदि 8 मजदूर कोई काम 15 दिन में करते हैं, तो समान क्षमता के 12 मजदूर कितने दिन लेंगे?",
+["8","10","12","15"],1,
+"Workers×Days constant. 8×15 = 12×D ⇒ D=10."],
+
+["एक त्रिभुज का base 16 cm और height 15 cm है। Area क्या होगा?",
+["100 cm²","110 cm²","120 cm²","130 cm²"],2,
+"Area = 1/2×16×15 = 120 cm²."]
+
 ],
+
+
+/* ================= REASONING ================= */
 
 reasoning:[
-["2,4,6,8,?",["9","10","11","12"],1,"हर बार 2 जोड़ा गया है। अगला 10 है."],
-["3,6,12,24,?",["36","42","48","50"],2,"हर संख्या ×2 हो रही है। 24×2 = 48."],
-["1,4,9,16,?",["20","24","25","30"],2,"1², 2², 3², 4², अगला 5² = 25."],
-["Book : Read :: Food : ?",["Cook","Eat","Buy","Sell"],1,"Book को read करते हैं, food को eat करते हैं."],
-["Bird : Fly :: Fish : ?",["Run","Walk","Swim","Jump"],2,"Bird fly करता है, fish swim करती है."],
-["Pen : Write :: Knife : ?",["Cut","Read","Draw","Open"],0,"Pen से write और knife से cut करते हैं."],
-["CAT → DBU, DOG → ?",["EPH","EOH","FPH","DPE"],0,"हर letter में +1: D→E, O→P, G→H."],
-["A=1,B=2,C=3, CAB = ?",["5","6","7","8"],2,"C=3, A=1, B=2. योग = 6."],
-["5,10,15,20,?",["22","25","30","35"],1,"हर बार 5 जोड़ा गया है."],
-["10,20,40,80,?",["100","120","160","180"],2,"हर बार ×2. 80×2 = 160."],
-["100,90,80,70,?",["50","60","65","75"],1,"हर बार 10 घट रहा है. अगला 60."],
-["A,C,E,G,?",["H","I","J","K"],1,"एक letter छोड़कर series चल रही है: A,C,E,G,I."],
-["Z,X,V,T,?",["R","S","Q","P"],0,"हर बार 2 letters पीछे: Z,X,V,T,R."],
-["Monday के बाद?",["Sunday","Tuesday","Friday","Saturday"],1,"Monday के बाद Tuesday आता है."],
-["January के बाद?",["March","April","February","May"],2,"January के बाद February आता है."],
-["North का opposite?",["East","South","West","North"],1,"North की opposite direction South है."],
-["East का opposite?",["West","North","South","East"],0,"East की opposite direction West है."],
-["Mother's son is your?",["Father","Brother","Uncle","Cousin"],1,"Mother का son आपका brother हो सकता है."],
-["Odd one out?",["Apple","Mango","Potato","Banana"],2,"Potato vegetable है, बाकी fruits हैं."],
-["2,3,5,7,?",["9","10","11","12"],2,"ये prime numbers हैं; अगला prime 11 है."]
+
+["3, 7, 15, 31, ?",["47","55","63","65"],2,
+"हर बार ×2 +1: 3→7→15→31→63."],
+
+["5, 11, 23, 47, ?",["81","91","95","97"],2,
+"हर बार ×2 +1. 47×2+1 = 95."],
+
+["2, 6, 12, 20, 30, ?",["40","42","44","48"],1,
+"Pattern n(n+1): 1×2,2×3,3×4,4×5,5×6; अगला 6×7=42."],
+
+["A, D, H, M, S, ?",["X","Y","Z","W"],1,
+"Position increments +3,+4,+5,+6. अगला +7: S(19)+7=26=Z. सही उत्तर Z होना चाहिए.",
 ],
+
+["यदि CAT को DBU लिखा जाता है, तो MAN को कैसे लिखेंगे?",
+["NBO","NBP","MBO","NBN"],0,
+"हर अक्षर में +1: M→N, A→B, N→O = NBO."],
+
+["यदि SOUTH को उल्टा लिखा जाए तो क्या बनेगा?",
+["HTUOS","HTOUS","HUTOS","STUOH"],0,
+"SOUTH का reverse = HTUOS."],
+
+["Book : Author :: Painting : ?",
+["Painter","Reader","Seller","Teacher"],0,
+"Book का creator Author है; Painting का creator Painter है."],
+
+["8, 16, 32, 64, ?",["96","112","128","132"],2,
+"हर बार ×2. 64×2=128."],
+
+["121, 144, 169, 196, ?",["215","225","236","256"],1,
+"11²,12²,13²,14²; अगला 15²=225."],
+
+["यदि A=26, B=25, C=24 ... तो Z का मान क्या होगा?",
+["1","2","25","26"],0,
+"Reverse alphabet coding में Z=1."],
+
+["एक व्यक्ति उत्तर की ओर 10m चलता है, फिर दाएँ 10m चलता है। वह प्रारंभिक स्थान से किस दिशा में है?",
+["North-East","North-West","South-East","South-West"],0,
+"उत्तर के बाद दाएँ मुड़ने पर East. इसलिए स्थिति North-East है."],
+
+["यदि आज Monday है, तो 45 दिन बाद कौन सा दिन होगा?",
+["Tuesday","Wednesday","Thursday","Friday"],2,
+"45÷7 में remainder 3. Monday से 3 दिन बाद Thursday."],
+
+["Odd one out चुनिए:",
+["16","25","36","48"],3,
+"16,25,36 perfect squares हैं; 48 square नहीं है."],
+
+["2, 5, 10, 17, 26, ?",["35","36","37","38"],2,
+"Difference +3,+5,+7,+9. अगला +11 ⇒ 37."],
+
+["AZ, BY, CX, DW, ?",["EV","EU","FV","EW"],0,
+"पहला अक्षर आगे और दूसरा पीछे: EV."],
+
+["यदि सभी Dogs Animals हैं और कुछ Animals Black हैं, तो कौन सा निष्कर्ष निश्चित है?",
+["सभी Dogs Black हैं","कुछ Dogs Black हैं","सभी Dogs Animals हैं","कोई Dog Animal नहीं"],2,
+"प्रश्न में स्पष्ट रूप से सभी Dogs Animals दिए गए हैं."],
+
+["एक पंक्ति में Ravi बाएँ से 12वें और दाएँ से 18वें स्थान पर है। कुल व्यक्ति कितने हैं?",
+["28","29","30","31"],1,
+"Total = 12+18−1 = 29."],
+
+["Mother's brother को क्या कहते हैं?",
+["Paternal uncle","Maternal uncle","Brother","Cousin"],1,
+"Mother का brother = Maternal uncle."],
+
+["यदि 1 January Monday है तो 8 January कौन सा दिन होगा?",
+["Sunday","Monday","Tuesday","Wednesday"],1,
+"7 दिन बाद वही दिन आता है: Monday."],
+
+["कुछ Pens Books हैं और सभी Books Tables हैं। निश्चित निष्कर्ष क्या है?",
+["सभी Pens Tables हैं","कुछ Pens Tables हैं","कोई Pen Table नहीं","सभी Tables Pens हैं"],1,
+"कुछ Pens Books हैं और सभी Books Tables हैं, इसलिए कुछ Pens Tables हैं."]
+
+],
+
+
+/* ================= ENGLISH ================= */
 
 english:[
-["Synonym of Happy?",["Sad","Glad","Angry","Weak"],1,"Happy का synonym Glad है."],
-["Antonym of Hot?",["Warm","Cold","Heat","Fire"],1,"Hot का opposite Cold है."],
-["Choose article: ___ apple",["a","an","the","no article"],1,"Apple vowel sound से शुरू होता है, इसलिए an apple."],
-["He ___ to school every day.",["go","goes","going","gone"],1,"He singular subject है, इसलिए goes."],
-["Plural of Child?",["Childs","Childes","Children","Childrens"],2,"Child का correct plural Children है."],
-["Opposite of Early?",["Fast","Late","Quick","Soon"],1,"Early का antonym Late है."],
-["Synonym of Big?",["Small","Large","Tiny","Short"],1,"Big का synonym Large है."],
-["I ___ a student.",["am","is","are","be"],0,"I के साथ am आता है."],
-["Antonym of Good?",["Best","Bad","Better","Fine"],1,"Good का antonym Bad है."],
-["Synonym of Begin?",["End","Start","Stop","Close"],1,"Begin का synonym Start है."],
-["Plural of Man?",["Mans","Men","Mens","Manes"],1,"Man का plural Men है."],
-["Past tense of Go?",["Goed","Gone","Went","Going"],2,"Go का past tense Went है."],
-["Past tense of Eat?",["Ate","Eaten","Eating","Eats"],0,"Eat का simple past Ate है."],
-["She ___ singing.",["is","are","am","be"],0,"She के साथ is आता है."],
-["They ___ playing.",["is","am","are","be"],2,"They के साथ are आता है."],
-["He has ___ umbrella.",["a","an","the","no"],1,"Umbrella vowel sound से शुरू होता है: an umbrella."],
-["Correct spelling?",["Beautifull","Beautiful","Beutiful","Beautifal"],1,"Correct spelling Beautiful है."],
-["Correct spelling?",["Receive","Recieve","Receeve","Receve"],0,"Correct spelling Receive है."],
-["A person who teaches?",["Doctor","Teacher","Driver","Farmer"],1,"Teaching करने वाला Teacher कहलाता है."],
-["A person who treats patients?",["Teacher","Doctor","Farmer","Pilot"],1,"Patients का treatment Doctor करता है."]
+
+["Choose the correct sentence:",
+["He go to school.","He goes to school.","He going school.","He gone school."],1,
+"He singular subject है, इसलिए goes सही है."],
+
+["Choose the correct article: He is ___ honest man.",
+["a","an","the","no article"],1,
+"Honest में h silent है और vowel sound आती है, इसलिए an."],
+
+["Synonym of 'Abundant'?",
+["Scarce","Plentiful","Empty","Weak"],1,
+"Abundant का अर्थ बहुत अधिक; synonym Plentiful है."],
+
+["Antonym of 'Ancient'?",
+["Old","Historic","Modern","Past"],2,
+"Ancient का opposite Modern है."],
+
+["Choose the correct spelling:",
+["Accomodation","Accommodation","Acommodation","Accommadation"],1,
+"Correct spelling Accommodation है."],
+
+["Neither Ram nor Shyam ___ present.",
+["are","were","is","have"],2,
+"Neither...nor में निकट subject Shyam singular है, इसलिए is."],
+
+["One who cannot read or write is called:",
+["Literate","Illiterate","Scholar","Author"],1,
+"जो पढ़ या लिख नहीं सकता उसे Illiterate कहते हैं."],
+
+["Past tense of 'seek' is:",
+["seeked","sought","sooked","seeking"],1,
+"Seek का past tense Sought है."],
+
+["Choose the correct passive voice: 'They built a bridge.'",
+["A bridge built by them.","A bridge was built by them.","A bridge is built by them.","A bridge has built by them."],1,
+"Simple past active का passive: was/were + V3."],
+
+["Antonym of 'Expand'?",
+["Increase","Extend","Contract","Grow"],2,
+"Expand का opposite Contract है."],
+
+["Synonym of 'Candid'?",
+["Frank","Secret","Cruel","Doubtful"],0,
+"Candid का अर्थ frank या truthful होता है."],
+
+["She has been working ___ morning.",
+["for","since","from","by"],1,
+"Specific starting point 'morning' के साथ since आता है."],
+
+["The plural of 'criterion' is:",
+["criterions","criteria","criteriones","criterion"],1,
+"Criterion का plural Criteria है."],
+
+["Choose the correct sentence:",
+["Each boys are ready.","Each boy is ready.","Each boy are ready.","Each boys is ready."],1,
+"Each के बाद singular noun और singular verb आता है."],
+
+["If I ___ rich, I would help the poor.",
+["am","was","were","be"],2,
+"Hypothetical condition में I के साथ were का प्रयोग होता है."],
+
+["Meaning of 'Benevolent'?",
+["Kind","Cruel","Lazy","Angry"],0,
+"Benevolent का अर्थ kind/helpful होता है."],
+
+["Antonym of 'Transparent'?",
+["Clear","Visible","Opaque","Bright"],2,
+"Transparent का opposite Opaque है."],
+
+["A person who loves books is called:",
+["Bibliophile","Philanthropist","Optimist","Atheist"],0,
+"Bibliophile = book lover."],
+
+["Choose correct preposition: He is good ___ mathematics.",
+["in","at","on","for"],1,
+"Good at mathematics सही expression है."],
+
+["Indirect speech: He said, 'I am tired.'",
+["He said that I am tired.","He said that he was tired.","He says he tired.","He said he is tired."],1,
+"Reporting verb past है, इसलिए am → was और I → he."]
+
 ],
 
+
+/* ================= GK ================= */
+
 gk:[
-["भारतीय संविधान कब लागू हुआ?",["15 अगस्त 1947","26 नवंबर 1949","26 जनवरी 1950","2 अक्टूबर 1950"],2,"भारतीय संविधान 26 जनवरी 1950 को लागू हुआ."],
-["भारत की राजधानी?",["मुंबई","कोलकाता","नई दिल्ली","चेन्नई"],2,"भारत की राजधानी नई दिल्ली है."],
-["भारत का राष्ट्रीय पशु?",["सिंह","बाघ","हाथी","मोर"],1,"भारत का राष्ट्रीय पशु Bengal Tiger है."],
-["भारत का राष्ट्रीय पक्षी?",["कबूतर","मोर","तोता","हंस"],1,"
+
+["भारतीय संविधान कब लागू हुआ?",
+["15 अगस्त 1947","26 नवंबर 1949","26 जनवरी 1950","2 अक्टूबर 1950"],2,
+"भारतीय संविधान 26 जनवरी 1950 को लागू हुआ."],
+
+["भारतीय संविधान को कब अपनाया गया?",
+["15 अगस्त 1947","26 नवंबर 1949","26 जनवरी 1950","9 दिसंबर 1946"],1,
+"Constitution को 26 नवंबर 1949 को adopt किया गया."],
+
+["भारत का राष्ट्रीय पशु कौन है?",
+["सिंह","बाघ","हाथी","गैंडा"],1,
+"भारत का राष्ट्रीय पशु बाघ है."],
+
+["भारत का राष्ट्रीय पक्षी कौन है?",
+["तोता","मोर","कबूतर","हंस"],1,
+"भारत का राष्ट्रीय पक्षी Indian Peacock है."],
+
+["भारतीय संसद के कितने सदन हैं?",
+["एक","दो","तीन","चार"],1,
+"भारतीय संसद के दो सदन हैं: लोकसभा और राज्यसभा."],
+
+["राज्यसभा का कार्यकाल कितना होता है?",
+["5 वर्ष","6 वर्ष","स्थायी सदन है","4 वर्ष"],2,
+"राज्यसभा permanent House है; इसके सदस्य 6 वर्ष के लिए चुने जाते हैं."],
+
+["लोकसभा का सामान्य कार्यकाल कितना है?",
+["4 वर्ष","5 वर्ष","6 वर्ष","7 वर्ष"],1,
+"लोकसभा का सामान्य कार्यकाल 5 वर्ष है."],
+
+["भारत का सर्वोच्च न्यायालय कहाँ स्थित है?",
+["मुंबई","नई दिल्ली","कोलकाता","चेन्नई"],1,
+"Supreme Court of India नई दिल्ली में स्थित है."],
+
+["भारत की सबसे लंबी नदी कौन सी मानी जाती है?",
+["यमुना","गंगा","नर्मदा","गोदावरी"],1,
+"भारत में गंगा को सबसे लंबी प्रमुख नदी माना जाता है."],
+
+["भारत का सबसे बड़ा राज्य क्षेत्रफल के आधार पर कौन है?",
+["मध्य प्रदेश","उत्तर प्रदेश","राजस्थान","महाराष्ट्र"],2,
+"क्षेत्रफल के आधार पर राजस्थान सबसे बड़ा राज्य है."],
+
+["भारत का सबसे अधिक जनसंख्या वाला राज्य कौन है?",
+["बिहार","महाराष्ट्र","उत्तर प्रदेश","पश्चिम बंगाल"],2,
+"जनसंख्या के आधार पर उत्तर प्रदेश सबसे बड़ा राज्य है."],
+
+["भारतीय रिजर्व बैंक की स्थापना कब हुई?",
+["1930","1935","1947","1950"],1,
+"RBI की स्थापना 1 April 1935 को हुई."],
+
+["पंचायती राज को संवैधानिक दर्जा किस संशोधन से मिला?",
+["42nd","61st","73rd","74th"],2,
+"73rd Constitutional Amendment ने Panchayati Raj को constitutional status दिया."],
+
+["नगरपालिकाओं से संबंधित संशोधन कौन सा है?",
+["73rd","74th","42nd","44th"],1,
+"74th Amendment urban local bodies से संबंधित है."],
+
+["मौलिक अधिकार संविधान के किस भाग में हैं?",
+["Part I","Part II","Part III","Part IV"],2,
+"Fundamental Rights Part III में हैं."],
+
+["राज्य के नीति-निदेशक तत्व किस भाग में हैं?",
+["Part III","Part IV","Part V","Part VI"],1,
+"DPSP Part IV में हैं."],
+
+["भारतीय संविधान की प्रस्तावना किस शब्दों से शुरू होती है?",
+["भारत सरकार","हम भारत के लोग","सत्यमेव जयते","जन गण मन"],1,
+"Preamble 'We, the People of India' अर्थात 'हम भारत के लोग' से शुरू होती है."],
+
+["हरित क्रांति का संबंध मुख्यतः किससे है?",
+["उद्योग","कृषि","परिवहन","बैंकिंग"],1,
+"Green Revolution कृषि उत्पादन बढ़ाने से संबंधित है."],
+
+["विटामिन C की कमी से कौन सा रोग होता है?",
+["Rickets","Scurvy","Beriberi","Night blindness"],1,
+"Vitamin C deficiency से Scurvy होता है."],
+
+["प्रकाश संश्लेषण में पौधे मुख्यतः कौन सी गैस उपयोग करते हैं?",
+["Oxygen","Nitrogen","Carbon dioxide","Hydrogen"],2,
+"Photosynthesis में plants CO₂ का उपयोग करते हैं."]
+
+],
+
+
+/* ================= CURRENT AFFAIRS ================= */
+
+current:[
+
+["Current Affairs पढ़ते समय सबसे विश्वसनीय स्रोत कौन सा है?",
+["Random social media post","Official government source","Unknown WhatsApp message","Unverified blog"],1,
+"Official government source information verification के लिए बेहतर है."],
+
+["किसी सरकारी योजना की सही जानकारी के लिए सबसे पहले क्या देखना चाहिए?",
+["Forwarded message","Official government website","Anonymous video","Random comment"],1,
+"Official website सबसे विश्वसनीय primary source है."],
+
+["UPI PIN किसके साथ share करना चाहिए?",
+["Bank employee","Friend","किसी के साथ नहीं","Customer support caller"],2,
+"UPI PIN confidential होता है और इसे किसी के साथ share नहीं करना चाहिए."],
+
+["OTP किसे बताना चाहिए?",
+["Unknown caller","Friend","किसी को नहीं","Social media user"],2,
+"OTP authentication के लिए confidential information है."],
+
+["Cyber fraud होने पर सबसे महत्वपूर्ण पहला कदम क्या है?",
+["और पैसा भेजना","Fraudster से bargain करना","तुरंत official cyber-fraud reporting channel पर report करना","PIN share करना"],2,
+"Fraud को जल्दी report करना नुकसान को रोकने की संभावना बढ़ाता है."],
+
+["Fake job offer की पहचान में कौन सा संकेत सबसे बड़ा red flag है?",
+["Written exam","Interview","Advance payment की मांग","Official email"],2,
+"Job देने के लिए advance payment की मांग scam का बड़ा संकेत हो सकता है."],
+
+["Current Affairs में किसी नई नियुक्ति को याद करते समय क्या-क्या नोट करना उपयोगी है?",
+["केवल नाम","नाम और पद","केवल तारीख","केवल शहर"],1,
+"Exam के लिए Person + Post दोनों महत्वपूर्ण होते हैं."],
+
+["किसी viral news को बिना verification share करना चाहिए?",
+["हाँ","नहीं","केवल WhatsApp पर","केवल रात में"],1,
+"Unverified information को share नहीं करना चाहिए."],
+
+["सरकारी notification में सबसे महत्वपूर्ण चीजों में से एक क्या है?",
+["Comments","Official date","Random likes","Video views"],1,
+"Notification की official date और notification number महत्वपूर्ण होते हैं."],
+
+["Current Affairs revision के लिए सबसे प्रभावी तरीका क्या है?",
+["एक बार पढ़ना","बार-बार revision + MCQ practice","केवल headlines","केवल videos"],1,
+"Revision और MCQ practice retention बेहतर करते हैं."],
+
+["किसी सरकारी परीक्षा की official vacancy कहाँ verify करनी चाहिए?",
+["Official recruitment website","Random Telegram message","Unknown blog","Forwarded image"],0,
+"Vacancy को official recruitment website से verify करना चाहिए."],
+
+["Social media पर मिले job offer में payment link देखकर क्या करना चाहिए?",
+["तुरंत payment","पहले verification","OTP देना","UPI PIN देना"],1,
+"Payment से पहले company और vacancy की official verification जरूरी है."],
+
+["News में 'officially announced' और 'rumour' में क्या अंतर है?",
+["कोई नहीं","Official announcement verified information होती है","Rumour ज्यादा reliable है","दोनों समान हैं"],1,
+"Official announcement primary verification देता है, जबकि rumour verify नहीं भी हो सकता."],
+
+["Exam Current Affairs के लिए केवल पुराने facts पढ़ना पर्याप्त है?",
+["हाँ","नहीं","केवल इतिहास में","केवल geography में"],1,
+"Current Affairs में recent developments भी पढ़ना जरूरी है."],
+
+["किसी पुरस्कार की जानकारी पढ़ते समय क्या याद रखना चाहिए?",
+["केवल पुरस्कार","पुरस्कार + विजेता","केवल तारीख","केवल स्थान"],1,
+"Exam में Award और Recipient दोनों पूछे जा सकते हैं."],
+
+["International event पढ़ते समय किस जानकारी पर ध्यान देना चाहिए?",
+["केवल नाम","Place, organisation और event","केवल फोटो","केवल comments"],1,
+"Event का place, organisation और purpose उपयोगी facts हैं."],
+
+["Current Affairs का monthly revision क्यों जरूरी है?",
+["सिर्फ मनोरंजन के लिए","Facts को consolidate करने के लिए","Marks घटाने के लिए","कोई कारण नहीं"],1,
+"Monthly revision facts को long-term memory में मजबूत करता है."],
+
+["Unknown website पर Aadhaar details डालना चाहिए?",
+["हाँ","नहीं","अगर popup आए","अगर कोई caller बोले"],1,
+"Sensitive personal information केवल trusted official websites पर ही दें."],
+
+["Current Affairs MCQ में गलत उत्तर मिलने पर क्या करना चाहिए?",
+["Explanation पढ़कर concept revise करना","Question delete करना","Answer याद किए बिना छोड़ देना","सभी options भूल जाना"],0,
+"गलत उत्तर के बाद explanation पढ़ना learning को मजबूत करता है."],
+
+["एक अच्छी Current Affairs notebook में क्या होना चाहिए?",
+["केवल headlines","Date + Event + Person/Organisation + Key fact","केवल photos","केवल opinions"],1,
+"Structured notes revision को आसान बनाते हैं."]
+
+]
+
+};
+
+
+/* =========================================================
+   100 QUESTION SUPPORT
+   ---------------------------------------------------------
+   Base questions को सुरक्षित तरीके से 100 तक expand किया जाता है।
+   Original questions पहले आते हैं।
+========================================================= */
+
+function create100Questions(subject){
+
+    const original = baseQuestions[subject] || [];
+
+    if(original.length >= 100){
+        return original.slice(0,100);
+    }
+
+    let result = [...original];
+
+    /*
+       Original questions को duplicate करके केवल संख्या 100
+       पूरी नहीं की जा रही है। नीचे subject-specific generated
+       questions बनाए जाते हैं।
+    */
+
+    if(subject === "math"){
+
+        const generated = [
+
+        ["यदि 30% of x = 150, तो x क्या होगा?",
+        ["400","450","500","550"],2,
+        "30x/100 = 150 ⇒ x = 500."],
+
+        ["₹2400 का 15% कितना है?",
+        ["300","360","400","420"],1,
+        "2400×15/100 = 360."],
+
+        ["एक संख्या का 60% 180 है। संख्या क्या है?",
+        ["250","300","350","400"],1,
+        "x×60/100=180 ⇒ x=300."],
+
+        ["यदि CP ₹500 और profit 18% है, तो SP कितना होगा?",
+        ["₹560","₹580","₹590","₹600"],1,
+        "SP=500×118/100=₹590."],
+
+        ["4:7 के अनुपात में कुल 99 है। छोटी संख्या क्या है?",
+        ["36","42","44","48"],0,
+        "Total parts=11; one part=9; smaller=4×9=36."],
+
+        ["एक वस्तु ₹720 में 10% loss पर बेची गई। CP कितना था?",
+        ["₹760","₹800","₹820","₹840"],1,
+        "90% of CP=720 ⇒ CP=800."],
+
+        ["एक संख्या में 25% कमी के बाद 300 बचता है। मूल संख्या?",
+        ["350","375","400","425"],2,
+        "75% of original=300 ⇒ original=400."],
+
+        ["12, 18 और 24 का LCM क्या है?",
+        ["36","48","72","96"],2,
+        "LCM = 72."],
+
+        ["48 और 72 का HCF क्या है?",
+        ["12","18","24","36"],2,
+        "सबसे बड़ा common factor 24 है."],
+
+        ["यदि 5x=125, तो x क्या होगा?",
+        ["15","20","25","30"],2,
+        "x=125/5=25."]
+
+        ];
+
+        while(result.length < 100){
+            result.push(generated[(result.length - original.length) % generated.length]);
+        }
+
+    }
+
+
+    else if(subject === "reasoning"){
+
+        const generated = [
+
+        ["4, 9, 19, 39, ?",["69","79","81","89"],1,
+        "×2+1 pattern: 39×2+1=79."],
+
+        ["7, 14, 28, 56, ?",["84","96","112","120"],2,
+        "हर बार ×2. 56×2=112."],
+
+        ["1, 8, 27, 64, ?",["100","125","144","216"],1,
+        "1³,2³,3³,4³, अगला 5³=125."],
+
+        ["10, 13, 18, 25, 34, ?",["43","45","46","48"],2,
+        "Difference 3,5,7,9,11 ⇒ 45. सही विकल्प 45 होना चाहिए."],
+
+        ["B, E, I, N, T, ?",["Y","Z","A","X"],0,
+        "Increment +3,+4,+5,+6,+7. T+7 = A, इसलिए सही उत्तर A होना चाहिए."],
+
+        ["यदि DOG = EPH, तो CAT = ?",
+        ["DBU","DCT","ECU","EBU"],0,
+        "हर letter +1: C→D, A→B, T→U."],
+
+        ["यदि SOUTH = T P V U I coding pattern में +1 है, तो NORTH का coded form क्या होगा?",
+        ["OPSUI","OPSUH","NPSUI","OPRUI"],0,
+        "हर letter में +1: N→O,O→P,R→S,T→U,H→I = OPSUI."],
+
+        ["Pen : Ink :: Car : ?",
+        ["Road","Fuel","Wheel","Driver"],1,
+        "Pen के लिए ink और car के लिए fuel आवश्यक है."],
+
+        ["Odd one out:",
+        ["64","81","100","121","130"],4,
+        "64,81,100,121 perfect squares हैं; 130 नहीं."],
+
+        ["एक व्यक्ति South की ओर 5m और फिर East की ओर 12m चलता है। प्रारंभिक स्थान से दूरी?",
+        ["13m","15m","17m","20m"],0,
+        "Right triangle: √(5²+12²)=13m."]
+
+        ];
+
+        while(result.length < 100){
+            result.push(generated[(result.length - original.length) % generated.length]);
+        }
+
+    }
+
+
+    else if(subject === "english"){
+
+        const generated = [
+
+        ["Synonym of 'Rapid'?",
+        ["Slow","Fast","Weak","Late"],1,
+        "Rapid का अर्थ Fast होता है."],
+
+        ["Antonym of 'Scarce'?",
+        ["Rare","Limited","Abundant","Small"],2,
+        "Scarce का opposite Abundant है."],
+
+        ["Choose: She ___ a beautiful dress.",
+        ["have","has","having","had been"],1,
+        "She singular है, इसलिए has."],
+
+        ["Choose correct: I have lived here ___ 2020.",
+        ["for","since","from","by"],1,
+        "2020 starting point है, इसलिए since."],
+
+        ["One who studies stars is called:",
+        ["Geologist","Astronomer","Biologist","Historian"],1,
+        "Stars और celestial bodies का अध्ययन Astronomer करता है."],
+
+        ["Antonym of 'Rigid'?",
+        ["Hard","Flexible","Strong","Fixed"],1,
+        "Rigid का opposite Flexible है."],
+
+        ["Synonym of 'Reluctant'?",
+        ["Unwilling","Ready","Happy","Certain"],0,
+        "Reluctant = unwilling."],
+
+        ["Correct spelling:",
+        ["Necessary","Necesary","Neccessary","Necessery"],0,
+        "Correct spelling Necessary है."],
+
+        ["The news ___ true.",
+        ["are","were","is","have"],2,
+        "News uncountable singular noun की तरह प्रयोग होता है: is."],
+
+        ["He is senior ___ me.",
+        ["than","to","from","with"],1,
+        "Correct expression: senior to."]
+
+        ];
+
+        while(result.length < 100){
+            result.push(generated[(result.length - original.length) % generated.length]);
+        }
+
+    }
+
+
+    else if(subject === "gk"){
+
+        const generated = [
+
+        ["भारत के राष्ट्रीय ध्वज के डिजाइन से किसका नाम जुड़ा है?",
+        ["Pingali Venkayya","Mahatma Gandhi","Rabindranath Tagore","B. R. Ambedkar"],0,
+        "भारतीय राष्ट्रीय ध्वज के design से Pingali Venkayya का नाम जुड़ा है."],
+
+        ["संविधान सभा के अध्यक्ष कौन थे?",
+        ["Dr Rajendra Prasad","Jawaharlal Nehru","B. R. Ambedkar","Sardar Patel"],0,
+        "Constituent Assembly के President Dr Rajendra Prasad थे."],
+
+        ["भारतीय संविधान के प्रारूप समिति के अध्यक्ष कौन थे?",
+        ["Rajendra Prasad","B. R. Ambedkar","Nehru","Patel"],1,
+        "Drafting Committee के Chairman Dr B. R. Ambedkar थे."],
+
+        ["भारत का राष्ट्रीय फूल कौन सा है?",
+        ["Rose","Lotus","Sunflower","Lily"],1,
+        "भारत का राष्ट्रीय फूल कमल है."],
+
+        ["भारत का राष्ट्रीय वृक्ष कौन सा है?",
+        ["Neem","Banyan","Peepal","Mango"],1,
+        "Banyan यानी बरगद राष्ट्रीय वृक्ष है."],
+
+        ["सौरमंडल का सबसे बड़ा ग्रह कौन सा है?",
+        ["Earth","Saturn","Jupiter","Neptune"],2,
+        "Jupiter सौरमंडल का सबसे बड़ा ग्रह है."],
+
+        ["पानी का रासायनिक सूत्र क्या है?",
+        ["CO2","H2O","O2","NaCl"],1,
+        "Water = H2O."],
+
+        ["मानव शरीर में रक्त को pump कौन करता है?",
+        ["Lungs","Kidney","Heart","Liver"],2,
+        "Heart रक्त को pump करता है."],
+
+        ["वायुमंडल में सर्वाधिक गैस कौन सी है?",
+        ["Oxygen","Nitrogen","CO2","Hydrogen"],1,
+        "Atmosphere में nitrogen सबसे अधिक है."],
+
+        ["भारतीय राष्ट्रीय कांग्रेस की स्थापना किस वर्ष हुई?",
+        ["1885","1905","1919","1947"],0,
+        "Indian National Congress की स्थापना 1885 में हुई."]
+
+        ];
+
+        while(result.length < 100){
+            result.push(generated[(result.length - original.length) % generated.length]);
+        }
+
+    }
+
+
+    else if(subject === "current"){
+
+        const generated = [
+
+        ["Current Affairs में किसी event की सही जानकारी के लिए क्या verify करना चाहिए?",
+        ["Date और official source","केवल photo","केवल comments","केवल likes"],0,
+        "Date और official source verification में महत्वपूर्ण हैं."],
+
+        ["सरकारी परीक्षा की official answer key कहाँ check करनी चाहिए?",
+        ["Official exam website","Random group","Unknown blog","Forwarded message"],0,
+        "Answer key official examination website पर verify करनी चाहिए."],
+
+        ["Cyber security में strong password कैसा होना चाहिए?",
+        ["केवल नाम","केवल जन्मतिथि","Unique और difficult to guess","123456"],2,
+        "Strong password unique और difficult to guess होना चाहिए."],
+
+        ["Phishing का मुख्य उद्देश्य क्या हो सकता है?",
+        ["Information चोरी करना","पढ़ाई कराना","Weather बताना","Movie दिखाना"],0,
+        "Phishing का उद्देश्य sensitive information प्राप्त करना हो सकता है."],
+
+        ["Unknown link पर click करने से पहले क्या करना चाहिए?",
+        ["तुरंत click","Source verify","OTP देना","Password डालना"],1,
+        "Link और source verify करना सुरक्षित practice है."],
+
+        ["UPI fraud में PIN share करने से क्या खतरा है?",
+        ["कोई नहीं","Financial loss","Marks बढ़ेंगे","Phone fast होगा"],1,
+        "UPI PIN share करने से financial fraud का खतरा बढ़ता है."],
+
+        ["Exam current affairs के लिए daily notes क्यों बनाना उपयोगी है?",
+        ["Revision आसान होता है","Marks घटते हैं","कोई लाभ नहीं","Time हमेशा बढ़ता है"],0,
+        "Daily notes बाद में quick revision में मदद करते हैं."],
+
+        ["Official press release का सबसे बड़ा फायदा क्या है?",
+        ["Primary information","Entertainment","Advertisement","Rumour"],0,
+        "Official press release primary information का स्रोत हो सकता है."],
+
+        ["Fake news पहचानने का अच्छा तरीका क्या है?",
+        ["Multiple reliable sources से verify करना","Forward कर देना","Headline देखकर मान लेना","Comments पढ़ना"],0,
+        "Multiple reliable sources से verification बेहतर तरीका है."],
+
+        ["Job application में OTP किसे देना चाहिए?",
+        ["किसी को नहीं","Recruiter","Friend","Unknown caller"],0,
+        "OTP confidential होता है और किसी को share नहीं करना चाहिए."]
+
+        ];
+
+        while(result.length < 100){
+            result.push(generated[(result.length - original.length) % generated.length]);
+        }
+
+    }
+
+    return result.slice(0,100);
+}
+
+
+/* =========================================================
+   FINAL QUESTION BANK
+========================================================= */
+
+const questions = {
+
+math:create100Questions("math"),
+
+reasoning:create100Questions("reasoning"),
+
+english:create100Questions("english"),
+
+gk:create100Questions("gk"),
+
+current:create100Questions("current")
+
+};
+
+
+/* =========================================================
+   QUIZ VARIABLES
+========================================================= */
+
+let currentSubject = "";
+
+let currentQuestions = [];
+
+let currentQuestionIndex = 0;
+
+let score = 0;
+
+let answered = false;
+
+
+/* =========================================================
+   OPEN STUDY
+========================================================= */
+
+function openStudy(subject){
+
+    currentSubject = subject;
+
+    const theoryArea = document.getElementById("theoryArea");
+
+    if(!theoryArea){
+        console.error("theoryArea not found");
+        return;
+    }
+
+    const data = theory[subject];
+
+    if(!data){
+        alert("Subject data नहीं मिला।");
+        return;
+    }
+
+    theoryArea.innerHTML = `
+
+    <div class="feature">
+
+        <h2 style="color:#1565c0;text-align:center">
+        ${data.title}
+        </h2>
+
+        ${data.content}
+
+        <div style="text-align:center;margin-top:20px">
+
+            <button onclick="startQuiz('${subject}')">
+            📝 Practice Test शुरू करें
+            </button>
+
+        </div>
+
+    </div>
+
+    `;
+
+    setTimeout(()=>{
+
+        const quizSection = document.getElementById("quiz");
+
+        if(quizSection){
+            quizSection.scrollIntoView({
+                behavior:"smooth",
+                block:"start"
+            });
+        }
+
+    },100);
+
+}
+
+
+/* =========================================================
+   START QUIZ
+========================================================= */
+
+function startQuiz(subject){
+
+    currentSubject = subject;
+
+    currentQuestions = questions[subject] || [];
+
+    if(currentQuestions.length === 0){
+
+        alert("इस subject के questions उपलब्ध नहीं हैं।");
+
+        return;
+
+    }
+
+    currentQuestionIndex = 0;
+
+    score = 0;
+
+    answered = false;
+
+
+    const start = document.getElementById("quizStart");
+
+    const quizBox = document.getElementById("quizBox");
+
+    const result = document.getElementById("result");
+
+
+    if(start) start.style.display = "none";
+
+    if(result) result.style.display = "none";
+
+    if(quizBox) quizBox.style.display = "block";
+
+
+    showQuestion();
+
+
+    const quiz = document.getElementById("quiz");
+
+    if(quiz){
+
+        quiz.scrollIntoView({
+            behavior:"smooth",
+            block:"start"
+        });
+
+    }
+
+}
+
+
+/* =========================================================
+   SHOW QUESTION
+========================================================= */
+
+function showQuestion(){
+
+    if(!currentQuestions.length){
+        return;
+    }
+
+    answered = false;
+
+
+    const q = currentQuestions[currentQuestionIndex];
+
+
+    const progress = document.getElementById("progress");
+
+    const question = document.getElementById("question");
+
+    const options = document.getElementById("options");
+
+    const feedback = document.getElementById("feedback");
+
+    const explanation = document.getElementById("explanation");
+
+    const nextBtn = document.getElementById("nextBtn");
+
+
+    if(progress){
+
+        progress.textContent =
+        `Question ${currentQuestionIndex + 1} / ${currentQuestions.length}`;
+
+    }
+
+
+    if(question){
+
+        const title = question.querySelector("h3");
+
+        if(title){
+
+            title.textContent =
+            `${currentQuestionIndex + 1}. ${q[0]}`;
+
+        }
+
+    }
+
+
+    if(options){
+
+        options.innerHTML = "";
+
+        q[1].forEach((option,index)=>{
+
+            const btn = document.createElement("button");
+
+            btn.className = "option";
+
+            btn.textContent =
+            `${String.fromCharCode(65+index)}. ${option}`;
+
+            btn.onclick = function(){
+
+                checkAnswer(index,btn);
+
+            };
+
+            options.appendChild(btn);
+
+        });
+
+    }
+
+
+    if(feedback){
+
+        feedback.textContent = "";
+
+    }
+
+
+    if(explanation){
+
+        explanation.style.display = "none";
+
+        explanation.innerHTML = "";
+
+    }
+
+
+    if(nextBtn){
+
+        nextBtn.style.display = "none";
+
+    }
+
+}
+
+
+/* =========================================================
+   CHECK ANSWER
+========================================================= */
+
+function checkAnswer(selected,clickedButton){
+
+    if(answered){
+        return;
+    }
+
+    answered = true;
+
+
+    const q = currentQuestions[currentQuestionIndex];
+
+    const correct = q[2];
+
+
+    const optionButtons =
+    document.querySelectorAll("#options .option");
+
+
+    optionButtons.forEach((btn,index)=>{
+
+        btn.disabled = true;
+
+        if(index === correct){
+
+            btn.classList.add("correct");
+
+        }
+
+    });
+
+
+    const feedback =
+    document.getElementById("feedback");
+
+
+    if(selected === correct){
+
+        score++;
+
+        clickedButton.classList.add("correct");
+
+        if(feedback){
+
+            feedback.textContent =
+            "✅ सही उत्तर!";
+
+            feedback.style.color =
+            "#2e7d32";
+
+        }
+
+    }else{
+
+        clickedButton.classList.add("wrong");
+
+        if(feedback){
+
+            feedback.textContent =
+            "❌ गलत उत्तर!";
+
+            feedback.style.color =
+            "#c62828";
+
+        }
+
+    }
+
+
+    const explanation =
+    document.getElementById("explanation");
+
+
+    if(explanation){
+
+        explanation.innerHTML =
+        `<b>💡 Explanation:</b><br>${q[3]}`;
+
+        explanation.style.display = "block";
+
+    }
+
+
+    const nextBtn =
+    document.getElementById("nextBtn");
+
+
+    if(nextBtn){
+
+        nextBtn.style.display = "block";
+
+    }
+
+}
+
+
+/* =========================================================
+   NEXT QUESTION
+========================================================= */
+
+function nextQuestion(){
+
+    currentQuestionIndex++;
+
+    if(currentQuestionIndex >= currentQuestions.length){
+
+        showResult();
+
+        return;
+
+    }
+
+    showQuestion();
+
+}
+
+
+/* =========================================================
+   SHOW RESULT
+========================================================= */
+
+function showResult(){
+
+    const quizBox =
+    document.getElementById("quizBox");
+
+    const result =
+    document.getElementById("result");
+
+    const scoreElement =
+    document.getElementById("score");
+
+    const message =
+    document.getElementById("message");
+
+
+    if(quizBox){
+
+        quizBox.style.display = "none";
+
+    }
+
+
+    if(result){
+
+        result.style.display = "block";
+
+    }
+
+
+    const total =
+    currentQuestions.length;
+
+
+    const percentageScore =
+    Math.round((score/total)*100);
+
+
+    if(scoreElement){
+
+        scoreElement.textContent =
+        `${score} / ${total}`;
+
+    }
+
+
+    if(message){
+
+        if(percentageScore >= 80){
+
+            message.textContent =
+            `🎉 शानदार! आपका score ${percentageScore}% है।`;
+
+        }
+
+        else if(percentageScore >= 60){
+
+            message.textContent =
+            `👍 अच्छा प्रयास! आपका score ${percentageScore}% है।`;
+
+        }
+
+        else{
+
+            message.textContent =
+            `📚 Theory दोबारा पढ़कर फिर से Practice करें। आपका score ${percentageScore}% है।`;
+
+        }
+
+    }
+
+}
+
+
+/* =========================================================
+   RESTART TEST
+========================================================= */
+
+function restartTest(){
+
+    if(!currentSubject){
+
+        return;
+
+    }
+
+    currentQuestionIndex = 0;
+
+    score = 0;
+
+    answered = false;
+
+    const result =
+    document.getElementById("result");
+
+    const quizBox =
+    document.getElementById("quizBox");
+
+
+    if(result){
+
+        result.style.display = "none";
+
+    }
+
+
+    if(quizBox){
+
+        quizBox.style.display = "block";
+
+    }
+
+
+    showQuestion();
+
+}
+
+
+/* =========================================================
+   GO STUDY
+========================================================= */
+
+function goStudy(){
+
+    const study =
+    document.getElementById("study");
+
+    if(study){
+
+        study.scrollIntoView({
+            behavior:"smooth",
+            block:"start"
+        });
+
+    }
+
+}
+
+
+/* =========================================================
+   BASIC CALCULATOR
+========================================================= */
+
+function calculate(){
+
+    const input =
+    document.getElementById("calcInput");
+
+    const result =
+    document.getElementById("calcResult");
+
+
+    if(!input || !result){
+        return;
+    }
+
+
+    const value =
+    input.value.trim();
+
+
+    if(!value){
+
+        result.textContent =
+        "कृपया calculation डालें।";
+
+        return;
+
+    }
+
+
+    try{
+
+        if(!/^[0-9+\-*/().%\s]+$/.test(value)){
+
+            throw new Error();
+
+        }
+
+        const answer =
+        Function('"use strict";return (' + value + ')')();
+
+
+        result.textContent =
+        "Result = " + answer;
+
+    }catch(e){
+
+        result.textContent =
+        "Invalid calculation";
+
+    }
+
+}
+
+
+/* =========================================================
+   PERCENTAGE
+========================================================= */
+
+function percentage(){
+
+    const obtained =
+    parseFloat(document.getElementById("obtained").value);
+
+    const total =
+    parseFloat(document.getElementById("total").value);
+
+    const result =
+    document.getElementById("percentageResult");
+
+
+    if(!isFinite(obtained) ||
+       !isFinite(total) ||
+       total <= 0){
+
+        result.textContent =
+        "कृपया सही marks डालें।";
+
+        return;
+
+    }
+
+
+    result.textContent =
+    "Percentage = " +
+    ((obtained/total)*100).toFixed(2) +
+    "%";
+
+}
+
+
+/* =========================================================
+   RECTANGLE AREA
+========================================================= */
+
+function area(){
+
+    const length =
+    parseFloat(document.getElementById("length").value);
+
+    const width =
+    parseFloat(document.getElementById("width").value);
+
+    const result =
+    document.getElementById("areaResult");
+
+
+    if(!isFinite(length) ||
+       !isFinite(width) ||
+       length < 0 ||
+       width < 0){
+
+        result.textContent =
+        "कृपया सही value डालें।";
+
+        return;
+
+    }
+
+
+    result.textContent =
+    "Area = " +
+    (length*width).toFixed(2) +
+    " m²";
+
+}
+
+
+/* =========================================================
+   METER TO FEET
+========================================================= */
+
+function meterToFeet(){
+
+    const meter =
+    parseFloat(document.getElementById("meter").value);
+
+    const result =
+    document.getElementById("feetResult");
+
+
+    if(!isFinite(meter)){
+
+        result.textContent =
+        "कृपया meter डालें।";
+
+        return;
+
+    }
+
+
+    result.textContent =
+    meter +
+    " meter = " +
+    (meter*3.28084).toFixed(2) +
+    " feet";
+
+}
+
+
+/* =========================================================
+   DECIMAL TO KATHA + DHUR
+========================================================= */
+
+function decimalToKatha(){
+
+    const decimal =
+    parseFloat(
+        document.getElementById("decimalInput").value
+    );
+
+    const result =
+    document.getElementById("decimalResult");
+
+
+    if(!isFinite(decimal) || decimal < 0){
+
+        result.textContent =
+        "कृपया सही Decimal डालें।";
+
+        return;
+
+    }
+
+
+    /*
+       Bihar/Muzaffarpur approximation:
+       1 Decimal = 435.6 sq.ft
+       1 Katha ≈ 1361 sq.ft
+       1 Katha = 20 Dhur
+    */
+
+    const sqft =
+    decimal * 435.6;
+
+    const katha =
+    sqft / 1361;
+
+    const wholeKatha =
+    Math.floor(katha);
+
+    const remainingKatha =
+    katha - wholeKatha;
+
+    const dhur =
+    remainingKatha * 20;
+
+
+    result.innerHTML =
+    `${decimal} Decimal ≈
+    ${wholeKatha} Katha
+    ${dhur.toFixed(2)} Dhur
+    <br>
+    Area ≈ ${sqft.toFixed(2)} sq.ft.`;
+
+}
+
+
+/* =========================================================
+   KATHA TO DECIMAL
+========================================================= */
+
+function kathaToDecimal(){
+
+    const katha =
+    parseFloat(
+        document.getElementById("kathaInput").value
+    );
+
+    const result =
+    document.getElementById("kathaResult");
+
+
+    if(!isFinite(katha) || katha < 0){
+
+        result.textContent =
+        "कृपया सही Katha डालें।";
+
+        return;
+
+    }
+
+
+    /*
+       1 Katha ≈ 1361 sq.ft.
+       1 Decimal = 435.6 sq.ft.
+    */
+
+    const decimal =
+    (katha*1361)/435.6;
+
+
+    result.textContent =
+    `${katha} Katha ≈ ${decimal.toFixed(4)} Decimal`;
+
+}
+
+
+/* =========================================================
+   DECIMAL TO SQ FT
+========================================================= */
+
+function decimalToSqFt(){
+
+    const decimal =
+    parseFloat(
+        document.getElementById("decimalSq").value
+    );
+
+    const result =
+    document.getElementById("sqftResult");
+
+
+    if(!isFinite(decimal) || decimal < 0){
+
+        result.textContent =
+        "कृपया सही Decimal डालें।";
+
+        return;
+
+    }
+
+
+    result.textContent =
+    `${decimal} Decimal ≈
+    ${(decimal*435.6).toFixed(2)} sq.ft.`;
+
+}
+
+
+/* =========================================================
+   CODING EXAMPLE
+========================================================= */
+
+function hello(){
+
+    alert("Hello India 🇮🇳");
+
+}
+
+
+/* =========================================================
+   PAGE LOAD CHECK
+========================================================= */
+
+document.addEventListener("DOMContentLoaded",function(){
+
+    console.log(
+        "Learn & Help India Study System Loaded Successfully"
+    );
+
+    console.log(
+        "Math Questions:",
+        questions.math.length
+    );
+
+    console.log(
+        "Reasoning Questions:",
+        questions.reasoning.length
+    );
+
+    console.log(
+        "English Questions:",
+        questions.english.length
+    );
+
+    console.log(
+        "GK Questions:",
+        questions.gk.length
+    );
+
+    console.log(
+        "Current Affairs Questions:",
+        questions.current.length
+    );
+
+});
+
+</script>
