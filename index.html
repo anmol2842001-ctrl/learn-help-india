@@ -2746,61 +2746,64 @@ const theory = {
    OPEN STUDY
 ========================================================= */
 
-function openStudy(subject){
+function startQuiz(subject){
 
     currentSubject = subject;
 
-    const theoryArea = document.getElementById("theoryArea");
+    currentQuestions = questions[subject] || [];
 
-    if(!theoryArea){
-        console.error("theoryArea not found");
+    if(!currentQuestions.length){
+
+        alert("इस subject के questions उपलब्ध नहीं हैं।");
+
         return;
     }
 
-    const data = theory[subject];
+    currentQuestionIndex = 0;
+    score = 0;
+    answered = false;
 
-    if(!data){
-        alert("Subject data नहीं मिला।");
-        return;
+    const start =
+        document.getElementById("quizStart");
+
+    const quizBox =
+        document.getElementById("quizBox");
+
+    const result =
+        document.getElementById("result");
+
+    if(start){
+        start.style.display = "none";
     }
 
-    theoryArea.innerHTML = `
+    if(result){
+        result.style.display = "none";
+    }
 
-    <div class="feature">
+    if(quizBox){
+        quizBox.style.display = "block";
+    }
 
-        <h2 style="color:#1565c0;text-align:center">
-        ${data.title}
-        </h2>
+    // सबसे पहले question दिखाएँ
+    showQuestion();
 
-        ${data.content}
+    // Quiz section पर जाएँ
+    const quiz =
+        document.getElementById("quiz");
 
-        <div style="text-align:center;margin-top:20px">
+    if(quiz){
 
-            <button onclick="startQuiz('${subject}')">
-            📝 Practice Test शुरू करें
-            </button>
+        setTimeout(function(){
 
-        </div>
-
-    </div>
-
-    `;
-
-    setTimeout(()=>{
-
-        const quizSection = document.getElementById("quiz");
-
-        if(quizSection){
-            quizSection.scrollIntoView({
+            quiz.scrollIntoView({
                 behavior:"smooth",
                 block:"start"
             });
-        }
 
-    },100);
+        },100);
 
+    }
 }
-
 
 /* =========================================================
    START QUIZ
@@ -2812,52 +2815,58 @@ function startQuiz(subject){
 
     currentQuestions = questions[subject] || [];
 
-    if(currentQuestions.length === 0){
+    if(!currentQuestions.length){
 
         alert("इस subject के questions उपलब्ध नहीं हैं।");
 
         return;
-
     }
 
     currentQuestionIndex = 0;
-
     score = 0;
-
     answered = false;
 
+    const start =
+        document.getElementById("quizStart");
 
-    const start = document.getElementById("quizStart");
+    const quizBox =
+        document.getElementById("quizBox");
 
-    const quizBox = document.getElementById("quizBox");
+    const result =
+        document.getElementById("result");
 
-    const result = document.getElementById("result");
+    if(start){
+        start.style.display = "none";
+    }
 
+    if(result){
+        result.style.display = "none";
+    }
 
-    if(start) start.style.display = "none";
+    if(quizBox){
+        quizBox.style.display = "block";
+    }
 
-    if(result) result.style.display = "none";
-
-    if(quizBox) quizBox.style.display = "block";
-
-
+    // सबसे पहले question दिखाएँ
     showQuestion();
 
-
-    const quiz = document.getElementById("quiz");
+    // Quiz section पर जाएँ
+    const quiz =
+        document.getElementById("quiz");
 
     if(quiz){
 
-        quiz.scrollIntoView({
-            behavior:"smooth",
-            block:"start"
-        });
+        setTimeout(function(){
+
+            quiz.scrollIntoView({
+                behavior:"smooth",
+                block:"start"
+            });
+
+        },100);
 
     }
-
 }
-
-
 /* =========================================================
    SHOW QUESTION
 ========================================================= */
