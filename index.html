@@ -2522,7 +2522,226 @@ let score = 0;
 
 let answered = false;
 
+/* =========================================================
+   STUDY THEORY DATABASE
+========================================================= */
 
+const theory = {
+
+    math:{
+        title:"➗ Mathematics",
+        content:`
+        <div class="theory-box">
+            <h3>📘 Mathematics Theory</h3>
+            <p>
+            यहाँ Maths के important concepts, formulas और practice
+            questions पढ़ें।
+            </p>
+
+            <p><b>मुख्य Topics:</b></p>
+            <ul>
+                <li>Percentage</li>
+                <li>Profit & Loss</li>
+                <li>Ratio & Proportion</li>
+                <li>Average</li>
+                <li>Simple Interest</li>
+                <li>Time & Work</li>
+                <li>Time, Speed & Distance</li>
+                <li>Number System</li>
+                <li>Mensuration</li>
+                <li>Algebra</li>
+            </ul>
+        </div>
+
+        <div class="theory-box">
+            <h3>📐 Important Formula</h3>
+
+            <p><b>Percentage:</b></p>
+            <p>Percentage = (Part / Total) × 100</p>
+
+            <p><b>Profit:</b></p>
+            <p>Profit = SP − CP</p>
+
+            <p><b>Profit %:</b></p>
+            <p>Profit % = (Profit / CP) × 100</p>
+
+            <p><b>Simple Interest:</b></p>
+            <p>SI = (P × R × T) / 100</p>
+
+            <p><b>Distance:</b></p>
+            <p>Distance = Speed × Time</p>
+
+            <p><b>Rectangle Area:</b></p>
+            <p>Area = Length × Breadth</p>
+        </div>
+        `
+    },
+
+
+    reasoning:{
+        title:"🧠 Reasoning",
+        content:`
+        <div class="theory-box">
+            <h3>📘 Reasoning Theory</h3>
+
+            <p>
+            Reasoning में logic, pattern और relationship को समझकर
+            answer निकालना होता है।
+            </p>
+
+            <p><b>मुख्य Topics:</b></p>
+
+            <ul>
+                <li>Number Series</li>
+                <li>Alphabet Series</li>
+                <li>Coding-Decoding</li>
+                <li>Analogy</li>
+                <li>Classification</li>
+                <li>Direction Test</li>
+                <li>Blood Relation</li>
+                <li>Ranking</li>
+                <li>Odd One Out</li>
+                <li>Syllogism</li>
+            </ul>
+        </div>
+
+        <div class="theory-box">
+            <h3>💡 Reasoning Trick</h3>
+
+            <p>
+            Number Series में सबसे पहले difference देखें।
+            अगर difference से pattern नहीं मिले तो ×, ÷,
+            square, cube या alternate pattern check करें।
+            </p>
+        </div>
+        `
+    },
+
+
+    english:{
+        title:"🔤 English",
+        content:`
+        <div class="theory-box">
+            <h3>📘 English Theory</h3>
+
+            <p>
+            English section में Grammar, Vocabulary,
+            Sentence और Comprehension महत्वपूर्ण हैं।
+            </p>
+
+            <p><b>मुख्य Topics:</b></p>
+
+            <ul>
+                <li>Parts of Speech</li>
+                <li>Tense</li>
+                <li>Article</li>
+                <li>Preposition</li>
+                <li>Subject-Verb Agreement</li>
+                <li>Synonym</li>
+                <li>Antonym</li>
+                <li>One Word Substitution</li>
+                <li>Spelling</li>
+                <li>Active & Passive Voice</li>
+                <li>Direct & Indirect Speech</li>
+            </ul>
+        </div>
+
+        <div class="theory-box">
+            <h3>💡 Important Rule</h3>
+
+            <p>
+            Singular subject के साथ सामान्यतः singular verb
+            का प्रयोग होता है।
+            </p>
+
+            <p>
+            Example:
+            <b>He goes to school.</b>
+            </p>
+        </div>
+        `
+    },
+
+
+    gk:{
+        title:"🇮🇳 GK / GS",
+        content:`
+        <div class="theory-box">
+            <h3>📘 GK / GS</h3>
+
+            <p>
+            General Knowledge और General Studies में History,
+            Geography, Polity, Science, Economy और Static GK
+            के questions आते हैं।
+            </p>
+
+            <p><b>मुख्य Topics:</b></p>
+
+            <ul>
+                <li>Indian History</li>
+                <li>Indian Geography</li>
+                <li>Indian Polity</li>
+                <li>Indian Constitution</li>
+                <li>General Science</li>
+                <li>Economics</li>
+                <li>Environment</li>
+                <li>Important Days</li>
+                <li>Books & Authors</li>
+                <li>Sports</li>
+            </ul>
+        </div>
+
+        <div class="theory-box">
+            <h3>🇮🇳 Indian Polity Example</h3>
+
+            <p>
+            भारतीय संविधान 26 नवंबर 1949 को अपनाया गया
+            और 26 जनवरी 1950 को लागू हुआ।
+            </p>
+        </div>
+        `
+    },
+
+
+    current:{
+        title:"📰 Current Affairs",
+        content:`
+        <div class="theory-box">
+            <h3>📰 Current Affairs</h3>
+
+            <p>
+            Current Affairs में देश-दुनिया में हाल में हुई
+            महत्वपूर्ण घटनाओं का अध्ययन किया जाता है।
+            </p>
+
+            <p><b>मुख्य Topics:</b></p>
+
+            <ul>
+                <li>Government Schemes</li>
+                <li>Appointments</li>
+                <li>Awards</li>
+                <li>Sports</li>
+                <li>National Events</li>
+                <li>International Events</li>
+                <li>Important Reports</li>
+                <li>Science & Technology</li>
+                <li>Economy</li>
+                <li>Defence</li>
+            </ul>
+        </div>
+
+        <div class="theory-box">
+            <h3>⚠️ Important</h3>
+
+            <p>
+            Current Affairs पढ़ते समय information को
+            official और reliable sources से verify करें।
+            </p>
+        </div>
+        `
+    }
+
+};
 /* =========================================================
    OPEN STUDY
 ========================================================= */
